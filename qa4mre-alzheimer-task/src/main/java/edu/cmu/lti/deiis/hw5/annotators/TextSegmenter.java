@@ -13,7 +13,9 @@ import edu.cmu.lti.qalab.utils.Brackets;
 import edu.cmu.lti.qalab.utils.Utils;
 
 
-
+/**
+ * Segments the text into words in the JCas
+ */
 public class TextSegmenter extends JCasAnnotator_ImplBase {
 
 	
@@ -28,6 +30,7 @@ public class TextSegmenter extends JCasAnnotator_ImplBase {
 			
 			String docText = testDoc.getText();
 
+			// Define the pattern to search for:
 			Pattern pattern = Pattern.compile("[0-9a-z][A-Z][a-z]+{3}");
 			Matcher matcher = pattern.matcher(docText);
 
@@ -35,10 +38,10 @@ public class TextSegmenter extends JCasAnnotator_ImplBase {
 
 			ArrayList<Integer> posList = new ArrayList<Integer>();
 			while (matcher.find()) {
-				//String matched = matcher.group();
+				//String matched = matcher.group();   //troubleshooting
 				int start = matcher.start();
 				int end = matcher.end();
-				//System.out.println("matched: "+matched+"\t"+start+"\t"+end);
+				//System.out.println("matched: "+matched+"\t"+start+"\t"+end);    //troubleshooting
 				boolean isSegment = true;
 				if (Character.isDigit(docText.charAt(start))) {
 					if((start-1)>=0 && Character.isDigit(docText.charAt(start-1))){
@@ -62,6 +65,7 @@ public class TextSegmenter extends JCasAnnotator_ImplBase {
 					}
 				}
 				
+				// Does not consider text inside brackets:
 				boolean isInsideBkrt=Utils.isInsideBracket(brackatedExpression,start+1);
 				//System.out.println("isInsideBracket: "+isInsideBkrt+"\t"+"isSegment: "+isSegment);
 				if(isInsideBkrt){
@@ -84,6 +88,7 @@ public class TextSegmenter extends JCasAnnotator_ImplBase {
 			}
 			//System.out.println(docText);
 
+			// Add text to JCas:
 			testDoc.setText(docText);
 			testDoc.addToIndexes();
 			
