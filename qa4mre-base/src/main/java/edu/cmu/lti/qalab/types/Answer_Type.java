@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Mon May 13 14:41:33 EDT 2013
+ * Updated by JCasGen Tue Nov 12 17:49:20 EST 2013
  * @generated */
 public class Answer_Type extends Annotation_Type {
   /** @generated */
@@ -241,6 +241,24 @@ public class Answer_Type extends Annotation_Type {
     ll_cas.ll_setRefValue(addr, casFeatCode_dependencies, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_isDiscard;
+  /** @generated */
+  final int     casFeatCode_isDiscard;
+  /** @generated */ 
+  public boolean getIsDiscard(int addr) {
+        if (featOkTst && casFeat_isDiscard == null)
+      jcas.throwFeatMissing("isDiscard", "edu.cmu.lti.qalab.types.Answer");
+    return ll_cas.ll_getBooleanValue(addr, casFeatCode_isDiscard);
+  }
+  /** @generated */    
+  public void setIsDiscard(int addr, boolean v) {
+        if (featOkTst && casFeat_isDiscard == null)
+      jcas.throwFeatMissing("isDiscard", "edu.cmu.lti.qalab.types.Answer");
+    ll_cas.ll_setBooleanValue(addr, casFeatCode_isDiscard, v);}
+    
+  
 
 
 
@@ -293,6 +311,10 @@ public class Answer_Type extends Annotation_Type {
  
     casFeat_dependencies = jcas.getRequiredFeatureDE(casType, "dependencies", "uima.cas.FSList", featOkTst);
     casFeatCode_dependencies  = (null == casFeat_dependencies) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_dependencies).getCode();
+
+ 
+    casFeat_isDiscard = jcas.getRequiredFeatureDE(casType, "isDiscard", "uima.cas.Boolean", featOkTst);
+    casFeatCode_isDiscard  = (null == casFeat_isDiscard) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_isDiscard).getCode();
 
   }
 }

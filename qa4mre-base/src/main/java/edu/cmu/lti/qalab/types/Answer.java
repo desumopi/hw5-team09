@@ -12,8 +12,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Mon May 13 14:41:33 EDT 2013
- * XML source: /media/alkesh/Windows7_OS/Users/alkesh/git/qa4mre-cse/qa4mre-base/src/main/resources/TypeSystemDescriptor.xml
+ * Updated by JCasGen Tue Nov 12 17:49:20 EST 2013
+ * XML source: /Users/napatluevisadpaibul/git/hw5-team09/qa4mre-base/src/main/resources/TypeSystemDescriptor.xml
  * @generated */
 public class Answer extends Annotation {
   /** @generated
@@ -259,6 +259,24 @@ public class Answer extends Annotation {
     if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_dependencies == null)
       jcasType.jcas.throwFeatMissing("dependencies", "edu.cmu.lti.qalab.types.Answer");
     jcasType.ll_cas.ll_setRefValue(addr, ((Answer_Type)jcasType).casFeatCode_dependencies, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: isDiscard
+
+  /** getter for isDiscard - gets 
+   * @generated */
+  public boolean getIsDiscard() {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_isDiscard == null)
+      jcasType.jcas.throwFeatMissing("isDiscard", "edu.cmu.lti.qalab.types.Answer");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Answer_Type)jcasType).casFeatCode_isDiscard);}
+    
+  /** setter for isDiscard - sets  
+   * @generated */
+  public void setIsDiscard(boolean v) {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_isDiscard == null)
+      jcasType.jcas.throwFeatMissing("isDiscard", "edu.cmu.lti.qalab.types.Answer");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((Answer_Type)jcasType).casFeatCode_isDiscard, v);}    
   }
 
     

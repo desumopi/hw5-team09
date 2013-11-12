@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Mon May 13 14:41:33 EDT 2013
+ * Updated by JCasGen Tue Nov 12 17:49:21 EST 2013
  * @generated */
 public class Dependency_Type extends Annotation_Type {
   /** @generated */
