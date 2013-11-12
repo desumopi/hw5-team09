@@ -16,10 +16,10 @@ PLoS ONE: Genetics of Clusterin Isoform Expression and Alzheimer's Disease RiskO
 				<q  q_id="2" >
 					<q_str>What compartments inside the cell contain clusterin proteins?</q_str>
 					<answer a_id='1'  correct="Yes">ER and the Golgi apparatus</answer>
-					<answer a_id='2' >epitope tag</answer>
-					<answer a_id='3' >anibody</answer>
-					<answer a_id='4' >secretory pathway</answer>
-					<answer a_id='5' >secreted</answer>
+					<answer a_id='2' discard="Yes">epitope tag</answer>
+					<answer a_id='3' discard="Yes">anibody</answer>
+					<answer a_id='4' discard="Yes">secretory pathway</answer>
+					<answer a_id='5' discard="Yes">secreted</answer>
 				</q>
 				<q  q_id="3" >
 					<q_str>Which of the two CLU isoforms is the main one expressed in the choroid plexus?</q_str>
@@ -80,9 +80,9 @@ PLoS ONE: Genetics of Clusterin Isoform Expression and Alzheimer's Disease RiskO
 				<q  q_id="10" >
 					<q_str>How many residues does the CLU2 protein sequence have?</q_str>
 					<answer a_id='1'  correct="Yes">449</answer>
-					<answer a_id='2' >protein</answer>
-					<answer a_id='3' >82.3</answer>
-					<answer a_id='4' >52.5</answer>
+					<answer a_id='2' discard="Yes">protein</answer>
+					<answer a_id='3' discard="Yes">82.3</answer>
+					<answer a_id='4' discard="Yes">52.5</answer>
 					<answer a_id='5' >6</answer>
 				</q>
 		</reading-test>
@@ -141,7 +141,7 @@ PLoS ONE: Somatostatin Modulates Insulin-Degrading-Enzyme Metabolism: Implicatio
 				<q  q_id="7" >
 					<q_str>What is the major protease produced by microglia responsible for degrading A?</q_str>
 					<answer a_id='1' >Ab</answer>
-					<answer a_id='2' >cells</answer>
+					<answer a_id='2' discard="Yes">cells</answer>
 					<answer a_id='3' >IDE</answer>
 					<answer a_id='4'  correct="Yes">extracellular</answer>
 					<answer a_id='5' >beta-amyloid</answer>
@@ -158,9 +158,9 @@ PLoS ONE: Somatostatin Modulates Insulin-Degrading-Enzyme Metabolism: Implicatio
 					<q_str>What are the sst receptors that are expressed on rat astrocytes?</q_str>
 					<answer a_id='1' >SSTR-2, SSTR-3 and SSTR-4</answer>
 					<answer a_id='2'  correct="Yes">SSTR-1, SSTR-2 and SSTR-4</answer>
-					<answer a_id='3' >somatostatin</answer>
-					<answer a_id='4' >microglia</answer>
-					<answer a_id='5' >rat</answer>
+					<answer a_id='3' discard="Yes">somatostatin</answer>
+					<answer a_id='4' discard="Yes">microglia</answer>
+					<answer a_id='5' discard="Yes">rat</answer>
 				</q>
 				<q  q_id="10" >
 					<q_str>What method was used to inhibit the expression of IDE?</q_str>
@@ -193,8 +193,8 @@ Journal of Aging ResearchVolume 2012 (2012), Article ID 324968, 9 pagesdoi:10.11
 				</q>
 				<q  q_id="3" >
 					<q_str>How many persons worldwide are estimated to have a medical condition related to neurodegeneration?</q_str>
-					<answer a_id='1' >LPR2</answer>
-					<answer a_id='2' >mitochondria</answer>
+					<answer a_id='1' discard="Yes">LPR2</answer>
+					<answer a_id='2' discard="Yes">mitochondria</answer>
 					<answer a_id='3' >60%</answer>
 					<answer a_id='4'  correct="Yes">more than 10 million</answer>
 					<answer a_id='5' >70 years old</answer>
@@ -241,11 +241,11 @@ Journal of Aging ResearchVolume 2012 (2012), Article ID 324968, 9 pagesdoi:10.11
 				</q>
 				<q  q_id="9" >
 					<q_str>Where does amyloid-beta assemble into oligomeric structures?</q_str>
-					<answer a_id='1' >fractions</answer>
+					<answer a_id='1' discard="Yes">fractions</answer>
 					<answer a_id='2' >monomeric amyloid</answer>
 					<answer a_id='3' >membranes</answer>
 					<answer a_id='4'  correct="Yes">synaptic terminals</answer>
-					<answer a_id='5' >lipid</answer>
+					<answer a_id='5' discard="Yes">lipid</answer>
 				</q>
 				<q  q_id="10" >
 					<q_str>When does oxidative stress happen in AD patients?</q_str>
@@ -336,9 +336,9 @@ PLoS ONE: Alzheimer's Disease-Linked Mutations in Presenilin-1 Result in a Drast
 					<q_str>How many mutations relevant for familial forms of Alzheimer's disease have been detected for the PSEN1 gene?</q_str>
 					<answer a_id='1' >13</answer>
 					<answer a_id='2' >42</answer>
-					<answer a_id='3' >P436Q</answer>
+					<answer a_id='3' discard="Yes">P436Q</answer>
 					<answer a_id='4'  correct="Yes">185</answer>
-					<answer a_id='5' >PSEN2</answer>
+					<answer a_id='5' discard="Yes">PSEN2</answer>
 				</q>
 		</reading-test>
 	</topic>
