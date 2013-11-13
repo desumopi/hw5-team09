@@ -23,11 +23,11 @@ PLoS ONE: Genetics of Clusterin Isoform Expression and Alzheimer's Disease RiskO
 				</q>
 				<q  q_id="3" >
 					<q_str>Which of the two CLU isoforms is the main one expressed in the choroid plexus?</q_str>
-					<answer a_id='1' >fetal tissue</answer>
+					<answer a_id='1' discard="Yes">fetal tissue</answer>
 					<answer a_id='2' >CLU1</answer>
-					<answer a_id='3' >clusterin</answer>
+					<answer a_id='3' discard="Yes">clusterin</answer>
 					<answer a_id='4'  correct="Yes">CLU2</answer>
-					<answer a_id='5' >cerebrospinal fluid</answer>
+					<answer a_id='5' discard="Yes">cerebrospinal fluid</answer>
 				</q>
 				<q  q_id="4" >
 					<q_str>Which clusterin single nucleotide polymorphism has been linked to a reduction in the risk for developing Alzheimer's disease?</q_str>
@@ -195,9 +195,9 @@ Journal of Aging ResearchVolume 2012 (2012), Article ID 324968, 9 pagesdoi:10.11
 					<q_str>How many persons worldwide are estimated to have a medical condition related to neurodegeneration?</q_str>
 					<answer a_id='1' discard="Yes">LPR2</answer>
 					<answer a_id='2' discard="Yes">mitochondria</answer>
-					<answer a_id='3' >60%</answer>
+					<answer a_id='3' discard="Yes">60%</answer>
 					<answer a_id='4'  correct="Yes">more than 10 million</answer>
-					<answer a_id='5' >70 years old</answer>
+					<answer a_id='5' discard="Yes">70 years old</answer>
 				</q>
 				<q  q_id="4" >
 					<q_str>Which protein is able to block nitric oxide creation?</q_str>
