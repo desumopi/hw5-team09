@@ -137,7 +137,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 
 	public double scoreCoOccurInSameDoc(String question, Answer choice)
 			throws Exception {
-		// String choiceTokens[] = choice.split("[ ]");
+		//String choiceTokens[] = choice.split("[ ]");
 		ArrayList<NounPhrase> choiceNounPhrases = Utils.fromFSListToCollection(
 				choice.getNounPhraseList(), NounPhrase.class);
 		double score = 0.0;
@@ -185,22 +185,24 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 			}
 			// System.out.println(query+"\t"+nHits1);
 
-			/*
-			 * query = question; // System.out.println(query); params = new
-			 * HashMap<String, String>(); params.put("q", query);
-			 * params.put("rows", "1"); solrParams = new MapSolrParams(params);
-			 * rsp = solrWrapper.getServer().query(solrParams); long nHits2 =
-			 * rsp.getResults().getNumFound(); //
-			 * System.out.println(query+"\t"+nHits2);
-			 */
+			query = question; 
+			//System.out.println(query); 
+			params = new HashMap<String, String>();
+			params.put("q", query);
+			params.put("rows", "1"); 
+			solrParams = new MapSolrParams(params);
+			rsp = solrWrapper.getServer().query(solrParams); 
+			long nHits2 = rsp.getResults().getNumFound(); 
+			System.out.println(query+"\t"+nHits2);
+			
 
-			// score += myLog(combinedHits, nHits1, nHits2);
+			score += myLog(combinedHits, nHits1, nHits2);
 			if (nHits1 != 0) {
 				score += (double) combinedHits / nHits1;
 			}
 		}
 		if (choiceNounPhrases.size() > 0) {
-			// score=score/choiceNounPhrases.size();
+		  score=score/choiceNounPhrases.size();
 		}
 		return score;
 	}
