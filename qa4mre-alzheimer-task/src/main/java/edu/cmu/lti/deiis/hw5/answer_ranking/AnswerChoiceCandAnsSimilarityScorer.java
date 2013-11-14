@@ -20,6 +20,7 @@ import edu.cmu.lti.qalab.types.TestDocument;
 import edu.cmu.lti.qalab.utils.Utils;
 
 public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase {
+  // test WENYI
 
 	int K_CANDIDATES = 5;
 
