@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Tue Nov 12 17:49:21 EST 2013
+ * Updated by JCasGen Thu Nov 14 15:34:41 EST 2013
  * @generated */
 public class CandidateAnswer_Type extends Annotation_Type {
   /** @generated */
@@ -151,6 +151,42 @@ public class CandidateAnswer_Type extends Annotation_Type {
     ll_cas.ll_setDoubleValue(addr, casFeatCode_synonymScore, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_cosSimScore;
+  /** @generated */
+  final int     casFeatCode_cosSimScore;
+  /** @generated */ 
+  public double getCosSimScore(int addr) {
+        if (featOkTst && casFeat_cosSimScore == null)
+      jcas.throwFeatMissing("cosSimScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
+    return ll_cas.ll_getDoubleValue(addr, casFeatCode_cosSimScore);
+  }
+  /** @generated */    
+  public void setCosSimScore(int addr, double v) {
+        if (featOkTst && casFeat_cosSimScore == null)
+      jcas.throwFeatMissing("cosSimScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
+    ll_cas.ll_setDoubleValue(addr, casFeatCode_cosSimScore, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_diceCoeffScore;
+  /** @generated */
+  final int     casFeatCode_diceCoeffScore;
+  /** @generated */ 
+  public double getDiceCoeffScore(int addr) {
+        if (featOkTst && casFeat_diceCoeffScore == null)
+      jcas.throwFeatMissing("diceCoeffScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
+    return ll_cas.ll_getDoubleValue(addr, casFeatCode_diceCoeffScore);
+  }
+  /** @generated */    
+  public void setDiceCoeffScore(int addr, double v) {
+        if (featOkTst && casFeat_diceCoeffScore == null)
+      jcas.throwFeatMissing("diceCoeffScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
+    ll_cas.ll_setDoubleValue(addr, casFeatCode_diceCoeffScore, v);}
+    
+  
 
 
 
@@ -183,6 +219,14 @@ public class CandidateAnswer_Type extends Annotation_Type {
  
     casFeat_synonymScore = jcas.getRequiredFeatureDE(casType, "synonymScore", "uima.cas.Double", featOkTst);
     casFeatCode_synonymScore  = (null == casFeat_synonymScore) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_synonymScore).getCode();
+
+ 
+    casFeat_cosSimScore = jcas.getRequiredFeatureDE(casType, "cosSimScore", "uima.cas.Double", featOkTst);
+    casFeatCode_cosSimScore  = (null == casFeat_cosSimScore) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_cosSimScore).getCode();
+
+ 
+    casFeat_diceCoeffScore = jcas.getRequiredFeatureDE(casType, "diceCoeffScore", "uima.cas.Double", featOkTst);
+    casFeatCode_diceCoeffScore  = (null == casFeat_diceCoeffScore) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_diceCoeffScore).getCode();
 
   }
 }

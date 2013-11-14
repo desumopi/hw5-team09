@@ -11,8 +11,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Tue Nov 12 17:49:21 EST 2013
- * XML source: /Users/napatluevisadpaibul/git/hw5-team09/qa4mre-base/src/main/resources/TypeSystemDescriptor.xml
+ * Updated by JCasGen Thu Nov 14 15:34:41 EST 2013
+ * XML source: /Users/Apple/git/hw5-team09/qa4mre-base/src/main/resources/TypeSystemDescriptor.xml
  * @generated */
 public class CandidateAnswer extends Annotation {
   /** @generated
@@ -168,6 +168,42 @@ public class CandidateAnswer extends Annotation {
     if (CandidateAnswer_Type.featOkTst && ((CandidateAnswer_Type)jcasType).casFeat_synonymScore == null)
       jcasType.jcas.throwFeatMissing("synonymScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
     jcasType.ll_cas.ll_setDoubleValue(addr, ((CandidateAnswer_Type)jcasType).casFeatCode_synonymScore, v);}    
+   
+    
+  //*--------------*
+  //* Feature: cosSimScore
+
+  /** getter for cosSimScore - gets 
+   * @generated */
+  public double getCosSimScore() {
+    if (CandidateAnswer_Type.featOkTst && ((CandidateAnswer_Type)jcasType).casFeat_cosSimScore == null)
+      jcasType.jcas.throwFeatMissing("cosSimScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((CandidateAnswer_Type)jcasType).casFeatCode_cosSimScore);}
+    
+  /** setter for cosSimScore - sets  
+   * @generated */
+  public void setCosSimScore(double v) {
+    if (CandidateAnswer_Type.featOkTst && ((CandidateAnswer_Type)jcasType).casFeat_cosSimScore == null)
+      jcasType.jcas.throwFeatMissing("cosSimScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((CandidateAnswer_Type)jcasType).casFeatCode_cosSimScore, v);}    
+   
+    
+  //*--------------*
+  //* Feature: diceCoeffScore
+
+  /** getter for diceCoeffScore - gets 
+   * @generated */
+  public double getDiceCoeffScore() {
+    if (CandidateAnswer_Type.featOkTst && ((CandidateAnswer_Type)jcasType).casFeat_diceCoeffScore == null)
+      jcasType.jcas.throwFeatMissing("diceCoeffScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((CandidateAnswer_Type)jcasType).casFeatCode_diceCoeffScore);}
+    
+  /** setter for diceCoeffScore - sets  
+   * @generated */
+  public void setDiceCoeffScore(double v) {
+    if (CandidateAnswer_Type.featOkTst && ((CandidateAnswer_Type)jcasType).casFeat_diceCoeffScore == null)
+      jcasType.jcas.throwFeatMissing("diceCoeffScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((CandidateAnswer_Type)jcasType).casFeatCode_diceCoeffScore, v);}    
   }
 
     
