@@ -29,7 +29,7 @@
       <nameValuePair>
         <name>SOLR_SERVER_URL</name>
         <value>
-          <string>http://peace.isri.cs.cmu.edu:9080/solr/genomics-simple/</string>
+          <string>http://localhost:8983/solr/</string>
         </value>
       </nameValuePair>
       <nameValuePair>

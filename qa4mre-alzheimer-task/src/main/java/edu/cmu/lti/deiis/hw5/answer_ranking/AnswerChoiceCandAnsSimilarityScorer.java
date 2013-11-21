@@ -35,8 +35,9 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
     // String testDocId = testDoc.getId();
     ArrayList<QuestionAnswerSet> qaSet = Utils.getQuestionAnswerSetFromTestDocCAS(aJCas);
 
+    // traverse each set of Q&A
     for (int i = 0; i < qaSet.size(); i++) {
-
+      // each set of Q and choices
       Question question = qaSet.get(i).getQuestion();
       System.out.println("Question: " + question.getText());
       ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
@@ -48,14 +49,17 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
           choiceList.remove(ind);
         }
       }
+      // get candidate sentences of each question
       ArrayList<CandidateSentence> candSentList = Utils.fromFSListToCollection(qaSet.get(i)
               .getCandidateSentenceList(), CandidateSentence.class);
 
+      // focus on top k candidate sentences
       int topK = Math.min(K_CANDIDATES, candSentList.size());
       for (int c = 0; c < topK; c++) {
-
+        // for each sentence
         CandidateSentence candSent = candSentList.get(c);
 
+        // get nouns and NERs in it
         ArrayList<NounPhrase> candSentNouns = Utils.fromFSListToCollection(candSent.getSentence()
                 .getPhraseList(), NounPhrase.class);
         ArrayList<NER> candSentNers = Utils.fromFSListToCollection(candSent.getSentence()
@@ -64,13 +68,17 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
         ArrayList<CandidateAnswer> candAnsList = new ArrayList<CandidateAnswer>();
         for (int j = 0; j < choiceList.size(); j++) {
 
+          // compare candidate sentences and choices, based on nouns and NERs
           Answer answer = choiceList.get(j);
           ArrayList<NounPhrase> choiceNouns = Utils.fromFSListToCollection(
                   answer.getNounPhraseList(), NounPhrase.class);
           ArrayList<NER> choiceNERs = Utils.fromFSListToCollection(answer.getNerList(), NER.class);
 
           int nnMatch = 0;
+          // for each noun in this candidate sentence
           for (int k = 0; k < candSentNouns.size(); k++) {
+            // compare it with each element (nouns and NERs) in the choice
+            // if there is a match, count++
             for (int l = 0; l < choiceNERs.size(); l++) {
               if (candSentNouns.get(k).getText().contains(choiceNERs.get(l).getText())) {
                 nnMatch++;
@@ -85,6 +93,9 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
 
           // Wenyi modified this part
           // removed some error in the baseline code
+
+          // for each NER in this candidate sentence
+          // do the same thing as to nouns
           for (int k = 0; k < candSentNers.size(); k++) {
             for (int l = 0; l < choiceNERs.size(); l++) {
               if (candSentNers.get(k).getText().contains(choiceNERs.get(l).getText())) {
@@ -112,7 +123,10 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
           candAnswer.setText(answer.getText());
           candAnswer.setQId(answer.getQuestionId());
           candAnswer.setChoiceIndex(j);
-          candAnswer.setSimilarityScore(nnMatch);
+          candAnswer.setSimilarityScore(1.0*nnMatch/(answer.getEnd()-answer.getBegin())); 
+          // nnMatch is the default similarity score between candidate sentence and choice
+          // Wenyi modified it with a normalization using the length of answer.
+          // when running "questionRun", the result improves from 02113 to 02213.
           candAnsList.add(candAnswer);
         }
 
