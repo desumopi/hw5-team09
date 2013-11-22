@@ -104,8 +104,9 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 
 					}
 
-					System.out.println(choiceList.get(j).getText() + "\t"
-							+ score1 + "\t" + ((score1)));
+					// callie: I removed this println
+					//System.out.println(choiceList.get(j).getText() + "\t"
+					//		+ score1 + "\t" + ((score1)));
 
 					CandidateAnswer candAnswer=null;
 					if(candSent.getCandAnswerList()==null){
@@ -193,7 +194,8 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 			solrParams = new MapSolrParams(params);
 			rsp = solrWrapper.getServer().query(solrParams); 
 			long nHits2 = rsp.getResults().getNumFound(); 
-			System.out.println(query+"\t"+nHits2);
+			// callie (I removed this println so that all the output fits on the console)
+			//System.out.println(query+"\t"+nHits2);
 			
 
 			score += myLog(combinedHits, nHits1, nHits2);
