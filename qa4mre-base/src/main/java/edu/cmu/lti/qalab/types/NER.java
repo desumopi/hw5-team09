@@ -12,7 +12,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Nov 14 15:34:42 EST 2013
+ * Updated by JCasGen Fri Nov 22 12:22:54 EST 2013
  * XML source: /Users/Apple/git/hw5-team09/qa4mre-base/src/main/resources/TypeSystemDescriptor.xml
  * @generated */
 public class NER extends Annotation {

@@ -436,16 +436,11 @@
           <rangeTypeName>uima.cas.Double</rangeTypeName>
         </featureDescription>
         <featureDescription>
-           <name>cosSimScore</name>
+           <name>altSimScore</name>
            <description/>
            <rangeTypeName>uima.cas.Double</rangeTypeName>
          </featureDescription>
-         <featureDescription>
-           <name>diceCoeffScore</name>
-           <description/>
-           <rangeTypeName>uima.cas.Double</rangeTypeName>
-         </featureDescription>
-      </features>
+         </features>
     </typeDescription>
   </types>
 </typeSystemDescription>

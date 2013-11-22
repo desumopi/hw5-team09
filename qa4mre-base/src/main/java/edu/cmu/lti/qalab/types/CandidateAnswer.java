@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Thu Nov 14 15:34:41 EST 2013
+ * Updated by JCasGen Fri Nov 22 12:22:53 EST 2013
  * XML source: /Users/Apple/git/hw5-team09/qa4mre-base/src/main/resources/TypeSystemDescriptor.xml
  * @generated */
 public class CandidateAnswer extends Annotation {
@@ -171,39 +171,21 @@ public class CandidateAnswer extends Annotation {
    
     
   //*--------------*
-  //* Feature: cosSimScore
+  //* Feature: altSimScore
 
-  /** getter for cosSimScore - gets 
+  /** getter for altSimScore - gets 
    * @generated */
-  public double getCosSimScore() {
-    if (CandidateAnswer_Type.featOkTst && ((CandidateAnswer_Type)jcasType).casFeat_cosSimScore == null)
-      jcasType.jcas.throwFeatMissing("cosSimScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((CandidateAnswer_Type)jcasType).casFeatCode_cosSimScore);}
+  public double getAltSimScore() {
+    if (CandidateAnswer_Type.featOkTst && ((CandidateAnswer_Type)jcasType).casFeat_altSimScore == null)
+      jcasType.jcas.throwFeatMissing("altSimScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((CandidateAnswer_Type)jcasType).casFeatCode_altSimScore);}
     
-  /** setter for cosSimScore - sets  
+  /** setter for altSimScore - sets  
    * @generated */
-  public void setCosSimScore(double v) {
-    if (CandidateAnswer_Type.featOkTst && ((CandidateAnswer_Type)jcasType).casFeat_cosSimScore == null)
-      jcasType.jcas.throwFeatMissing("cosSimScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((CandidateAnswer_Type)jcasType).casFeatCode_cosSimScore, v);}    
-   
-    
-  //*--------------*
-  //* Feature: diceCoeffScore
-
-  /** getter for diceCoeffScore - gets 
-   * @generated */
-  public double getDiceCoeffScore() {
-    if (CandidateAnswer_Type.featOkTst && ((CandidateAnswer_Type)jcasType).casFeat_diceCoeffScore == null)
-      jcasType.jcas.throwFeatMissing("diceCoeffScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((CandidateAnswer_Type)jcasType).casFeatCode_diceCoeffScore);}
-    
-  /** setter for diceCoeffScore - sets  
-   * @generated */
-  public void setDiceCoeffScore(double v) {
-    if (CandidateAnswer_Type.featOkTst && ((CandidateAnswer_Type)jcasType).casFeat_diceCoeffScore == null)
-      jcasType.jcas.throwFeatMissing("diceCoeffScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((CandidateAnswer_Type)jcasType).casFeatCode_diceCoeffScore, v);}    
+  public void setAltSimScore(double v) {
+    if (CandidateAnswer_Type.featOkTst && ((CandidateAnswer_Type)jcasType).casFeat_altSimScore == null)
+      jcasType.jcas.throwFeatMissing("altSimScore", "edu.cmu.lti.qalab.types.CandidateAnswer");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((CandidateAnswer_Type)jcasType).casFeatCode_altSimScore, v);}    
   }
 
     
