@@ -62,6 +62,15 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 			System.out.println("Question: " + question.getText());
 			ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet
 					.get(i).getAnswerList(), Answer.class);
+			
+			// callie  Remove the sentences for which isDiscard is true
+      for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
+        Answer temp = choiceList.get(ind);
+        if (temp.getIsDiscard()) {
+          choiceList.remove(ind);
+        }
+      }
+			
 			ArrayList<CandidateSentence> candSentList = Utils
 					.fromFSListToCollection(qaSet.get(i)
 							.getCandidateSentenceList(),
