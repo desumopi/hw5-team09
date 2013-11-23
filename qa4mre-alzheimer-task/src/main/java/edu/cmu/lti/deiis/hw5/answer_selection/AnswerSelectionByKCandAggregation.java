@@ -20,127 +20,119 @@ import edu.cmu.lti.qalab.utils.Utils;
 
 public class AnswerSelectionByKCandAggregation extends JCasAnnotator_ImplBase {
 
-	int K_CANDIDATES = 5;
+  int K_CANDIDATES = 5;
 
-	@Override
-	public void initialize(UimaContext context)
-			throws ResourceInitializationException {
-		super.initialize(context);
-		K_CANDIDATES = (Integer) context
-				.getConfigParameterValue("K_CANDIDATES");
-		
-	}
+  @Override
+  public void initialize(UimaContext context) throws ResourceInitializationException {
+    super.initialize(context);
+    K_CANDIDATES = (Integer) context.getConfigParameterValue("K_CANDIDATES");
 
-	@Override
-	public void process(JCas aJCas) throws AnalysisEngineProcessException {
-		TestDocument testDoc = Utils.getTestDocumentFromCAS(aJCas);
-		ArrayList<QuestionAnswerSet> qaSet = Utils.fromFSListToCollection(
-				testDoc.getQaList(), QuestionAnswerSet.class);
-		int matched = 0;
-		int total = 0;
-		int unanswered = 0;
+  }
 
-		for (int i = 0; i < qaSet.size(); i++) {
+  @Override
+  public void process(JCas aJCas) throws AnalysisEngineProcessException {
+    TestDocument testDoc = Utils.getTestDocumentFromCAS(aJCas);
+    ArrayList<QuestionAnswerSet> qaSet = Utils.fromFSListToCollection(testDoc.getQaList(),
+            QuestionAnswerSet.class);
+    int matched = 0;
+    int total = 0;
+    int unanswered = 0;
 
-			Question question = qaSet.get(i).getQuestion();
-			System.out.println("Question: " + question.getText());
-			ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet
-					.get(i).getAnswerList(), Answer.class);
-			ArrayList<CandidateSentence> candSentList = Utils
-					.fromFSListToCollection(qaSet.get(i)
-							.getCandidateSentenceList(),
-							CandidateSentence.class);
+    for (int i = 0; i < qaSet.size(); i++) {
 
-			int topK = Math.min(K_CANDIDATES, candSentList.size());
-			String correct = "";
+      Question question = qaSet.get(i).getQuestion();
+      System.out.println("Question: " + question.getText());
+      ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
+              Answer.class);
+      ArrayList<CandidateSentence> candSentList = Utils.fromFSListToCollection(qaSet.get(i)
+              .getCandidateSentenceList(), CandidateSentence.class);
 
-			for (int j = 0; j < choiceList.size(); j++) {
-				Answer answer = choiceList.get(j);
-				if (answer.getIsCorrect()) {
-					correct = answer.getText();
-					break;
-				}
-			}
+      int topK = Math.min(K_CANDIDATES, candSentList.size());
+      String correct = "";
 
-			HashMap<String, Double> hshAnswer = new HashMap<String, Double>();
+      for (int j = 0; j < choiceList.size(); j++) {
+        Answer answer = choiceList.get(j);
+        if (answer.getIsCorrect()) {
+          correct = answer.getText();
+          break;
+        }
+      }
 
-			for (int c = 0; c < topK; c++) {
+      HashMap<String, Double> hshAnswer = new HashMap<String, Double>();
 
-				CandidateSentence candSent = candSentList.get(c);
+      for (int c = 0; c < topK; c++) {
 
-				ArrayList<CandidateAnswer> candAnswerList = Utils
-						.fromFSListToCollection(candSent.getCandAnswerList(),
-								CandidateAnswer.class);
+        CandidateSentence candSent = candSentList.get(c);
 
-				for (int j = 0; j < candAnswerList.size(); j++) {
+        ArrayList<CandidateAnswer> candAnswerList = Utils.fromFSListToCollection(
+                candSent.getCandAnswerList(), CandidateAnswer.class);
 
-					CandidateAnswer candAns = candAnswerList.get(j);
-					String answer = candAns.getText();
-					double totalScore = candAns.getSimilarityScore()
-							+ candAns.getSynonymScore() + candAns.getPMIScore();
+        for (int j = 0; j < candAnswerList.size(); j++) {
 
-					Double existingVal=hshAnswer.get(answer);
-					if(existingVal==null){
-						existingVal=new Double(0.0);
-					}
-					hshAnswer.put(answer, existingVal+totalScore);
-					
-				}
-			}
+          CandidateAnswer candAns = candAnswerList.get(j);
+          String answer = candAns.getText();
+          double totalScore = candAns.getSimilarityScore() + candAns.getSynonymScore()
+                  + candAns.getPMIScore() + candAns.getAltSimScore();
 
-			String bestChoice = null;
-			try {
-				bestChoice = findBestChoice(hshAnswer);
+          Double existingVal = hshAnswer.get(answer);
+          if (existingVal == null) {
+            existingVal = new Double(0.0);
+          }
+          hshAnswer.put(answer, existingVal + totalScore);
 
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			System.out.println("Correct Choice: " + "\t" + correct);
-			System.out.println("Best Choice: " + "\t" + bestChoice);
+        }
+      }
 
-			if (bestChoice == null) {
-				unanswered++;
-			}
-			if (bestChoice != null && correct.equals(bestChoice)) {
-				matched++;
+      String bestChoice = null;
+      try {
+        bestChoice = findBestChoice(hshAnswer);
 
-			}
-			total++;
-			System.out
-					.println("================================================");
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+      System.out.println("Correct Choice: " + "\t" + correct);
+      System.out.println("Best Choice: " + "\t" + bestChoice);
 
-		}
+      if (bestChoice == null) {
+        unanswered++;
+      }
+      if (bestChoice != null && correct.equals(bestChoice)) {
+        matched++;
 
-		System.out.println("Correct: " + matched + "/" + total + "="
-				+ ((matched * 100.0) / total) + "%");
-		// TO DO: Reader of this pipe line should read from xmi generated by
-		// SimpleRunCPE
-		double cAt1 = (((double) matched) / ((double) total) * unanswered + (double) matched)
-				* (1.0 / total);
-		System.out.println("c@1 score:" + cAt1);
+      }
+      total++;
+      System.out.println("================================================");
 
-	}
-	
-	public String findBestChoice(
-			HashMap<String, Double> hshAnswer) throws Exception {
+    }
 
-		Iterator<String> it = hshAnswer.keySet().iterator();
-		String bestAns = null;
-		double maxScore = 0;
-		System.out.println("Aggregated counts; ");
-		while (it.hasNext()) {
-			String key = it.next();
-			Double val = hshAnswer.get(key);
-			System.out.println(key+"\t"+key+"\t"+val);
-			if (val > maxScore) {
-				maxScore = val;
-				bestAns = key;
-			}
+    System.out.println("Correct: " + matched + "/" + total + "=" + ((matched * 100.0) / total)
+            + "%");
+    // TO DO: Reader of this pipe line should read from xmi generated by
+    // SimpleRunCPE
+    double cAt1 = (((double) matched) / ((double) total) * unanswered + (double) matched)
+            * (1.0 / total);
+    System.out.println("c@1 score:" + cAt1);
 
-		}
+  }
 
-		return bestAns;
-	}
+  public String findBestChoice(HashMap<String, Double> hshAnswer) throws Exception {
 
+    Iterator<String> it = hshAnswer.keySet().iterator();
+    String bestAns = null;
+    double maxScore = 0;
+    System.out.println("Aggregated counts; ");
+    while (it.hasNext()) {
+      String key = it.next();
+      Double val = hshAnswer.get(key);
+      System.out.println(key + "\t" + key + "\t" + val);
+      if (val > maxScore) {
+        maxScore = val;
+        bestAns = key;
+      }
+
+    }
+
+    return bestAns;
+  }
 
 }
