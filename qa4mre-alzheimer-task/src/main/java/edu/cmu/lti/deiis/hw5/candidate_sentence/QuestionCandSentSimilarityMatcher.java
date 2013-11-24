@@ -78,6 +78,10 @@ public class QuestionCandSentSimilarityMatcher extends JCasAnnotator_ImplBase {
       solrQuery.setFields("*", "score");
       try {
         SolrDocumentList results = solrWrapper.runQuery(solrQuery, TOP_SEARCH_RESULTS);
+        
+        //napat
+        double currentScore = 0;
+        
         for (int j = 0; j < results.size(); j++) {
           SolrDocument doc = results.get(j);
           String sentId = doc.get("id").toString();
@@ -91,6 +95,16 @@ public class QuestionCandSentSimilarityMatcher extends JCasAnnotator_ImplBase {
 
           String sentence = doc.get("text").toString();
           double relScore = Double.parseDouble(doc.get("score").toString());
+          
+          //napat
+          if(5*relScore <currentScore)
+          {
+            System.out.println("too low score:"+sentence);
+            break;
+          }
+          currentScore = relScore;
+          
+          
           CandidateSentence candSent = new CandidateSentence(aJCas);
           candSent.setSentence(annSentence);
           candSent.setRelevanceScore(relScore);
