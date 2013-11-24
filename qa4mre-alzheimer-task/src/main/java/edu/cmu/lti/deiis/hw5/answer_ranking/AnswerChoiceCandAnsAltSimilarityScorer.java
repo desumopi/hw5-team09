@@ -65,27 +65,42 @@ public class AnswerChoiceCandAnsAltSimilarityScorer extends JCasAnnotator_ImplBa
         // for each sentence
         CandidateSentence candSent = candSentList.get(c);
 
-        // get nouns and NERs in it
-        ArrayList<Token> candSentTokens = Utils.fromFSListToCollection(candSent.getSentence()
-                .getTokenList(), Token.class);
-        Set<Token> candSentTokenSet = new HashSet<Token>(candSentTokens);
-        Map<Token, Integer> candSentTokenMap = list2map(candSentTokens);
+        // get nouns and NERs in it, now maybe tokens
+        ArrayList<NounPhrase> candSentNouns = Utils.fromFSListToCollection(candSent.getSentence()
+                .getPhraseList(), NounPhrase.class);
+        Set<NounPhrase> candSentTokenSet = new HashSet<NounPhrase>(candSentNouns);
+        Map<NounPhrase, Integer> candSentTokenMap = list2map(candSentNouns);
+
+        ArrayList<NER> candSentNouns2 = Utils.fromFSListToCollection(candSent.getSentence()
+                .getPhraseList(), NER.class);
+        Set<NER> candSentTokenSet2 = new HashSet<NER>(candSentNouns2);
+        Map<NER, Integer> candSentTokenMap2 = list2map(candSentNouns2);
 
         ArrayList<CandidateAnswer> candAnsList = new ArrayList<CandidateAnswer>();
         for (int j = 0; j < choiceList.size(); j++) {
 
-          // compare candidate sentences and choices, based on nouns and NERs
+          // compare candidate sentences and choices, based on nouns and NERs, and now maybe tokens
           Answer answer = choiceList.get(j);
 
-          ArrayList<Token> choiceTokens = Utils.fromFSListToCollection(answer.getTokenList(),
-                  Token.class);
-          Map<Token, Integer> choiceTokenMap = list2map(candSentTokens);
-          Set<Token> allTokenSet = new HashSet<Token>(choiceTokens);
+          ArrayList<NounPhrase> choiceNouns = Utils.fromFSListToCollection(candSent.getSentence()
+                  .getPhraseList(), NounPhrase.class);
+          Map<NounPhrase, Integer> choiceTokenMap = list2map(choiceNouns);
+          Set<NounPhrase> allTokenSet = new HashSet<NounPhrase>(choiceNouns);
           allTokenSet.addAll(candSentTokenSet);
           double cosSim = computeCosSim(allTokenSet, choiceTokenMap, candSentTokenMap);
           double diceCoeff = computeDiceCoeff(allTokenSet, choiceTokenMap, candSentTokenMap);
           double jCoeff = computeJaccardCoeff(allTokenSet, choiceTokenMap, candSentTokenMap);
-          System.out.println(choiceList.get(j).getText() + "\t" + cosSim);
+
+          ArrayList<NER> choiceNouns2 = Utils.fromFSListToCollection(candSent.getSentence()
+                  .getPhraseList(), NER.class);
+          Map<NER, Integer> choiceTokenMap2 = list2map(choiceNouns2);
+          Set<NER> allTokenSet2 = new HashSet<NER>(choiceNouns2);
+          allTokenSet2.addAll(candSentTokenSet2);
+          double cosSim2 = computeCosSim(allTokenSet2, choiceTokenMap2, candSentTokenMap2);
+          double diceCoeff2 = computeDiceCoeff(allTokenSet2, choiceTokenMap2, candSentTokenMap2);
+          double jCoeff2 = computeJaccardCoeff(allTokenSet2, choiceTokenMap2, candSentTokenMap2);
+
+          // System.out.println(choiceList.get(j).getText() + "\t" + cosSim);
           CandidateAnswer candAnswer = null;
           if (candSent.getCandAnswerList() == null) {
             candAnswer = new CandidateAnswer(aJCas);
@@ -98,7 +113,8 @@ public class AnswerChoiceCandAnsAltSimilarityScorer extends JCasAnnotator_ImplBa
           candAnswer.setText(answer.getText());
           candAnswer.setQId(answer.getQuestionId());
           candAnswer.setChoiceIndex(j);
-          candAnswer.setSimilarityScore(diceCoeff + cosSim + jCoeff);
+          candAnswer.setSimilarityScore(diceCoeff + cosSim + jCoeff + diceCoeff2 + cosSim2
+                  + jCoeff2);
           candAnsList.add(candAnswer);
         }
 
@@ -118,9 +134,9 @@ public class AnswerChoiceCandAnsAltSimilarityScorer extends JCasAnnotator_ImplBa
 
   }
 
-  public HashMap<Token, Integer> list2map(ArrayList<Token> tokens) {
-    Map<Token, Integer> result = new HashMap<Token, Integer>();
-    for (Token t : tokens) {
+  public <T> HashMap<T, Integer> list2map(ArrayList<T> tokens) {
+    Map<T, Integer> result = new HashMap<T, Integer>();
+    for (T t : tokens) {
       if (result.containsKey(t)) {
         int tmp = result.get(t);
         tmp++;
@@ -129,16 +145,16 @@ public class AnswerChoiceCandAnsAltSimilarityScorer extends JCasAnnotator_ImplBa
         result.put(t, 1);
       }
     }
-    return (HashMap<Token, Integer>) result;
+    return (HashMap<T, Integer>) result;
 
   }
 
-  public double computeCosSim(Set<Token> allTokenSet, Map<Token, Integer> choiceTokenMap,
-          Map<Token, Integer> candSentTokenMap) {
+  public <T> double computeCosSim(Set<T> allTokenSet, Map<T, Integer> choiceTokenMap,
+          Map<T, Integer> candSentTokenMap) {
     double cosSim = 0.0;
     double sqrSumOne = 0.0;
     double sqrSumTwo = 0.0;
-    for (Token t : allTokenSet) {
+    for (T t : allTokenSet) {
       double freqOne = 0.0;
       double freqTwo = 0.0;
       if (choiceTokenMap.containsKey(t)) {
@@ -160,39 +176,47 @@ public class AnswerChoiceCandAnsAltSimilarityScorer extends JCasAnnotator_ImplBa
 
   }
 
-  public double computeDiceCoeff(Set<Token> allTokenSet, Map<Token, Integer> choiceTokenMap,
-          Map<Token, Integer> candSentTokenMap) {
+  public <T> double computeDiceCoeff(Set<T> allTokenSet, Map<T, Integer> choiceTokenMap,
+          Map<T, Integer> candSentTokenMap) {
 
-    Set<Token> listOne = new HashSet<Token>();
-    Set<Token> common = new HashSet<Token>();
+    Set<T> listOne = new HashSet<T>();
+    Set<T> common = new HashSet<T>();
 
-    for (Entry<Token, Integer> entry : choiceTokenMap.entrySet()) {
+    for (Entry<T, Integer> entry : choiceTokenMap.entrySet()) {
       listOne.add(entry.getKey());
     }
-    for (Entry<Token, Integer> entry : candSentTokenMap.entrySet()) {
+    for (Entry<T, Integer> entry : candSentTokenMap.entrySet()) {
       if (!listOne.contains(entry.getKey())) {
         common.add(entry.getKey());
       }
     }
-    return (common.size()) / (choiceTokenMap.size() + candSentTokenMap.size());
+    if (choiceTokenMap.size() + candSentTokenMap.size() == 0) {
+      return 0.0;
+    } else {
+      return (common.size()) / (choiceTokenMap.size() + candSentTokenMap.size());
+    }
 
   }
 
-  public double computeJaccardCoeff(Set<Token> allTokenSet, Map<Token, Integer> choiceTokenMap,
-          Map<Token, Integer> candSentTokenMap) {
+  public <T> double computeJaccardCoeff(Set<T> allTokenSet, Map<T, Integer> choiceTokenMap,
+          Map<T, Integer> candSentTokenMap) {
 
-    Set<Token> listOne = new HashSet<Token>();
-    Set<Token> common = new HashSet<Token>();
+    Set<T> listOne = new HashSet<T>();
+    Set<T> common = new HashSet<T>();
 
-    for (Entry<Token, Integer> entry : choiceTokenMap.entrySet()) {
+    for (Entry<T, Integer> entry : choiceTokenMap.entrySet()) {
       listOne.add(entry.getKey());
     }
-    for (Entry<Token, Integer> entry : candSentTokenMap.entrySet()) {
+    for (Entry<T, Integer> entry : candSentTokenMap.entrySet()) {
       if (!listOne.contains(entry.getKey())) {
         common.add(entry.getKey());
       }
     }
-    return (common.size()) / (choiceTokenMap.size() + candSentTokenMap.size() - common.size());
+    if (choiceTokenMap.size() + candSentTokenMap.size() == 0) {
+      return 0.0;
+    } else {
+      return (common.size()) / (choiceTokenMap.size() + candSentTokenMap.size() - common.size());
+    }
 
   }
 }

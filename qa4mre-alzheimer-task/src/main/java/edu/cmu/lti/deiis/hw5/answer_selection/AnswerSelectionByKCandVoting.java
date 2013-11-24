@@ -74,7 +74,7 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
           String answer = candAns.getText();
 
           double totalScore = candAns.getSimilarityScore() + candAns.getSynonymScore()
-                  + candAns.getPMIScore();
+                  + candAns.getPMIScore()+candAns.getAltSimScore();
 
           if (totalScore > maxScore) {
             maxScore = totalScore;
