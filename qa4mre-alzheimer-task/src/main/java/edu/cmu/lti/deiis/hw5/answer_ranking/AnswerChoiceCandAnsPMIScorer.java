@@ -31,7 +31,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 
   HashSet<String> hshStopWords = new HashSet<String>();
 
-  int K_CANDIDATES = 5;
+  int K_CANDIDATES = 10;
 
   @Override
   public void initialize(UimaContext context) throws ResourceInitializationException {
