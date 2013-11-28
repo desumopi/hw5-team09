@@ -106,6 +106,18 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
             }
 
           }
+          
+          
+          
+          // Napat add extra score on matching question/answer
+          try {
+            score1 += scoreCoOccurInSameDoc(question.getText(), choiceList.get(j));
+            count++;
+          } catch (Exception e) {
+            e.printStackTrace();
+          }
+          
+          
           // Wenyi added "count" to normalize the original the PMI score, which is a sum of scores.
           // the result of PMI itself stays the same; but when combined with default and alternative
           // similarity scorers, the performance get worse. so we may ignore the variable "count".
