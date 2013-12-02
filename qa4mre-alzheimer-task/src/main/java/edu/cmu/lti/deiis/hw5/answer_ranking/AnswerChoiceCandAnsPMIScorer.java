@@ -65,62 +65,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
       ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
               Answer.class);
 
-      // callie
-      try {
-        BufferedWriter bW = new BufferedWriter(new FileWriter("RemovedAnswers.txt", true));
-        for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
-          Answer temp = choiceList.get(ind);
-          Character lastChar = temp.getText().charAt(temp.getText().length() - 1);
-          Character plural = new Character('s');
-          int stind1 = getFirstSpace(question.getText()) + 1;
-          int stind2 = getFirstSpace(question.getText().substring(stind1)) + stind1;
-          // System.out.println(stind1 + " - " + stind2 + " of " + question.getText());
-          String qWdTwo = question.getText().substring(stind1, stind2);
-          Character lastQChar = qWdTwo.charAt(qWdTwo.length() - 1);
-
-          if ("How many".equals(question.getText().substring(0, 8)) && !isNumeric(temp.getText())
-                  && !temp.getText().contains("more") && !temp.getText().contains("less")) {
-
-            temp.setIsDiscard(true);
-            bW.write("Q: " + question.getText() + "\n");
-            bW.write("auto: " + choiceList.get(ind).getText() + "\n");
-
-          } else if ("What are".equals(question.getText().substring(0, 8))
-                  && !(lastChar.equals(plural)) && !(temp.getText().contains("and"))) {
-
-            temp.setIsDiscard(true);
-            bW.write("Q: " + question.getText() + "\n");
-            bW.write("auto: " + choiceList.get(ind).getText() + "\n");
-
-          } else if ("What".equals(question.getText().substring(0, 4))
-                  && !(qWdTwo.equals("regulates")) && lastQChar.equals(plural)
-                  && qWdTwo.length() > 2 && !(lastChar.equals(plural))
-                  && !(temp.getText().contains("and"))) {
-
-            temp.setIsDiscard(true);
-            bW.write("Q: " + question.getText() + "\n");
-            bW.write("auto: " + choiceList.get(ind).getText() + "\n");
-
-          } else if (question.getText().contains("Which")
-                  && question.getText().substring(0, question.getText().length() - 3)
-                          .contains("CLU isoform") && !temp.getText().contains("CLU")) {
-
-            temp.setIsDiscard(true);
-            bW.write("Q: " + question.getText() + "\n");
-            bW.write("auto: " + choiceList.get(ind).getText() + "\n");
-
-          }
-          if (temp.getIsDiscard()) {
-            bW.write("Q: " + question.getText() + "\n");
-            bW.write("hand: " + choiceList.get(ind).getText() + "\n");
-            choiceList.remove(ind);
-          }
-        }
-        bW.close();
-      } catch (IOException e1) {
-        System.out.println("THE FILE DOES NOT EXIST");
-        e1.printStackTrace();
-      }
+      
 
       // callie Remove the sentences for which isDiscard is true
       // for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
