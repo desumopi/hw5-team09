@@ -11,11 +11,11 @@ Of mice and men: an Alzheimer’s cure for our murine brethren. Alzheimer's Dise
 					<answer a_id='2' >sun exposure</answer>
 					<answer a_id='3' >cell degeneration</answer>
 					<answer a_id='4' >higher life expectancy</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="2" >
 					<q_str>How many people affected by Alzheimer's are there expected to be in the year 2050?</q_str>
-					<answer a_id='1' >123 million</answer>
+					<answer a_id='1'  correct="Yes">123 million</answer>
 					<answer a_id='2' >85 million</answer>
 					<answer a_id='3' >none</answer>
 					<answer a_id='4' >a pretty small number</answer>
@@ -25,7 +25,7 @@ Of mice and men: an Alzheimer’s cure for our murine brethren. Alzheimer's Dise
 					<q_str>How can Alzheimer's patients regain the sense of smell?</q_str>
 					<answer a_id='1' >through chemotherapy</answer>
 					<answer a_id='2' >through clinical trials</answer>
-					<answer a_id='3' >through treatment with bexarotene</answer>
+					<answer a_id='3'  correct="Yes">through treatment with bexarotene</answer>
 					<answer a_id='4' >by lying in the sun</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
@@ -35,11 +35,11 @@ Of mice and men: an Alzheimer’s cure for our murine brethren. Alzheimer's Dise
 					<answer a_id='2' >APP proteins</answer>
 					<answer a_id='3' >bexarotene</answer>
 					<answer a_id='4' >chemotherapy</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="5" >
 					<q_str>Name two neurodegenerative diseases.</q_str>
-					<answer a_id='1' >Alzheimer's and Parkinson's</answer>
+					<answer a_id='1'  correct="Yes">Alzheimer's and Parkinson's</answer>
 					<answer a_id='2' >HIV and Alzheimer's</answer>
 					<answer a_id='3' >heart cancer and prostate cancer</answer>
 					<answer a_id='4' >Creutzfeldt-Jakob and stroke</answer>
@@ -48,7 +48,7 @@ Of mice and men: an Alzheimer’s cure for our murine brethren. Alzheimer's Dise
 				<q  q_id="6" >
 					<q_str>How long after taking bexarotene is it possible to halve the aggregated protein?</q_str>
 					<answer a_id='1' >several weeks</answer>
-					<answer a_id='2' >three days</answer>
+					<answer a_id='2'  correct="Yes">three days</answer>
 					<answer a_id='3' >several years</answer>
 					<answer a_id='4' >three months</answer>
 					<answer a_id='5' >None of the above</answer>
@@ -57,7 +57,7 @@ Of mice and men: an Alzheimer’s cure for our murine brethren. Alzheimer's Dise
 					<q_str>How can apolipoprotein E help people with Alzheimer's?</q_str>
 					<answer a_id='1' >by increasing the birth rate</answer>
 					<answer a_id='2' >by using bexarotene as a preventive therapy</answer>
-					<answer a_id='3' >by breaking down the amyloid-beta aggregates</answer>
+					<answer a_id='3'  correct="Yes">by breaking down the amyloid-beta aggregates</answer>
 					<answer a_id='4' >through all the above</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
@@ -66,12 +66,12 @@ Of mice and men: an Alzheimer’s cure for our murine brethren. Alzheimer's Dise
 					<answer a_id='1' >Bexarotene's side-effects are considerable.</answer>
 					<answer a_id='2' >Bexarotene contains APP proteins that allow the memory to be deciphered.</answer>
 					<answer a_id='3' >Parkinson's disease is treated with bexarotene.</answer>
-					<answer a_id='4' >Mice models with Alzheimer's do not show all of the humans' symptoms.</answer>
+					<answer a_id='4'  correct="Yes">Mice models with Alzheimer's do not show all of the humans' symptoms.</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
 				<q  q_id="9" >
 					<q_str>What is the purpose of giving bexarotene to mice?</q_str>
-					<answer a_id='1' >Alzheimer's treatment</answer>
+					<answer a_id='1'  correct="Yes">Alzheimer's treatment</answer>
 					<answer a_id='2' >nest making</answer>
 					<answer a_id='3' >restoring smell</answer>
 					<answer a_id='4' >neurodegeneration
@@ -84,12 +84,12 @@ Of mice and men: an Alzheimer’s cure for our murine brethren. Alzheimer's Dise
 					<answer a_id='2' >every day</answer>
 					<answer a_id='3' >of course</answer>
 					<answer a_id='4' >most probably no</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="11" >
 					<q_str>What is the aim of giving Targretin to people suffering from Alzheimer's?</q_str>
 					<answer a_id='1' >watching the clinical trials related to Alzheimer</answer>
-					<answer a_id='2' >reversing the AD by breaking down the amyloid-beta aggregates</answer>
+					<answer a_id='2'  correct="Yes">reversing the AD by breaking down the amyloid-beta aggregates</answer>
 					<answer a_id='3' >eliminating the side-effects of chemotherapy drugs</answer>
 					<answer a_id='4' >inserting human genes into mice</answer>
 					<answer a_id='5' >None of the above</answer>
@@ -97,7 +97,7 @@ Of mice and men: an Alzheimer’s cure for our murine brethren. Alzheimer's Dise
 				<q  q_id="12" >
 					<q_str>Is Alzheimer's disease specific to old people?</q_str>
 					<answer a_id='1' >never</answer>
-					<answer a_id='2' >generally yes</answer>
+					<answer a_id='2'  correct="Yes">generally yes</answer>
 					<answer a_id='3' >always</answer>
 					<answer a_id='4' >generally no</answer>
 					<answer a_id='5' >None of the above</answer>
@@ -108,7 +108,7 @@ Of mice and men: an Alzheimer’s cure for our murine brethren. Alzheimer's Dise
 					<answer a_id='2' >because vitamin C is related to vitamin D</answer>
 					<answer a_id='3' >because amyloid proteins are in a greater number than vitamin D</answer>
 					<answer a_id='4' >because destroying amyloid proteins is required</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="14" >
 					<q_str>What is a common characteristic for the neurodegenerative diseases?</q_str>
@@ -116,7 +116,7 @@ Of mice and men: an Alzheimer’s cure for our murine brethren. Alzheimer's Dise
 					<answer a_id='2' >chemotherapy</answer>
 					<answer a_id='3' >restoring smell</answer>
 					<answer a_id='4' >clinical trials</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="15" >
 					<q_str>How do vitamin D and bexarotene correlate?</q_str>
@@ -124,7 +124,7 @@ Of mice and men: an Alzheimer’s cure for our murine brethren. Alzheimer's Dise
 					<answer a_id='2' >protein destruction</answer>
 					<answer a_id='3' >clinical trials</answer>
 					<answer a_id='4' >cell generation</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 		</reading-test>
 <reading-test r_id="2">
@@ -134,7 +134,7 @@ CREB regulates the expression of neuronal glucose transporter 3: a possible mech
 				<q  q_id="1" >
 					<q_str>What protein regulates the expression of brain-derived neurotrophic factor?</q_str>
 					<answer a_id='1' >Alzheimer</answer>
-					<answer a_id='2' >CREB</answer>
+					<answer a_id='2'  correct="Yes">CREB</answer>
 					<answer a_id='3' >GLUT3</answer>
 					<answer a_id='4' >BDNF</answer>
 					<answer a_id='5' >hippocampus</answer>
@@ -143,7 +143,7 @@ CREB regulates the expression of neuronal glucose transporter 3: a possible mech
 					<q_str>What experimental technique was used to detect the interaction between the CREB protein and the promoter of GLUT3?</q_str>
 					<answer a_id='1' >Pearson correlation</answer>
 					<answer a_id='2' >plasmids</answer>
-					<answer a_id='3' >ChIP</answer>
+					<answer a_id='3'  correct="Yes">ChIP</answer>
 					<answer a_id='4' >CRE-like elements</answer>
 					<answer a_id='5' >PAGE</answer>
 				</q>
@@ -151,13 +151,13 @@ CREB regulates the expression of neuronal glucose transporter 3: a possible mech
 					<q_str>What protein is phosphorylated by PKA?</q_str>
 					<answer a_id='1' >kinase</answer>
 					<answer a_id='2' >Ser133</answer>
-					<answer a_id='3' >CREB</answer>
+					<answer a_id='3'  correct="Yes">CREB</answer>
 					<answer a_id='4' >luciferase</answer>
 					<answer a_id='5' >promoter</answer>
 				</q>
 				<q  q_id="4" >
 					<q_str>What software tool was used to examine the GLUT3 promoter?</q_str>
-					<answer a_id='1' >MatInspector</answer>
+					<answer a_id='1'  correct="Yes">MatInspector</answer>
 					<answer a_id='2' >luciferase</answer>
 					<answer a_id='3' >CRE1</answer>
 					<answer a_id='4' >Genomatix</answer>
@@ -169,13 +169,13 @@ CREB regulates the expression of neuronal glucose transporter 3: a possible mech
 					<answer a_id='2' >79</answer>
 					<answer a_id='3' >CREB</answer>
 					<answer a_id='4' >m-calpain</answer>
-					<answer a_id='5' >µ-calpain</answer>
+					<answer a_id='5'  correct="Yes">µ-calpain</answer>
 				</q>
 				<q  q_id="6" >
 					<q_str>What organism was used to characterize the regulation of GLUT3 gene expression by HIF1?</q_str>
 					<answer a_id='1' >brain</answer>
 					<answer a_id='2' >GLUT3</answer>
-					<answer a_id='3' >mouse</answer>
+					<answer a_id='3'  correct="Yes">mouse</answer>
 					<answer a_id='4' >human</answer>
 					<answer a_id='5' >CREB</answer>
 				</q>
@@ -185,14 +185,14 @@ CREB regulates the expression of neuronal glucose transporter 3: a possible mech
 					<answer a_id='2' >CREs</answer>
 					<answer a_id='3' >promoter</answer>
 					<answer a_id='4' >SH-SY5Y</answer>
-					<answer a_id='5' >BDNF</answer>
+					<answer a_id='5'  correct="Yes">BDNF</answer>
 				</q>
 				<q  q_id="8" >
 					<q_str>What protein is the target for proteolytical cleavage by calpain I?</q_str>
 					<answer a_id='1' >calcium</answer>
 					<answer a_id='2' >GLUT3</answer>
 					<answer a_id='3' >AD</answer>
-					<answer a_id='4' >CREB</answer>
+					<answer a_id='4'  correct="Yes">CREB</answer>
 					<answer a_id='5' >glucose</answer>
 				</q>
 				<q  q_id="9" >
@@ -201,12 +201,12 @@ CREB regulates the expression of neuronal glucose transporter 3: a possible mech
 					<answer a_id='2' >CREs</answer>
 					<answer a_id='3' >CRE1</answer>
 					<answer a_id='4' >AD</answer>
-					<answer a_id='5' >CREB</answer>
+					<answer a_id='5'  correct="Yes">CREB</answer>
 				</q>
 				<q  q_id="10" >
 					<q_str>What protein was able to generate truncated versions of Calcineurin?</q_str>
 					<answer a_id='1' >GLUT3</answer>
-					<answer a_id='2' >calpain I</answer>
+					<answer a_id='2'  correct="Yes">calpain I</answer>
 					<answer a_id='3' >ATRA</answer>
 					<answer a_id='4' >CREB</answer>
 					<answer a_id='5' >Alzheimer</answer>
@@ -218,7 +218,7 @@ Fighting Alzheimer’s disease? Get the immune system on board. James Fuller Jam
 			</doc>
 				<q  q_id="1" >
 					<q_str>How does beta amyloid affect Alzhemeir's patients?</q_str>
-					<answer a_id='1' >forming plaques that destroy neurons</answer>
+					<answer a_id='1'  correct="Yes">forming plaques that destroy neurons</answer>
 					<answer a_id='2' >increasing certain chemicals in the brain</answer>
 					<answer a_id='3' >breaking up the deposits on neurons</answer>
 					<answer a_id='4' >reducing the quantity of antibodies</answer>
@@ -230,19 +230,19 @@ Fighting Alzheimer’s disease? Get the immune system on board. James Fuller Jam
 					<answer a_id='2' >never</answer>
 					<answer a_id='3' >most frequently not</answer>
 					<answer a_id='4' >every day</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="3" >
 					<q_str>How can we start developing new treatments for Alzheimer's?</q_str>
 					<answer a_id='1' >losing the abilities to perform everyday tasks</answer>
 					<answer a_id='2' >slowing down neuronal degeneration</answer>
-					<answer a_id='3' >studying the blood or brain of Alzheimer's patients</answer>
+					<answer a_id='3'  correct="Yes">studying the blood or brain of Alzheimer's patients</answer>
 					<answer a_id='4' >studying the TB vaccine</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
 				<q  q_id="4" >
 					<q_str>Is it possible to protect neurons against destruction by Alzheimer's disease?</q_str>
-					<answer a_id='1' >yes</answer>
+					<answer a_id='1'  correct="Yes">yes</answer>
 					<answer a_id='2' >no</answer>
 					<answer a_id='3' >impossible</answer>
 					<answer a_id='4' >probably not</answer>
@@ -251,7 +251,7 @@ Fighting Alzheimer’s disease? Get the immune system on board. James Fuller Jam
 				<q  q_id="5" >
 					<q_str>Give two symptoms of dementia.</q_str>
 					<answer a_id='1' >destruction and protection of neurons</answer>
-					<answer a_id='2' >losing memories and daily abilities</answer>
+					<answer a_id='2'  correct="Yes">losing memories and daily abilities</answer>
 					<answer a_id='3' >cerebral bleeding and memory loss</answer>
 					<answer a_id='4' >bacterial infections and rheumatoid arthritis</answer>
 					<answer a_id='5' >None of the above</answer>
@@ -262,12 +262,12 @@ Fighting Alzheimer’s disease? Get the immune system on board. James Fuller Jam
 					<answer a_id='2' >we know how Alzheimer's works</answer>
 					<answer a_id='3' >they are not vaccinated against TB</answer>
 					<answer a_id='4' >efficient  therapies for dementia are hard to choose</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="7" >
 					<q_str>What is the aim of James Fuller in his PhD thesis?</q_str>
 					<answer a_id='1' >increase increase our lifespan</answer>
-					<answer a_id='2' >remove side effects of antibodies to Alzheimer's plaques</answer>
+					<answer a_id='2'  correct="Yes">remove side effects of antibodies to Alzheimer's plaques</answer>
 					<answer a_id='3' >develop a therapy for the treatment of rheumatoid arthritis</answer>
 					<answer a_id='4' >create a vaccine similar to the one against TB</answer>
 					<answer a_id='5' >None of the above</answer>
@@ -277,14 +277,14 @@ Fighting Alzheimer’s disease? Get the immune system on board. James Fuller Jam
 					<answer a_id='1' >Alzheimer's patients</answer>
 					<answer a_id='2' >the families of  dementia patients</answer>
 					<answer a_id='3' >the researchers of pulmonary diseases</answer>
-					<answer a_id='4' >James Fuller</answer>
+					<answer a_id='4'  correct="Yes">James Fuller</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
 				<q  q_id="9" >
 					<q_str>Why is there no progress in the quality of life in old age?</q_str>
 					<answer a_id='1' >the treatment of Alzheimer's patients is expensive</answer>
 					<answer a_id='2' >advances in healthcare increase the length of humans' lives</answer>
-					<answer a_id='3' >efficient  therapies for dementia are missing</answer>
+					<answer a_id='3'  correct="Yes">efficient  therapies for dementia are missing</answer>
 					<answer a_id='4' >new therapies are developed using proteins</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
@@ -294,7 +294,7 @@ Fighting Alzheimer’s disease? Get the immune system on board. James Fuller Jam
 					<answer a_id='2' >400 billions</answer>
 					<answer a_id='3' >30 millions</answer>
 					<answer a_id='4' >equal to that of Alzheimer's patients</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="11" >
 					<q_str>What is the aim of protecting protein deposits in the brain?</q_str>
@@ -302,13 +302,13 @@ Fighting Alzheimer’s disease? Get the immune system on board. James Fuller Jam
 					<answer a_id='2' >reduce the amount of protein produced</answer>
 					<answer a_id='3' >lose memories</answer>
 					<answer a_id='4' >develop strategies to create antibodies</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="12" >
 					<q_str>Which is the part of the human body where the plaques are formed?</q_str>
 					<answer a_id='1' >lungs</answer>
 					<answer a_id='2' >shoulders</answer>
-					<answer a_id='3' >head</answer>
+					<answer a_id='3'  correct="Yes">head</answer>
 					<answer a_id='4' >hands</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
@@ -317,7 +317,7 @@ Fighting Alzheimer’s disease? Get the immune system on board. James Fuller Jam
 					<answer a_id='1' >we use antibodies to fight Alzheimer's</answer>
 					<answer a_id='2' >we lose precious memories</answer>
 					<answer a_id='3' >we know how Alzheimer's works</answer>
-					<answer a_id='4' >we do not understand how to model Alzheimer's in the lab</answer>
+					<answer a_id='4'  correct="Yes">we do not understand how to model Alzheimer's in the lab</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
 				<q  q_id="14" >
@@ -326,12 +326,12 @@ Fighting Alzheimer’s disease? Get the immune system on board. James Fuller Jam
 					<answer a_id='2' >analyzing their blood and brains</answer>
 					<answer a_id='3' >protecting the protein plaques</answer>
 					<answer a_id='4' >stimulating drug development</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="15" >
 					<q_str>Name a similarity between AD and TB.</q_str>
 					<answer a_id='1' >the body is slowly destroying the brain</answer>
-					<answer a_id='2' >the vaccine that teaches the immune system to fight off the infection</answer>
+					<answer a_id='2'  correct="Yes">the vaccine that teaches the immune system to fight off the infection</answer>
 					<answer a_id='3' >drugs and therapy
 </answer>
 					<answer a_id='4' >side effects of the vaccines</answer>
@@ -344,7 +344,7 @@ Alanna Shaikh: How I'm preparing to get Alzheimer's. I'd like to talk about my d
 			</doc>
 				<q  q_id="1" >
 					<q_str>What would an Alzheimer relative envisage when practising an internal Chinese martial art?</q_str>
-					<answer a_id='1' >to improve their sense of balance</answer>
+					<answer a_id='1'  correct="Yes">to improve their sense of balance</answer>
 					<answer a_id='2' >to learn origami</answer>
 					<answer a_id='3' >to get muscle tremors</answer>
 					<answer a_id='4' >to have a hobby</answer>
@@ -355,7 +355,7 @@ Alanna Shaikh: How I'm preparing to get Alzheimer's. I'd like to talk about my d
 					<answer a_id='1' >2</answer>
 					<answer a_id='2' >10</answer>
 					<answer a_id='3' >35</answer>
-					<answer a_id='4' >3</answer>
+					<answer a_id='4'  correct="Yes">3</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
 				<q  q_id="3" >
@@ -363,13 +363,13 @@ Alanna Shaikh: How I'm preparing to get Alzheimer's. I'd like to talk about my d
 					<answer a_id='1' >eating right</answer>
 					<answer a_id='2' >building physical strength</answer>
 					<answer a_id='3' >keeping the mind active</answer>
-					<answer a_id='4' >all the above</answer>
+					<answer a_id='4'  correct="Yes">all the above</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
 				<q  q_id="4" >
 					<q_str>Why would Alanna be given charts to color?</q_str>
 					<answer a_id='1' >to show her love for her sons</answer>
-					<answer a_id='2' >to have hands-on activities</answer>
+					<answer a_id='2'  correct="Yes">to have hands-on activities</answer>
 					<answer a_id='3' >because Alzheimer's tends to run in families</answer>
 					<answer a_id='4' >because she wants to learn bridge</answer>
 					<answer a_id='5' >None of the above</answer>
@@ -381,7 +381,7 @@ Alanna Shaikh: How I'm preparing to get Alzheimer's. I'd like to talk about my d
 					<answer a_id='2' >to win a tai chi medal</answer>
 					<answer a_id='3' >to fill out forms</answer>
 					<answer a_id='4' >to have the ability to knit a sweater</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="6" >
 					<q_str>Name three hobbies that can prevent Alzheimer disease.</q_str>
@@ -389,13 +389,13 @@ Alanna Shaikh: How I'm preparing to get Alzheimer's. I'd like to talk about my d
 					<answer a_id='2' >karate, weight-bearing exercises, yoga</answer>
 					<answer a_id='3' >paperwork, tai chi</answer>
 					<answer a_id='4' >bridge, swimming, drawing</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="7" >
 					<q_str>Can a person suffering from Alzheimer read the daily newspaper?</q_str>
 					<answer a_id='1' >always</answer>
 					<answer a_id='2' >sometimes </answer>
-					<answer a_id='3' >never</answer>
+					<answer a_id='3'  correct="Yes">never</answer>
 					<answer a_id='4' >rarely</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
@@ -405,7 +405,7 @@ Alanna Shaikh: How I'm preparing to get Alzheimer's. I'd like to talk about my d
 					<answer a_id='2' >every day</answer>
 					<answer a_id='3' >of course</answer>
 					<answer a_id='4' >most probably no</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="9" >
 					<q_str>How is Alzheimer's disease observable at Alanna's father?</q_str>
@@ -413,7 +413,7 @@ Alanna Shaikh: How I'm preparing to get Alzheimer's. I'd like to talk about my d
 					<answer a_id='2' >he speaks two languages</answer>
 					<answer a_id='3' >he watches TV</answer>
 					<answer a_id='4' >he plays bridge</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="10" >
 					<q_str>Name a reason why Alanna's father didn't lose his love for his family.</q_str>
@@ -421,12 +421,12 @@ Alanna Shaikh: How I'm preparing to get Alzheimer's. I'd like to talk about my d
 					<answer a_id='2' >he was a college professor</answer>
 					<answer a_id='3' >the monster has got him</answer>
 					<answer a_id='4' >he needs help</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="11" >
 					<q_str>Is it possible to totally prevent Alzheimer through extra-professional activities?</q_str>
 					<answer a_id='1' >certainly yes</answer>
-					<answer a_id='2' >certainly no</answer>
+					<answer a_id='2'  correct="Yes">certainly no</answer>
 					<answer a_id='3' >mostly yes</answer>
 					<answer a_id='4' >100% yes</answer>
 					<answer a_id='5' >None of the above</answer>
@@ -437,13 +437,13 @@ Alanna Shaikh: How I'm preparing to get Alzheimer's. I'd like to talk about my d
 					<answer a_id='2' >tai chi</answer>
 					<answer a_id='3' >knitting</answer>
 					<answer a_id='4' >gardening</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="13" >
 					<q_str>What does the help in getting dressed represent for an Alzheimer patient?</q_str>
 					<answer a_id='1' >an obligation</answer>
 					<answer a_id='2' >a purpose</answer>
-					<answer a_id='3' >a need</answer>
+					<answer a_id='3'  correct="Yes">a need</answer>
 					<answer a_id='4' >a certainty</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
@@ -452,17 +452,18 @@ Alanna Shaikh: How I'm preparing to get Alzheimer's. I'd like to talk about my d
 					<answer a_id='1' >35 million</answer>
 					<answer a_id='2' >three</answer>
 					<answer a_id='3' >50 million</answer>
-					<answer a_id='4' >70 million</answer>
+					<answer a_id='4'  correct="Yes">70 million</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
 				<q  q_id="15" >
 					<q_str>Why does Alanna want to become a better person?</q_str>
-					<answer a_id='1' >for her heart to survive</answer>
+					<answer a_id='1'  correct="Yes">for her heart to survive</answer>
 					<answer a_id='2' >to be as happy as possible</answer>
 					<answer a_id='3' >to think about global health</answer>
 					<answer a_id='4' >to knit</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
+				
 		</reading-test>
 		<reading-test r_id="5">
 			<doc d_id="5">
@@ -471,7 +472,7 @@ PLOS ONE: Crosstalk between Thyroid Hormone Receptor and Liver X Receptor in the
 				<q  q_id="1" >
 					<q_str>What group of receptors can regulate the expression of the Seladin-1 gene?</q_str>
 					<answer a_id='1' >AD</answer>
-					<answer a_id='2' >Liver X receptors</answer>
+					<answer a_id='2'  correct="Yes">Liver X receptors</answer>
 					<answer a_id='3' >β-amyloid</answer>
 					<answer a_id='4' >TH</answer>
 					<answer a_id='5' >expression</answer>
@@ -480,13 +481,13 @@ PLOS ONE: Crosstalk between Thyroid Hormone Receptor and Liver X Receptor in the
 					<q_str>What target gene shows increased expression when TO901317 is administered?</q_str>
 					<answer a_id='1' >DMSO</answer>
 					<answer a_id='2' >TO</answer>
-					<answer a_id='3' >Seladin-1</answer>
+					<answer a_id='3'  correct="Yes">Seladin-1</answer>
 					<answer a_id='4' >LXR</answer>
 					<answer a_id='5' >TRE</answer>
 				</q>
 				<q  q_id="3" >
 					<q_str>What protein activates the Seladin-1 promoter by binding to ERE?</q_str>
-					<answer a_id='1' >ER</answer>
+					<answer a_id='1'  correct="Yes">ER</answer>
 					<answer a_id='2' >HTB185</answer>
 					<answer a_id='3' >β-gal</answer>
 					<answer a_id='4' >TRKI</answer>
@@ -494,7 +495,7 @@ PLOS ONE: Crosstalk between Thyroid Hormone Receptor and Liver X Receptor in the
 				</q>
 				<q  q_id="4" >
 					<q_str>What experimental method was used to characterize the activation of Seladin-1 promoter by LXR-α?</q_str>
-					<answer a_id='1' >promoter deletion experiments</answer>
+					<answer a_id='1'  correct="Yes">promoter deletion experiments</answer>
 					<answer a_id='2' >wild-type mice</answer>
 					<answer a_id='3' >hypothyroid state</answer>
 					<answer a_id='4' >crosstalk</answer>
@@ -506,7 +507,7 @@ PLOS ONE: Crosstalk between Thyroid Hormone Receptor and Liver X Receptor in the
 					<answer a_id='2' >LXR response element</answer>
 					<answer a_id='3' >Seladin-1</answer>
 					<answer a_id='4' >APP</answer>
-					<answer a_id='5' >BACE</answer>
+					<answer a_id='5'  correct="Yes">BACE</answer>
 				</q>
 				<q  q_id="6" >
 					<q_str>What mouse models were used for this study?</q_str>
@@ -514,27 +515,27 @@ PLOS ONE: Crosstalk between Thyroid Hormone Receptor and Liver X Receptor in the
 					<answer a_id='2' >forebrain</answer>
 					<answer a_id='3' >ChIP assay</answer>
 					<answer a_id='4' >reporter plasmid</answer>
-					<answer a_id='5' >C57/BL6 (B6) and TRKI mice</answer>
+					<answer a_id='5'  correct="Yes">C57/BL6 (B6) and TRKI mice</answer>
 				</q>
 				<q  q_id="7" >
 					<q_str>What is the long name of the Seladin-1 gene?</q_str>
 					<answer a_id='1' >Mouse</answer>
 					<answer a_id='2' >half-palindromic estrogen response element</answer>
 					<answer a_id='3' >DHCR24</answer>
-					<answer a_id='4' >selective AD indicator 1</answer>
+					<answer a_id='4'  correct="Yes">selective AD indicator 1</answer>
 					<answer a_id='5' >LXR</answer>
 				</q>
 				<q  q_id="8" >
 					<q_str>The administration of what hormone can induce the expression of Seladin-1?</q_str>
 					<answer a_id='1' >AD</answer>
-					<answer a_id='2' >TH</answer>
+					<answer a_id='2'  correct="Yes">TH</answer>
 					<answer a_id='3' >mRNA</answer>
 					<answer a_id='4' >LXR</answer>
 					<answer a_id='5' >forebrain</answer>
 				</q>
 				<q  q_id="9" >
 					<q_str>What protein forms a dimer with TR-β?</q_str>
-					<answer a_id='1' >RXR-α</answer>
+					<answer a_id='1'  correct="Yes">RXR-α</answer>
 					<answer a_id='2' >Seladin-1</answer>
 					<answer a_id='3' >EMSA</answer>
 					<answer a_id='4' >GS125</answer>
@@ -546,8 +547,9 @@ PLOS ONE: Crosstalk between Thyroid Hormone Receptor and Liver X Receptor in the
 					<answer a_id='2' >PCR</answer>
 					<answer a_id='3' >antibody</answer>
 					<answer a_id='4' >assays</answer>
-					<answer a_id='5' >ChIP</answer>
+					<answer a_id='5'  correct="Yes">ChIP</answer>
 				</q>
+				
 		</reading-test>
 		<reading-test r_id="6">
 			<doc d_id="6">
@@ -556,14 +558,14 @@ BMC Genomics | Full text | PuF, an antimetastatic and developmental signaling pr
 				<q  q_id="1" >
 					<q_str>What is the transcriptional activator that stimulates the gene expression of APP?</q_str>
 					<answer a_id='1' >PuF</answer>
-					<answer a_id='2' >SP1</answer>
+					<answer a_id='2'  correct="Yes">SP1</answer>
 					<answer a_id='3' >NB cells</answer>
 					<answer a_id='4' >metastasis</answer>
 					<answer a_id='5' >PvuII</answer>
 				</q>
 				<q  q_id="2" >
 					<q_str>What is the gene symbol for MAPT?</q_str>
-					<answer a_id='1' >microtubule-associated protein tau</answer>
+					<answer a_id='1'  correct="Yes">microtubule-associated protein tau</answer>
 					<answer a_id='2' >APOE</answer>
 					<answer a_id='3' >promoter</answer>
 					<answer a_id='4' >Polyacrylamide gel</answer>
@@ -573,14 +575,14 @@ BMC Genomics | Full text | PuF, an antimetastatic and developmental signaling pr
 					<q_str>What is the target gene of the transcriptional regulator PuF?</q_str>
 					<answer a_id='1' >EMSA</answer>
 					<answer a_id='2' >AD</answer>
-					<answer a_id='3' >APP</answer>
+					<answer a_id='3'  correct="Yes">APP</answer>
 					<answer a_id='4' >SP1</answer>
 					<answer a_id='5' >TF</answer>
 				</q>
 				<q  q_id="4" >
 					<q_str>Depletion of which metal results in lower activity of the APP gene promoter?</q_str>
 					<answer a_id='1' >BACE1</answer>
-					<answer a_id='2' >Copper</answer>
+					<answer a_id='2'  correct="Yes">Copper</answer>
 					<answer a_id='3' >pBLCAT3</answer>
 					<answer a_id='4' >408nt</answer>
 					<answer a_id='5' >TFs</answer>
@@ -591,7 +593,7 @@ BMC Genomics | Full text | PuF, an antimetastatic and developmental signaling pr
 					<answer a_id='2' >unlabeled PRE</answer>
 					<answer a_id='3' >oligomer pairs</answer>
 					<answer a_id='4' >nuclear extracts</answer>
-					<answer a_id='5' >electrophoretic mobility shift assay</answer>
+					<answer a_id='5'  correct="Yes">electrophoretic mobility shift assay</answer>
 				</q>
 				<q  q_id="6" >
 					<q_str>What is the gene symbol for apolipoprotein E?</q_str>
@@ -599,11 +601,11 @@ BMC Genomics | Full text | PuF, an antimetastatic and developmental signaling pr
 					<answer a_id='2' >AD</answer>
 					<answer a_id='3' >protein</answer>
 					<answer a_id='4' >GATA1</answer>
-					<answer a_id='5' >APOE</answer>
+					<answer a_id='5'  correct="Yes">APOE</answer>
 				</q>
 				<q  q_id="7" >
 					<q_str>What program was used to do the phylogenetic and sequence analysis?</q_str>
-					<answer a_id='1' >WebPrank</answer>
+					<answer a_id='1'  correct="Yes">WebPrank</answer>
 					<answer a_id='2' >Rodentia</answer>
 					<answer a_id='3' >estimation</answer>
 					<answer a_id='4' >tree</answer>
@@ -613,7 +615,7 @@ BMC Genomics | Full text | PuF, an antimetastatic and developmental signaling pr
 					<q_str>What protein can interact with TGF beta?</q_str>
 					<answer a_id='1' >AD</answer>
 					<answer a_id='2' >NIH3T3</answer>
-					<answer a_id='3' >ZEB1</answer>
+					<answer a_id='3'  correct="Yes">ZEB1</answer>
 					<answer a_id='4' >EMSA</answer>
 					<answer a_id='5' >hypoxia</answer>
 				</q>
@@ -622,17 +624,18 @@ BMC Genomics | Full text | PuF, an antimetastatic and developmental signaling pr
 					<answer a_id='1' >Alzheimer</answer>
 					<answer a_id='2' >PRE</answer>
 					<answer a_id='3' >AD</answer>
-					<answer a_id='4' >CAMK2N1</answer>
+					<answer a_id='4'  correct="Yes">CAMK2N1</answer>
 					<answer a_id='5' >developmental signaling protein</answer>
 				</q>
 				<q  q_id="10" >
 					<q_str>What protein inhibits the gene expression of APP?</q_str>
-					<answer a_id='1' >PuF</answer>
+					<answer a_id='1'  correct="Yes">PuF</answer>
 					<answer a_id='2' >Pb</answer>
 					<answer a_id='3' >PRE</answer>
 					<answer a_id='4' >SP1</answer>
 					<answer a_id='5' >Copper</answer>
 				</q>
+				
 		</reading-test>
 <reading-test r_id="7">
 			<doc d_id="7">
@@ -641,7 +644,7 @@ Financial challenges faced by person with dementia. The idea: A person with deme
 				<q  q_id="1" >
 					<q_str>What does a U.S. health insurance program cover for a person with Alzheimer's?</q_str>
 					<answer a_id='1' >assisted living facilities </answer>
-					<answer a_id='2' >medical expenses provided as part of treatment</answer>
+					<answer a_id='2'  correct="Yes">medical expenses provided as part of treatment</answer>
 					<answer a_id='3' >Alzheimer's diagnosis</answer>
 					<answer a_id='4' >personal pension plan</answer>
 					<answer a_id='5' >None of the above</answer>
@@ -652,7 +655,7 @@ Financial challenges faced by person with dementia. The idea: A person with deme
 					<answer a_id='2' >consumer credit</answer>
 					<answer a_id='3' >mental health</answer>
 					<answer a_id='4' >financial aid</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="3" >
 					<q_str>Does health insurance cover the cost of books read by an Alzheimer's patient?</q_str>
@@ -660,11 +663,11 @@ Financial challenges faced by person with dementia. The idea: A person with deme
 					<answer a_id='2' >sometimes no</answer>
 					<answer a_id='3' >of course</answer>
 					<answer a_id='4' >most probably no</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="4" >
 					<q_str>Can the income of an Alzheimer's family exceed the "poverty threshold"?</q_str>
-					<answer a_id='1' >yes, if they don't want to apply for social assistance</answer>
+					<answer a_id='1'  correct="Yes">yes, if they don't want to apply for social assistance</answer>
 					<answer a_id='2' >no, if they want a different type of healthcare</answer>
 					<answer a_id='3' >sometimes yes</answer>
 					<answer a_id='4' >never</answer>
@@ -672,7 +675,7 @@ Financial challenges faced by person with dementia. The idea: A person with deme
 				</q>
 				<q  q_id="5" >
 					<q_str>What will happen if the care needed by an Alzheimer's patient costs more than the family is able to pay?</q_str>
-					<answer a_id='1' >The family’s private funds are normally the first source for payment of any cost of care not immediately covered by the insurance of the family.</answer>
+					<answer a_id='1'  correct="Yes">The family’s private funds are normally the first source for payment of any cost of care not immediately covered by the insurance of the family.</answer>
 					<answer a_id='2' >Health Care coverage and Medicare pay immediate hospital and medically-related expenses relating to treatment. </answer>
 					<answer a_id='3' >Public Assistance is available as well as assistance from many giving groups.</answer>
 					<answer a_id='4' >all the above</answer>
@@ -681,7 +684,7 @@ Financial challenges faced by person with dementia. The idea: A person with deme
 				<q  q_id="6" >
 					<q_str>Give three examples of kinds of medical care.</q_str>
 					<answer a_id='1' >private enterprise, charitable institutions, and the Federal Government</answer>
-					<answer a_id='2' >care homes, co-ops, and foster homes</answer>
+					<answer a_id='2'  correct="Yes">care homes, co-ops, and foster homes</answer>
 					<answer a_id='3' >boarding homes, charitable institutions, and organizing committees</answer>
 					<answer a_id='4' >co-ops, public assistance, and other institutions</answer>
 					<answer a_id='5' >None of the above</answer>
@@ -692,14 +695,14 @@ Financial challenges faced by person with dementia. The idea: A person with deme
 					<answer a_id='2' >The cost of living constantly increases.
 </answer>
 					<answer a_id='3' >The costs incident to the disease constantly increase.</answer>
-					<answer a_id='4' >Health care covers assisted living.</answer>
+					<answer a_id='4'  correct="Yes">Health care covers assisted living.</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
 				<q  q_id="8" >
 					<q_str>How can a farmer avoid paying for institutional care?</q_str>
 					<answer a_id='1' >by paying other health related costs</answer>
 					<answer a_id='2' >by applying for a tax break</answer>
-					<answer a_id='3' >by transferring the farm to his children</answer>
+					<answer a_id='3'  correct="Yes">by transferring the farm to his children</answer>
 					<answer a_id='4' >by paying all costs related to the treatment</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
@@ -709,11 +712,11 @@ Financial challenges faced by person with dementia. The idea: A person with deme
 					<answer a_id='2' >raising living standards</answer>
 					<answer a_id='3' >early diagnosis of the disease</answer>
 					<answer a_id='4' >correctly following the prescribed treatment</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="10" >
 					<q_str>Why is the middle class falling into poverty? </q_str>
-					<answer a_id='1' >It is difficult to pay the bills.</answer>
+					<answer a_id='1'  correct="Yes">It is difficult to pay the bills.</answer>
 					<answer a_id='2' >There are limitations caused by biking.</answer>
 					<answer a_id='3' >The ability to read is being lost.</answer>
 					<answer a_id='4' >Health care covers assisted living.</answer>
@@ -724,12 +727,12 @@ Financial challenges faced by person with dementia. The idea: A person with deme
 					<answer a_id='1' >applying for a tax break</answer>
 					<answer a_id='2' >paying a mortgage on a farm </answer>
 					<answer a_id='3' >managing private pension funds</answer>
-					<answer a_id='4' >reducing costs</answer>
+					<answer a_id='4'  correct="Yes">reducing costs</answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
 				<q  q_id="12" >
 					<q_str>How old was Mike Donohue when he was diagnosed with the most common form of dementia?</q_str>
-					<answer a_id='1' >70</answer>
+					<answer a_id='1'  correct="Yes">70</answer>
 					<answer a_id='2' >75</answer>
 					<answer a_id='3' >5</answer>
 					<answer a_id='4' >80</answer>
@@ -741,7 +744,7 @@ Financial challenges faced by person with dementia. The idea: A person with deme
 					<answer a_id='2' >by paying all costs related to the infrastructure</answer>
 					<answer a_id='3' >by practising mountain biking</answer>
 					<answer a_id='4' >by changing the services on offer</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="14" >
 					<q_str>How can an atypical Alzheimer's patient not evolve into the typical stage of the disease?</q_str>
@@ -749,16 +752,17 @@ Financial challenges faced by person with dementia. The idea: A person with deme
 					<answer a_id='2' >by biking</answer>
 					<answer a_id='3' >by reading comics</answer>
 					<answer a_id='4' >by regularly paying taxes</answer>
-					<answer a_id='5' >None of the above</answer>
+					<answer a_id='5'  correct="Yes">None of the above</answer>
 				</q>
 				<q  q_id="15" >
 					<q_str>When is it legally possible for an Alzheimer's patient to ask for help?</q_str>
 					<answer a_id='1' >in 2007</answer>
 					<answer a_id='2' >five years ago</answer>
-					<answer a_id='3' >when the minimum level of income has been reached</answer>
+					<answer a_id='3'  correct="Yes">when the minimum level of income has been reached</answer>
 					<answer a_id='4' >when the disease has been diagnosed </answer>
 					<answer a_id='5' >None of the above</answer>
 				</q>
+				
 		</reading-test>
 <reading-test r_id="8">
 			<doc d_id="8">
@@ -768,21 +772,21 @@ JCI - Inhibition of GSK3β-mediated BACE1 expression reduces Alzheimer-associate
 					<q_str>What protein activity can be inhibited by LiCl?</q_str>
 					<answer a_id='1' >Lithium chloride</answer>
 					<answer a_id='2' >cell culture</answer>
-					<answer a_id='3' >GSK3</answer>
+					<answer a_id='3'  correct="Yes">GSK3</answer>
 					<answer a_id='4' >β-actin</answer>
 					<answer a_id='5' >valproic acid</answer>
 				</q>
 				<q  q_id="2" >
 					<q_str>What specific protein forms part of a multimeric protein complex with beta catenin?</q_str>
 					<answer a_id='1' >Serine</answer>
-					<answer a_id='2' >APC</answer>
+					<answer a_id='2'  correct="Yes">APC</answer>
 					<answer a_id='3' >antibody</answer>
 					<answer a_id='4' >SB216763</answer>
 					<answer a_id='5' >embryos</answer>
 				</q>
 				<q  q_id="3" >
 					<q_str>What is the gene symbol of Glycogen synthase kinase 3?</q_str>
-					<answer a_id='1' >GSK3</answer>
+					<answer a_id='1'  correct="Yes">GSK3</answer>
 					<answer a_id='2' >tau protein kinase</answer>
 					<answer a_id='3' >kinase-3beta</answer>
 					<answer a_id='4' >BACE1</answer>
@@ -794,28 +798,28 @@ JCI - Inhibition of GSK3β-mediated BACE1 expression reduces Alzheimer-associate
 					<answer a_id='2' >hypoxia</answer>
 					<answer a_id='3' >neuritic plaque</answer>
 					<answer a_id='4' >wild-type</answer>
-					<answer a_id='5' >AD transgenic mice</answer>
+					<answer a_id='5'  correct="Yes">AD transgenic mice</answer>
 				</q>
 				<q  q_id="5" >
 					<q_str>What protein is as well a known target of BACE1?</q_str>
 					<answer a_id='1' >drug</answer>
 					<answer a_id='2' >(6)</answer>
 					<answer a_id='3' >AD</answer>
-					<answer a_id='4' >APLP1</answer>
+					<answer a_id='4'  correct="Yes">APLP1</answer>
 					<answer a_id='5' >RT-PCR</answer>
 				</q>
 				<q  q_id="6" >
 					<q_str>What experimental technique was used to detect neuritic plaques?</q_str>
 					<answer a_id='1' >brains</answer>
 					<answer a_id='2' >neurofibrillary tangles</answer>
-					<answer a_id='3' >immunostaining</answer>
+					<answer a_id='3'  correct="Yes">immunostaining</answer>
 					<answer a_id='4' >controls</answer>
 					<answer a_id='5' >Alzheimer</answer>
 				</q>
 				<q  q_id="7" >
 					<q_str>What protein activates the gene expression of NF-kappaB?</q_str>
 					<answer a_id='1' >brain</answer>
-					<answer a_id='2' >TNF-α</answer>
+					<answer a_id='2'  correct="Yes">TNF-α</answer>
 					<answer a_id='3' >p65-binding element</answer>
 					<answer a_id='4' >pB1A</answer>
 					<answer a_id='5' >AD</answer>
@@ -824,7 +828,7 @@ JCI - Inhibition of GSK3β-mediated BACE1 expression reduces Alzheimer-associate
 					<q_str>What protein activated the transcription of BACE1?</q_str>
 					<answer a_id='1' >siRNA</answer>
 					<answer a_id='2' >isoform</answer>
-					<answer a_id='3' >GSK3β</answer>
+					<answer a_id='3'  correct="Yes">GSK3β</answer>
 					<answer a_id='4' >GSK3α</answer>
 					<answer a_id='5' >mRNA</answer>
 				</q>
@@ -834,7 +838,7 @@ JCI - Inhibition of GSK3β-mediated BACE1 expression reduces Alzheimer-associate
 					<answer a_id='2' >ubiquitination</answer>
 					<answer a_id='3' >AD</answer>
 					<answer a_id='4' >ARA</answer>
-					<answer a_id='5' >tau protein</answer>
+					<answer a_id='5'  correct="Yes">tau protein</answer>
 				</q>
 				<q  q_id="10" >
 					<q_str>What gene is blocked by ARA?</q_str>
@@ -842,8 +846,9 @@ JCI - Inhibition of GSK3β-mediated BACE1 expression reduces Alzheimer-associate
 					<answer a_id='2' >20E2</answer>
 					<answer a_id='3' >luciferase</answer>
 					<answer a_id='4' >mice</answer>
-					<answer a_id='5' >GSK3</answer>
+					<answer a_id='5'  correct="Yes">GSK3</answer>
 				</q>
+				
 		</reading-test>
 		</topic>
 </test-set>
