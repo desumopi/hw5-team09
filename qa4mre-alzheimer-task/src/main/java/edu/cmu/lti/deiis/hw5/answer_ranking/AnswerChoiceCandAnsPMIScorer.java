@@ -1,5 +1,8 @@
 package edu.cmu.lti.deiis.hw5.answer_ranking;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -62,13 +65,64 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
       ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
               Answer.class);
 
-      // callie Remove the sentences for which isDiscard is true
-      for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
-        Answer temp = choiceList.get(ind);
-        if (temp.getIsDiscard()) {
-          choiceList.remove(ind);
+      // callie
+      try {
+        BufferedWriter bW = new BufferedWriter(new FileWriter("RemovedAnswers.txt", true));
+        for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
+          Answer temp = choiceList.get(ind);
+          Character lastChar = temp.getText().charAt(temp.getText().length() - 1);
+          Character plural = new Character('s');
+          int stind1 = getFirstSpace(question.getText()) + 1;
+          int stind2 = getFirstSpace(question.getText().substring(stind1)) + stind1;
+          //System.out.println(stind1 + " - " + stind2 + " of " + question.getText());
+          String qWdTwo = question.getText().substring(stind1, stind2);
+          Character lastQChar = qWdTwo.charAt(qWdTwo.length() - 1);
+          
+          if ("How many".equals(question.getText().substring(0, 8)) && !isNumeric(temp.getText())
+                  && !temp.getText().contains("More") && !temp.getText().contains("Less")) {
+            
+            bW.write("Q: " + question.getText() + "\n");
+            bW.write("auto: " + choiceList.get(ind).getText() + "\n");
+            
+          } else if ("What are".equals(question.getText().substring(0, 8))
+                  && !(lastChar.equals(plural)) && !(temp.getText().contains("and"))) {
+            
+            bW.write("Q: " + question.getText() + "\n");
+            bW.write("auto: " + choiceList.get(ind).getText() + "\n");
+            
+          } else if ("What".equals(question.getText().substring(0, 4)) && !(qWdTwo.equals("regulates")) && lastQChar.equals(plural)
+                  && qWdTwo.length() > 2 && !(lastChar.equals(plural))
+                  && !(temp.getText().contains("and"))) {
+            
+            bW.write("Q: " + question.getText() + "\n");
+            bW.write("auto: " + choiceList.get(ind).getText() + "\n");
+            
+          } else if (question.getText().contains("Which")
+                  && question.getText().substring(0, question.getText().length()*(3/4)).contains("CLU isoform") && !temp.getText().contains("CLU")) {
+            
+            bW.write("Q: " + question.getText() + "\n");
+            bW.write("auto: " + choiceList.get(ind).getText() + "\n");
+            
+          }
+          if (temp.getIsDiscard()) {
+            bW.write("Q: " + question.getText() + "\n");
+            bW.write("hand: " + choiceList.get(ind).getText() + "\n");
+            choiceList.remove(ind);
+          }
         }
+        bW.close();
+      } catch (IOException e1) {
+        System.out.println("THE FILE DOES NOT EXIST");
+        e1.printStackTrace();
       }
+
+      // callie Remove the sentences for which isDiscard is true
+      // for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
+      // Answer temp = choiceList.get(ind);
+      // if (temp.getIsDiscard()) {
+      // choiceList.remove(ind);
+      // }
+      // }
 
       ArrayList<CandidateSentence> candSentList = Utils.fromFSListToCollection(qaSet.get(i)
               .getCandidateSentenceList(), CandidateSentence.class);
@@ -106,35 +160,37 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
             }
 
           }
-          
-       // napat add extra score on matching question/answer
-          ArrayList<NounPhrase> questionSentNouns = Utils.fromFSListToCollection(question.getNounList(), NounPhrase.class);
-          ArrayList<NER> questionSentNers = Utils.fromFSListToCollection(question.getNerList(), NER.class);
-          for (int k = 0; k < questionSentNouns.size(); k++) 
-           {
-              try {
-                double tmScore = scoreCoOccurInSameDoc( questionSentNouns.get(k).getText(), choiceList.get(j));
-                score1 += tmScore/topK;
-                count++;
-                //System.out.println("qnoun:"+tmScore);
-              } catch (Exception e) {
-                e.printStackTrace();
-              }
-          
-           }
-           for (int k = 0; k < questionSentNers.size(); k++) 
-             {
-                try {
-                  double tmScore = scoreCoOccurInSameDoc( questionSentNers.get(k).getText(), choiceList.get(j));
-                  score1 += tmScore/topK;
-                  count++;
-                 // System.out.println("qner:"+tmScore);
-                } catch (Exception e) {
-                  e.printStackTrace();
-                }
-            
-             }
-         
+
+          // napat add extra score on matching question/answer
+          ArrayList<NounPhrase> questionSentNouns = Utils.fromFSListToCollection(
+                  question.getNounList(), NounPhrase.class);
+          ArrayList<NER> questionSentNers = Utils.fromFSListToCollection(question.getNerList(),
+                  NER.class);
+          for (int k = 0; k < questionSentNouns.size(); k++) {
+            try {
+              double tmScore = scoreCoOccurInSameDoc(questionSentNouns.get(k).getText(),
+                      choiceList.get(j));
+              score1 += tmScore / topK;
+              count++;
+              // System.out.println("qnoun:"+tmScore);
+            } catch (Exception e) {
+              e.printStackTrace();
+            }
+
+          }
+          for (int k = 0; k < questionSentNers.size(); k++) {
+            try {
+              double tmScore = scoreCoOccurInSameDoc(questionSentNers.get(k).getText(),
+                      choiceList.get(j));
+              score1 += tmScore / topK;
+              count++;
+              // System.out.println("qner:"+tmScore);
+            } catch (Exception e) {
+              e.printStackTrace();
+            }
+
+          }
+
           // Wenyi added "count" to normalize the original the PMI score, which is a sum of scores.
           // the result of PMI itself stays the same; but when combined with default and alternative
           // similarity scorers, the performance get worse. so we may ignore the variable "count".
@@ -169,6 +225,26 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
     FSList fsQASet = Utils.fromCollectionToFSList(aJCas, qaSet);
     testDoc.setQaList(fsQASet);
 
+  }
+
+  public static boolean isNumeric(String str) {
+    try {
+      double d = Double.parseDouble(str);
+    } catch (NumberFormatException nfe) {
+      return false;
+    }
+    return true;
+  }
+
+  public static int getFirstSpace(String st) {
+    Character space = ' ';
+    for (int i = 0; i < st.length(); i++) {
+      Character tmp = st.charAt(i);
+      if (tmp.equals(space)) {
+        return i;
+      }
+    }
+    return st.length() - 1;
   }
 
   public double scoreCoOccurInSameDoc(String question, Answer choice) throws Exception {
