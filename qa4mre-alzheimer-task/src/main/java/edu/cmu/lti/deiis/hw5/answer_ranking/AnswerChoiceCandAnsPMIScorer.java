@@ -74,35 +74,41 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
           Character plural = new Character('s');
           int stind1 = getFirstSpace(question.getText()) + 1;
           int stind2 = getFirstSpace(question.getText().substring(stind1)) + stind1;
-          //System.out.println(stind1 + " - " + stind2 + " of " + question.getText());
+          // System.out.println(stind1 + " - " + stind2 + " of " + question.getText());
           String qWdTwo = question.getText().substring(stind1, stind2);
           Character lastQChar = qWdTwo.charAt(qWdTwo.length() - 1);
-          
+
           if ("How many".equals(question.getText().substring(0, 8)) && !isNumeric(temp.getText())
-                  && !temp.getText().contains("More") && !temp.getText().contains("Less")) {
-            
+                  && !temp.getText().contains("more") && !temp.getText().contains("less")) {
+
+            temp.setIsDiscard(true);
             bW.write("Q: " + question.getText() + "\n");
             bW.write("auto: " + choiceList.get(ind).getText() + "\n");
-            
+
           } else if ("What are".equals(question.getText().substring(0, 8))
                   && !(lastChar.equals(plural)) && !(temp.getText().contains("and"))) {
-            
+
+            temp.setIsDiscard(true);
             bW.write("Q: " + question.getText() + "\n");
             bW.write("auto: " + choiceList.get(ind).getText() + "\n");
-            
-          } else if ("What".equals(question.getText().substring(0, 4)) && !(qWdTwo.equals("regulates")) && lastQChar.equals(plural)
+
+          } else if ("What".equals(question.getText().substring(0, 4))
+                  && !(qWdTwo.equals("regulates")) && lastQChar.equals(plural)
                   && qWdTwo.length() > 2 && !(lastChar.equals(plural))
                   && !(temp.getText().contains("and"))) {
-            
+
+            temp.setIsDiscard(true);
             bW.write("Q: " + question.getText() + "\n");
             bW.write("auto: " + choiceList.get(ind).getText() + "\n");
-            
+
           } else if (question.getText().contains("Which")
-                  && question.getText().substring(0, question.getText().length()*(3/4)).contains("CLU isoform") && !temp.getText().contains("CLU")) {
-            
+                  && question.getText().substring(0, question.getText().length() - 3)
+                          .contains("CLU isoform") && !temp.getText().contains("CLU")) {
+
+            temp.setIsDiscard(true);
             bW.write("Q: " + question.getText() + "\n");
             bW.write("auto: " + choiceList.get(ind).getText() + "\n");
-            
+
           }
           if (temp.getIsDiscard()) {
             bW.write("Q: " + question.getText() + "\n");
@@ -230,6 +236,9 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
   public static boolean isNumeric(String str) {
     try {
       double d = Double.parseDouble(str);
+      if (d != (int) d) {
+        return false;
+      }
     } catch (NumberFormatException nfe) {
       return false;
     }

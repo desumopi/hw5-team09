@@ -6,6 +6,9 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.Map.Entry;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 import org.apache.uima.UimaContext;
 import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
@@ -48,12 +51,61 @@ public class AnswerChoiceCandAnsAltSimilarityScorer extends JCasAnnotator_ImplBa
       System.out.println("Question: " + question.getText());
       ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
               Answer.class);
-      // callie
-      for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
-        Answer temp = choiceList.get(ind);
-        if (temp.getIsDiscard()) {
-          choiceList.remove(ind);
+   // callie
+      try {
+        BufferedWriter bW = new BufferedWriter(new FileWriter("RemovedAnswers.txt", true));
+        for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
+          Answer temp = choiceList.get(ind);
+          Character lastChar = temp.getText().charAt(temp.getText().length() - 1);
+          Character plural = new Character('s');
+          int stind1 = getFirstSpace(question.getText()) + 1;
+          int stind2 = getFirstSpace(question.getText().substring(stind1)) + stind1;
+          // System.out.println(stind1 + " - " + stind2 + " of " + question.getText());
+          String qWdTwo = question.getText().substring(stind1, stind2);
+          Character lastQChar = qWdTwo.charAt(qWdTwo.length() - 1);
+
+          if ("How many".equals(question.getText().substring(0, 8)) && !isNumeric(temp.getText())
+                  && !temp.getText().contains("more") && !temp.getText().contains("less")) {
+
+            temp.setIsDiscard(true);
+            bW.write("Q: " + question.getText() + "\n");
+            bW.write("auto: " + choiceList.get(ind).getText() + "\n");
+
+          } else if ("What are".equals(question.getText().substring(0, 8))
+                  && !(lastChar.equals(plural)) && !(temp.getText().contains("and"))) {
+
+            temp.setIsDiscard(true);
+            bW.write("Q: " + question.getText() + "\n");
+            bW.write("auto: " + choiceList.get(ind).getText() + "\n");
+
+          } else if ("What".equals(question.getText().substring(0, 4))
+                  && !(qWdTwo.equals("regulates")) && lastQChar.equals(plural)
+                  && qWdTwo.length() > 2 && !(lastChar.equals(plural))
+                  && !(temp.getText().contains("and"))) {
+
+            temp.setIsDiscard(true);
+            bW.write("Q: " + question.getText() + "\n");
+            bW.write("auto: " + choiceList.get(ind).getText() + "\n");
+
+          } else if (question.getText().contains("Which")
+                  && question.getText().substring(0, question.getText().length() - 3)
+                          .contains("CLU isoform") && !temp.getText().contains("CLU")) {
+
+            temp.setIsDiscard(true);
+            bW.write("Q: " + question.getText() + "\n");
+            bW.write("auto: " + choiceList.get(ind).getText() + "\n");
+
+          }
+          if (temp.getIsDiscard()) {
+            bW.write("Q: " + question.getText() + "\n");
+            bW.write("hand: " + choiceList.get(ind).getText() + "\n");
+            choiceList.remove(ind);
+          }
         }
+        bW.close();
+      } catch (IOException e1) {
+        System.out.println("THE FILE DOES NOT EXIST");
+        e1.printStackTrace();
       }
       // get candidate sentences of each question
       ArrayList<CandidateSentence> candSentList = Utils.fromFSListToCollection(qaSet.get(i)
@@ -132,6 +184,29 @@ public class AnswerChoiceCandAnsAltSimilarityScorer extends JCasAnnotator_ImplBa
     FSList fsQASet = Utils.fromCollectionToFSList(aJCas, qaSet);
     testDoc.setQaList(fsQASet);
 
+  }
+
+  public static boolean isNumeric(String str) {
+    try {
+      double d = Double.parseDouble(str);
+      if (d != (int) d) {
+        return false;
+      }
+    } catch (NumberFormatException nfe) {
+      return false;
+    }
+    return true;
+  }
+
+  public static int getFirstSpace(String st) {
+    Character space = ' ';
+    for (int i = 0; i < st.length(); i++) {
+      Character tmp = st.charAt(i);
+      if (tmp.equals(space)) {
+        return i;
+      }
+    }
+    return st.length() - 1;
   }
 
   public <T> HashMap<T, Integer> list2map(ArrayList<T> tokens) {
