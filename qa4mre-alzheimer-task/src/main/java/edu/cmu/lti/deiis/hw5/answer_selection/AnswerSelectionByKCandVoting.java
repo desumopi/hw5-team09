@@ -59,6 +59,27 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
       }
 
       HashMap<String, Double> hshAnswer = new HashMap<String, Double>();
+      
+      //Napat initialize hshAnswer so we won't select null
+      //Remove the sentences for which isDiscard is true
+       for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
+         Answer temp = choiceList.get(ind);
+         if (temp.getIsDiscard()) {
+           choiceList.remove(ind);
+         }
+       }
+       
+       //initialize all availible answer to 1
+       for (int j = 0; j < choiceList.size(); j++) {
+      
+         Answer ans = choiceList.get(j);
+         String answer = ans.getText();
+         hshAnswer.put(answer,1.0);
+         
+       }
+
+      
+      
 
       for (int c = 0; c < topK; c++) {
 

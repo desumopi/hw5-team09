@@ -89,7 +89,10 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
                 nnMatch++;
               }
             }
+                       
           }
+          
+
 
           // Wenyi modified this part
           // removed some error in the baseline code
@@ -110,6 +113,19 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
 
           }
 
+          
+          //napat add score to question/answer direct match
+          for (int l = 0; l < choiceNERs.size(); l++) {
+            if (question.getText().contains(choiceNERs.get(l).getText())) {
+              nnMatch += 5;
+            }
+          }
+          for (int l = 0; l < choiceNouns.size(); l++) {
+            if (question.getText().contains(choiceNouns.get(l).getText())) {
+              nnMatch += 5;
+            }
+          }
+         
           System.out.println(choiceList.get(j).getText() + "\t" + nnMatch);
           CandidateAnswer candAnswer = null;
           if (candSent.getCandAnswerList() == null) {

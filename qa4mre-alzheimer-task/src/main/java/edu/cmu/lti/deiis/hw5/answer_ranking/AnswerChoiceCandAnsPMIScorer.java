@@ -31,7 +31,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 
   HashSet<String> hshStopWords = new HashSet<String>();
 
-  int K_CANDIDATES = 10;
+  int K_CANDIDATES = 5;
 
   @Override
   public void initialize(UimaContext context) throws ResourceInitializationException {
@@ -107,17 +107,33 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 
           }
           
+       // napat add extra score on matching question/answer
+          ArrayList<NounPhrase> questionSentNouns = Utils.fromFSListToCollection(question.getNounList(), NounPhrase.class);
+          ArrayList<NER> questionSentNers = Utils.fromFSListToCollection(question.getNerList(), NER.class);
+          for (int k = 0; k < questionSentNouns.size(); k++) 
+           {
+              try {
+                double tmScore = scoreCoOccurInSameDoc( questionSentNouns.get(k).getText(), choiceList.get(j));
+                score1 += tmScore;
+                count++;
+                //System.out.println("qnoun:"+tmScore);
+              } catch (Exception e) {
+                e.printStackTrace();
+              }
           
-          
-          // Napat add extra score on matching question/answer
-          try {
-            score1 += scoreCoOccurInSameDoc(question.getText(), choiceList.get(j));
-            count++;
-          } catch (Exception e) {
-            e.printStackTrace();
-          }
-          
-          
+           }
+           for (int k = 0; k < questionSentNers.size(); k++) 
+             {
+                try {
+                  double tmScore = scoreCoOccurInSameDoc( questionSentNers.get(k).getText(), choiceList.get(j));
+                  score1 += tmScore;
+                  count++;
+                 // System.out.println("qner:"+tmScore);
+                } catch (Exception e) {
+                  e.printStackTrace();
+                }
+            
+             }
           // Wenyi added "count" to normalize the original the PMI score, which is a sum of scores.
           // the result of PMI itself stays the same; but when combined with default and alternative
           // similarity scorers, the performance get worse. so we may ignore the variable "count".

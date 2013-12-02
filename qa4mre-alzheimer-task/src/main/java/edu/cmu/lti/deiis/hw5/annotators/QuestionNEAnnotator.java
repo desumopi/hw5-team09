@@ -52,7 +52,7 @@ public class QuestionNEAnnotator extends JCasAnnotator_ImplBase {
 			FSList fsNERList = Utils.createNERList(jCas, abnerList);
 			question.setNerList(fsNERList);
 			question.addToIndexes();
-
+	
 		}
 
 		for (int i = 0; i < answerList.size(); i++) {
