@@ -108,7 +108,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
           }
           
        // napat add extra score on matching question/answer
-          ArrayList<NounPhrase> questionSentNouns = Utils.fromFSListToCollection(question.getNounList(), NounPhrase.class);
+      /*    ArrayList<NounPhrase> questionSentNouns = Utils.fromFSListToCollection(question.getNounList(), NounPhrase.class);
           ArrayList<NER> questionSentNers = Utils.fromFSListToCollection(question.getNerList(), NER.class);
           for (int k = 0; k < questionSentNouns.size(); k++) 
            {
@@ -134,6 +134,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
                 }
             
              }
+         */
           // Wenyi added "count" to normalize the original the PMI score, which is a sum of scores.
           // the result of PMI itself stays the same; but when combined with default and alternative
           // similarity scorers, the performance get worse. so we may ignore the variable "count".

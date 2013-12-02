@@ -97,13 +97,13 @@ public class QuestionCandSentSimilarityMatcher extends JCasAnnotator_ImplBase {
           double relScore = Double.parseDouble(doc.get("score").toString());
           
           //napat
-          if(5*relScore <currentScore)
+          /*if(5*relScore <currentScore)
           {
             System.out.println("too low score:"+sentence);
             break;
           }
           currentScore = relScore;
-          
+          */
           
           CandidateSentence candSent = new CandidateSentence(aJCas);
           candSent.setSentence(annSentence);
