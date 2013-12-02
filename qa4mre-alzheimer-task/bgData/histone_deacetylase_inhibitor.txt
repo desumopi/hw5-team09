@@ -1,0 +1,89 @@
+Cellular biochemistry/pharmacology
+
+To carry out gene expression, a cell must control the coiling and uncoiling of DNA around histones. This is accomplished with the assistance of histone acetyl transferases (HAT), which acetylate the lysine residues in core histones leading to a less compact and more transcriptionally active chromatin, and, on the converse, the actions of histone deacetylases (HDAC), which remove the acetyl groups from the lysine residues leading to the formation of a condensed and transcriptionally silenced chromatin. Reversible modification of the terminal tails of core histones constitutes the major epigenetic mechanism for remodeling higher-order chromatin structure and controlling gene expression. HDAC inhibitors (HDI) block this action and can result in hyperacetylation of histones, thereby affecting gene expression.[5][6][7]
+
+The histone deacetylase inhibitors are a new class of cytostatic agents that inhibit the proliferation of tumor cells in culture and in vivo by inducing cell cycle arrest, differentiation and/or apoptosis. Histone acetylation and deacetylation play important roles in the modulation of chromatin topology and the regulation of gene transcription. Histone deacetylase inhibition induces the accumulation of hyperacetylated nucleosome core histones in most regions of chromatin but affects the expression of only a small subset of genes, leading to transcriptional activation of some genes, but repression of an equal or larger number of other genes. Non-histone proteins such as transcription factors are also targets for acetylation with varying functional effects. Acetylation enhances the activity of some transcription factors such as the tumor suppressor p53 and the erythroid differentiation factor GATA-1 but may repress transcriptional activity of others including T cell factor and the co-activator ACTR. Recent studies [...] have shown that the estrogen receptor alpha (ERalpha) can be hyperacetylated in response to histone deacetylase inhibition, suppressing ligand sensitivity and regulating transcriptional activation by histone deacetylase inhibitors.[8] Conservation of the acetylated ER-alpha motif in other nuclear receptors suggests that acetylation may play an important regulatory role in diverse nuclear receptor signaling functions. A number of structurally diverse histone deacetylase inhibitors have shown potent antitumor efficacy with little toxicity in vivo in animal models. Several compounds are currently in early phase clinical development as potential treatments for solid and hematological cancers both as monotherapy and in combination with cytotoxics and differentiation agents."[9]
+
+HDAC classification
+
+Based on their homology of accessory domains to yeast histone deacetylases, the 18 currently known human histone deacetylases are classified into four groups (I-IV):[10]
+
+Class I, which includes HDAC1, -2, -3 and -8 are related to yeast RPD3 gene;
+Class II, which includes HDAC4, -5, -6, -7, -9 and -10 are related to yeast Hda1 gene;
+Class III, also known as the sirtuins are related to the Sir2 gene and include SIRT1-7, and
+Class IV, which contains only HDAC11 has features of both Class I and II.
+HDI classification
+
+The “classical” HDIs act exclusively on Class I and Class II HDACs by binding to the zinc-containing catalytic domain of the HDACs. These classical HDIs fall into several groupings, in order of decreasing potency:[11]
+
+hydroxamic acids (or hydroxamates), such as trichostatin A,
+cyclic tetrapeptides (such as trapoxin B), and the depsipeptides,
+benzamides,
+electrophilic ketones, and
+the aliphatic acid compounds such as phenylbutyrate and valproic acid.
+"Second-generation" HDIs include the hydroxamic acids vorinostat (SAHA), belinostat (PXD101), LAQ824, and panobinostat (LBH589); and the benzamides : entinostat (MS-275), CI994, and mocetinostat (MGCD0103).[12][13]
+
+The sirtuin Class III HDACs are dependent on NAD+ and are, therefore, inhibited by nicotinamide, as well derivatives of NAD, dihydrocoumarin, naphthopyranone, and 2-hydroxynaphaldehydes.[14]
+
+Additional functions
+
+HDIs should not be considered to act solely as enzyme inhibitors of HDACs. A large variety of nonhistone transcription factors and transcriptional co-regulators are known to be modified by acetylation. HDIs can alter the degree of acetylation nonhistone effector molecules and, therefore, increase or repress the transcription of genes by this mechanism. Examples include: ACTR, cMyb, E2F1, EKLF, FEN 1, GATA, HNF-4, HSP90, Ku70, NF-κB, PCNA, p53, RB, Runx, SF1 Sp3, STAT, TFIIE, TCF, YY1, etc.[11][15]
+
+Uses
+
+Psychiatry and neurology
+
+HDIs have a long history of use in psychiatry and neurology as mood stabilzers and anti-epileptics. The prime example of this is valproic acid, marketed as a drug under the trade names Depakene, Depakote, and Divalproex. In more recent times, HDIs are being studied as a mitigator for neurodegenerative diseases such as Alzheimer's disease and Huntington's disease.[16] Enhancement of memory formation is increased in mice given the HDIs sodium butyrate or SAHA, or by genetic knockout of the HDAC2 gene in mice.[17] While that may have relevance to Alzheimer's disease, it was shown that some cognitive deficits were restored in actual transgenic mice that have a model of Alzheimer's disease (3xTg-AD) by orally administered nicotinamide, a competitive HDI of Class III sirtuins.[18]
+
+Cancer treatment
+
+Also in recent years, there has been an effort to develop HDIs as a cancer treatment or adjunct[19][20] The exact mechanisms by which the compounds may work are unclear, but epigenetic pathways are proposed.[9][21][22] HDAC inhibitors can induce p21 (WAF1) expression, a regulator of p53's tumor suppressor activity. HDACs are involved in the pathway by which the retinoblastoma protein (pRb) suppresses cell proliferation.[23] The pRb protein is part of a complex that attracts HDACs to the chromatin so that it will deacetylate histones.[24] HDAC1 negatively regulates the cardiovascular transcription factor Kruppel-like factor 5 through direct interaction.[25] Estrogen is well-established as a mitogenic factor implicated in the tumorigenesis and progression of breast cancer via its binding to the estrogen receptor alpha (ERα). Recent data indicate that chromatin inactivation mediated by HDAC and DNA methylation is a critical component of ERα silencing in human breast cancer cells.[26]
+
+Approved
+
+Vorinostat was licenced by the U.S. FDA in October 2006 for the treatment of cutaneous T cell lymphoma (CTCL).
+Romidepsin (trade name Istodax) was licenced by the US FDA in Nov 2009 for cutaneous T-cell lymphoma (CTCL).
+Clinical trials
+
+Started phase III clinical trials
+
+Panobinostat (LBH589) is in clinical trials for various cancers including a phase III trial for cutaneous T cell lymphoma (CTCL).
+Valproic acid (as Mg valproate) in phase III trials for cervical cancer and ovarian cancer, has also been trialled in spinal muscular atrophy.
+Started pivotal phase II clinical trials
+
+Belinostat (PXD101) has had a phase II trial for relapsed ovarian cancer, and reported good results for T cell lymphoma.
+Started phase II clinical trials
+
+Mocetinostat (MGCD0103) is undergoing clinical trials for treatment of various cancers (including follicular lymphoma, Hodgkin lymphoma and acute myeloid leukemia).
+Abexinostat (PCI-24781) has started a phase II trial for sarcoma,[27] and another for lymphoma[28]
+Entinostat (MS-275) in phase II for Hodgkin lymphoma, lung cancer and breast cancer.[29]
+SB939 starting a phase II trial for Recurrent or Metastatic Prostate Cancer (HRPC).[30] (phase I results,[31])
+Resminostat (4SC-201) an oral pan-HDACi. Results re Hodgkin lymphoma[32] Also in trials for hepatocellular carcinoma[33] for which it has FDA Orphan Drug status,[34] and met phase II primary endpoint.[35]
+Givinostat (ITF2357)[29] for refractory leukemias and myelomas.
+Quisinostat (JNJ-26481585)
+Started phase I clinical trials
+
+CUDC-101 intended for cancer, has started clinical trials,[36] it also inhibits EGFR and HER2. Early results reported in Nov 2010.[37]
+AR-42[38] has started clinical trials in 2010 for various cancers (relapsed or treatment-resistant multiple myeloma, chronic lymphocytic leukemia or lymphoma).[39] The trial should report in 2013[40] In 2012 AR-42 got 2 Orphan Drug designations from the FDA for two benign tumour types.[41]
+CHR-2845, CHR-3996[42]
+4SC-202 selective, for advanced hematological indications[33]
+CG200745 for solid tumors.[43]
+ACY-1215, selective for HDAC6, in two clinical trials for multiple myeloma in combination with bortezomib (Velcade, Takeda Millennium) and with lenalidomide (Revlimid, Celgene).[44]
+ME-344, for solid refractory tumors[45]
+Also sulforaphane[29]
+Preclinical
+
+Kevetrin, selective for HDAC2.[46]
+Inflammatory diseases
+
+Trichostatin A (TSA) and others are being investigated as anti-inflammatory agents.[47]
+
+HIV/AIDS
+
+After the successful initial round of in vitro research in January 2013, the Danish Research Council awarded the research team lead by Dr. Ole Søgaard from the Danish Aarhus University Hospital the amount of $2 million to proceed with clinical trials on 15 humans. The HDAC inhibitors flush HIV from the reservoirs it builds within the DNA of infected cells. After that a separate vaccination to eliminate HIV allows the immune system to neutralize the virus.[48]
+
+Other diseases
+
+Givinostat (ITF2357) is also under investigation for treatment of polycythemia vera (PV), essential thrombocythemia (ET) and myelofibrosis (MF).
+HDIs are also being studied as protection of heart muscle in acute myocardial infarction.[49]
+

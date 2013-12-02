@@ -1,0 +1,509 @@
+List of enzymes
+From Wikipedia, the free encyclopedia
+This article is a list of enzymes, sorted by their respective sub-categories and EC number.
+
+See also:
+
+List of EC numbers
+List of EC numbers (EC 1)
+List of EC numbers (EC 2)
+List of EC numbers (EC 3)
+List of EC numbers (EC 4)
+List of EC numbers (EC 5)
+List of EC numbers (EC 6)
+Contents
+
+1 Category:Oxidoreductases (EC 1) (Oxidoreductase)
+1.1 Category:EC 1.1 (act on the CH-OH group of donors)
+1.2 Category:EC 1.2 (act on the aldehyde or oxo group of donors)
+1.3 Category:EC 1.3 (act on the CH-CH group of donors)
+1.4 Category:EC 1.4 (act on the CH-NH2 group of donors)
+1.5 Category:EC 1.5 (act on CH-NH group of donors)
+1.6 Category:EC 1.6 (act on NADH or NADPH)
+1.7 Category:EC 1.7 (act on other nitrogenous compounds as donors)
+1.8 Category:EC 1.8 (act on a sulfur group of donors)
+1.9 Category:EC 1.9 (act on a heme group of donors)
+1.10 Category:EC 1.10 (act on diphenols and related substances as donors)
+1.11 Category:EC 1.11 (act on peroxide as an acceptor -- peroxidases)
+1.12 Category:EC 1.12 (act on hydrogen as a donor)
+1.13 Category:EC 1.13 (act on single donors with incorporation of molecular oxygen)
+1.14 Category:EC 1.14 (act on paired donors with incorporation of molecular oxygen)
+1.15 Category:EC 1.15 (act on superoxide radicals as acceptors)
+1.16 Category:EC 1.16 (oxidize metal ions)
+1.17 Category:EC 1.17 (act on CH or CH2 groups)
+1.18 Category:EC 1.18 (act on iron-sulfur proteins as donors)
+1.19 Category:EC 1.19 (act on reduced flavodoxin as donor)
+1.20 Category:EC 1.20 (act on phosphorus or arsenic as donors)
+1.21 Category:EC 1.21 (act on X-H and Y-H to form an X-Y bond)
+1.22 Category:EC 1.97 (other oxidoreductases)
+2 Category:Transferases (EC 2) (Transferase)
+2.1 Category:EC 2.1 (transfer one-carbon groups, Methylase)
+2.2 Category:EC 2.2 (transfer aldehyde or ketone groups)
+2.3 Category:EC 2.3 (acyltransferases)
+2.4 Category:EC 2.4 (glycosyltransferases)
+2.5 Category:EC 2.5 (transfer alkyl or aryl groups, other than methyl groups)
+2.6 Category:EC 2.6 (transfer nitrogenous groups)
+2.7 Category:EC 2.7 (transfer phosphorus-containing groups)
+2.8 Category:EC 2.8 (transfer sulfur-containing groups)
+2.9 Category:EC 2.9 (transfer selenium-containing groups)
+3 Category:Hydrolases (EC 3) (Hydrolase)
+3.1 Category:EC 3.1 (act on ester bonds)
+3.2 Category:EC 3.2 (act on sugars - glycosylases)
+3.3 Category:EC 3.3 (act on ether bonds)
+3.4 Category:EC 3.4 (act on peptide bonds - Peptidase)
+3.5 Category:EC 3.5 (act on carbon-nitrogen bonds, other than peptide bonds)
+3.6 Category:EC 3.6 (act on acid anhydrides)
+3.7 Category:EC 3.7 (act on carbon-carbon bonds)
+3.8 Category:EC 3.8 (act on halide bonds)
+3.9 Category:EC 3.9 (act on phosphorus-nitrogen bonds)
+3.10 Category:EC 3.10 (act on sulfur-nitrogen bonds)
+3.11 Category:EC 3.11 (act on carbon-phosphorus bonds)
+3.12 Category:EC 3.12 (act on sulfur-sulfur bonds)
+3.13 Category:EC 3.13 (act on carbon-sulfur bonds)
+4 Category:Lyases (EC 4) (Lyase)
+4.1 Category:EC 4.1 (carbon-carbon lyases)
+4.2 Category:EC 4.2 (carbon-oxygen lyases)
+4.3 Category:EC 4.3 (carbon-nitrogen lyases)
+4.4 Category:EC 4.4 (carbon-sulfur lyases)
+4.5 Category:EC 4.5 (carbon-halide lyases)
+4.6 Category:EC 4.6 (phosphorus-oxygen lyases)
+5 Category:Isomerases (EC 5) (Isomerase)
+5.1 Category:EC 5.1 (racemases and epimerases)
+5.2 Category:EC 5.2 (cis-trans-isomerases)
+5.3 Category:EC 5.3 (intramolecular oxidoreductases)
+5.4 Category:EC 5.4 (intramolecular transferases -- mutases)
+5.5 Category:EC 5.5 (intramolecular lyases)
+5.6 Category:EC 5.99 (other isomerases)
+6 Category:Ligases (EC 6) (Ligase)
+6.1 Category:EC 6.1 (form carbon-oxygen bonds)
+6.2 Category:EC 6.2 (form carbon-sulfur bonds)
+6.3 Category:EC 6.3 (form carbon-nitrogen bonds)
+6.4 Category:EC 6.4 (form carbon-carbon bonds)
+6.5 Category:EC 6.5 (form phosphoric ester bonds)
+6.6 Category:EC 6.6 (form nitrogen-metal bonds)
+Category:Oxidoreductases (EC 1) (Oxidoreductase)
+
+Dehydrogenase
+Luciferase
+DMSO reductase
+Category:EC 1.1 (act on the CH-OH group of donors)
+
+Category:EC 1.1.1 (with NAD+ or NADP+ as acceptor)
+Alcohol dehydrogenase (NAD) EC 1.1.1.1
+Alcohol dehydrogenase (NADP) EC 1.1.1.2
+Homoserine dehydrogenase EC 1.1.1.3
+Aminopropanol oxidoreductase EC 1.1.1.4
+Diacetyl reductase EC 1.1.1.5
+Glycerol dehydrogenase EC 1.1.1.6
+Propanediol-phosphate dehydrogenase EC 1.1.1.7
+glycerol-3-phosphate dehydrogenase (NAD+) EC 1.1.1.8
+D-xylulose reductase EC 1.1.1.9
+L-xylulose reductase EC 1.1.1.10
+Lactate dehydrogenase EC 1.1.1.27
+Malate dehydrogenase EC 1.1.1.37
+Isocitrate dehydrogenase EC 1.1.1.42
+HMG-CoA reductase EC 1.1.1.88
+Category:EC 1.1.2 (with a cytochrome as acceptor)
+Category:EC 1.1.3 (with oxygen as acceptor)
+Glucose oxidase EC 1.1.3.4
+L-gulonolactone oxidase EC 1.1.3.8
+Thiamine oxidase EC 1.1.3.23
+Xanthine oxidase EC 1.1.3.32
+Category:EC 1.1.4 (with a disulfide as acceptor)
+Category:EC 1.1.5 (with a quinone or similar compound as acceptor)
+Category:EC 1.1.99 (with other acceptors)
+Category:EC 1.2 (act on the aldehyde or oxo group of donors)
+
+Category:EC 1.2.1 (with NAD+ or NADP+ as acceptor)
+Acetaldehyde dehydrogenase EC 1.2.1.10
+Glyceraldehyde 3-phosphate dehydrogenase EC 1.2.1.12
+Pyruvate dehydrogenase EC 1.2.1.51
+Category:EC 1.2.4
+Oxoglutarate dehydrogenase EC 1.2.4.2
+Category:EC 1.3 (act on the CH-CH group of donors)
+
+Category:EC 1.3.1 (with NAD+ or NADP+ as acceptor)
+Biliverdin reductase EC 1.3.1.24
+Category:EC 1.3.2 (with a cytochrome as acceptor)
+Category:EC 1.3.3 (with oxygen as acceptor)
+Protoporphyrinogen oxidase EC 1.3.3.4
+Category:EC 1.3.5 (with a quinone or similar compound as acceptor)
+Category:EC 1.3.7 (with an iron-sulfur protein as acceptor)
+Category:EC 1.3.99 (with other acceptors)
+Category:EC 1.4 (act on the CH-NH2 group of donors)
+
+Category:EC 1.4.3
+Monoamine oxidase EC 1.4.3.4
+Category:EC 1.5 (act on CH-NH group of donors)
+
+Category:EC 1.5.1 (with NAD+ or NADP+ as acceptor)
+Dihydrofolate reductase EC 1.5.1.3
+Methylenetetrahydrofolate reductase EC 1.5.1.20
+Category:EC 1.5.3 (with oxygen as acceptor)
+Sarcosine oxidase EC 1.5.3.1
+Dihydrobenzophenanthridine oxidase EC 1.5.3.12
+Category:EC 1.5.4 (with a disulfide as acceptor)
+Category:EC 1.5.5 (with a quinone or similar compound as acceptor)
+Category:EC 1.5.7 (with an iron-sulfur protein as acceptor)
+Category:EC 1.5.8 (with a flavin as acceptor)
+Category:EC 1.5.99 (with other acceptors)
+Category:EC 1.6 (act on NADH or NADPH)
+
+Category:EC 1.6.1 (with NAD+ or NADP+ as acceptor)
+Category:EC 1.6.2 (with a cytochrome as acceptor)
+Category:EC 1.6.3 (with oxygen as acceptor)
+Category:EC 1.6.4 (with a disulfide as acceptor)
+Category:EC 1.6.5 (with a quinone or similar compound as acceptor)
+NADH dehydrogenase EC 1.6.5.3
+Category:EC 1.6.6 (with a nitrogenous group as acceptor)
+Category:EC 1.6.7 (with an iron-sulfur protein as acceptor)
+Category:EC 1.6.8 (with a flavin as acceptor)
+Category:EC 1.6.99 (with other acceptors)
+Category:EC 1.7 (act on other nitrogenous compounds as donors)
+
+Category:EC 1.7.1 (with NAD+ or NADP+ as acceptor)
+Category:EC 1.7.2 (with a cytochrome as acceptor)
+Category:EC 1.7.3 (with oxygen as acceptor)
+Urate oxidase EC 1.7.3.3
+Category:EC 1.7.7 (with an iron-sulfur protein as acceptor)
+Category:EC 1.7.99 (with other acceptors)
+Nitrite reductase EC 1.7.99.3
+Nitrate reductase EC 1.7.99.4
+Category:EC 1.8 (act on a sulfur group of donors)
+
+Category:EC 1.8.1 (with NAD+ or NADP+ as acceptor)
+Glutathione reductase EC 1.8.1.7
+Thioredoxin reductase EC 1.8.1.9
+Category:EC 1.8.2 (with a cytochrome as acceptor)
+Category:EC 1.8.3 (with oxygen as acceptor)
+Sulfite oxidase EC 1.8.3.1
+Category:EC 1.8.4 (with a disulfide as acceptor)
+Category:EC 1.8.5 (with a quinone or similar compound as acceptor)
+Category:EC 1.8.6 (with a sulfur group as acceptor)
+Category:EC 1.8.7 (with an iron-sulfur protein as acceptor)
+Category:EC 1.8.98 (with other, known, acceptors)
+Category:EC 1.8.99 (with other acceptors)
+Category:EC 1.9 (act on a heme group of donors)
+
+Category:EC 1.9.3 (with oxygen as acceptor)
+Cytochrome c oxidase EC 1.9.3.1
+Category:EC 1.9.6 (with a nitrogenous as acceptor)
+Category:EC 1.9.99 (with other acceptors)
+Category:EC 1.10 (act on diphenols and related substances as donors)
+
+Category:EC 1.10.1(with NAD+ or NADP+ as acceptor)
+Category:EC 1.10.2 (with a cytochrome as acceptor)
+Coenzyme Q - cytochrome c reductase EC 1.10.2.2
+Category:EC 1.10.3 (with oxygen as acceptor)
+Catechol oxidase EC 1.10.3.1
+Laccase EC 1.10.3.2
+Category:EC 1.10.99 (with other acceptors)
+Category:EC 1.11 (act on peroxide as an acceptor -- peroxidases)
+
+Category:EC 1.11.1 (peroxidases)
+Cytochrome c peroxidase EC 1.11.1.5
+Catalase EC 1.11.1.6
+Myeloperoxidase EC 1.11.1.7
+Thyroid peroxidase EC 1.11.1.8
+Glutathione peroxidase EC 1.11.1.9
+Category:EC 1.12 (act on hydrogen as a donor)
+
+Category:EC 1.12.1 (with NAD+ or NADP+ as acceptor)
+Category:EC 1.12.2 (with a cytochrome as acceptor)
+Category:EC 1.12.5 (with a quinone or similar compound as acceptor)
+Category:EC 1.12.7 (with an iron-sulfur protein as acceptor)
+Category:EC 1.12.98 (with other known acceptors)
+Category:EC 1.12.99 (with other acceptors)
+Category:EC 1.13 (act on single donors with incorporation of molecular oxygen)
+
+Category:EC 1.13.11 (With incorporation of two atoms of oxygen)
+4-hydroxyphenylpyruvate dioxygenase (EC 1.13.11.27)
+Category:EC 1.13.12 (With incorporation of one atom of oxygen (internal monooxygenases or internal mixed function oxidases))
+Renilla-luciferin 2-monooxygenase EC 1.13.12.5
+Cypridina-luciferin 2-monooxygenase EC 1.13.12.6
+Firefly luciferase EC 1.13.12.7
+Watasenia-luciferin 2-monooxygenase EC 1.13.12.8
+Oplophorus-luciferin 2-monooxygenase EC 1.13.12.13
+Category:EC 1.14 (act on paired donors with incorporation of molecular oxygen)
+
+Cytochrome P450 oxidase
+Category:Cytochrome P450
+Aromatase EC 1.14.14.1
+CYP2D6 EC 1.14.14.1scfxv sc sxs sz
+CYP2E1 EC 1.14.14.1
+CYP3A4 EC 1.14.14.1
+Cytochrome P450 oxidase
+Category:EC 1.14.12
+Nitric oxide dioxygenase
+Category:EC 1.14.13
+Nitric oxide synthase EC 1.14.13.39
+Category:EC 1.14.14
+Aromatase EC 1.14.14.1
+CYP2D6 EC 1.14.14.1
+CYP2E1 EC 1.14.14.1
+CYP3A4 EC 1.14.14.1
+Category:EC 1.14.16
+Phenylalanine hydroxylase EC 1.14.16.1
+Category:EC 1.14.18
+Tyrosinase EC 1.14.18.1
+Category:EC 1.15 (act on superoxide radicals as acceptors)
+
+Category:EC 1.15.1
+Superoxide dismutase EC 1.15.1.1
+Category:EC 1.16 (oxidize metal ions)
+
+Category:EC 1.16.3
+Ceruloplasmin EC 1.16.3.1
+Category:EC 1.17 (act on CH or CH2 groups)
+
+Category:EC 1.18 (act on iron-sulfur proteins as donors)
+
+Category:EC 1.18.6
+Nitrogenase EC 1.18.6.1
+Category:EC 1.19 (act on reduced flavodoxin as donor)
+
+Category:EC 1.20 (act on phosphorus or arsenic as donors)
+
+Category:EC 1.21 (act on X-H and Y-H to form an X-Y bond)
+
+Category:EC 1.97 (other oxidoreductases)
+
+Category:EC 1.97.1
+Deiodinase EC 1.97.1.10
+Category:Transferases (EC 2) (Transferase)
+
+Glutathione S-transferase
+Category:EC 2.1 (transfer one-carbon groups, Methylase)
+
+Category:EC 2.1.1
+Catechol-O-methyl transferase EC 2.1.1.6
+DNA methyltransferase EC 2.1.1.72, EC 2.1.1.113, EC 2.1.1.37
+Histone methyltransferase EC 2.1.1.43, EC 2.1.1.125
+Category:EC 2.1.3
+ATCase EC 2.1.3.2
+Ornithine transcarbamoylase EC 2.1.3.3
+Category:EC 2.2 (transfer aldehyde or ketone groups)
+
+Category:EC 2.3 (acyltransferases)
+
+Category:EC 2.3.1
+Aminolevulinic acid synthase EC 2.3.1.37
+Choline acetyltransferase EC 2.3.1.6
+Category:EC 2.3.2
+Factor XIII EC 2.3.2.13
+Gamma glutamyl transpeptidase EC 2.3.2.2
+Transglutaminase EC 2.3.2.13
+Category:EC 2.4 (glycosyltransferases)
+
+Category:EC 2.4.2
+Hypoxanthine-guanine phosphoribosyltransferase EC 2.4.2.8
+Category:EC 2.5
+
+Category:EC 2.5.1
+Thiaminase EC 2.5.1.2
+Category:EC 2.5 (transfer alkyl or aryl groups, other than methyl groups)
+
+Category:EC 2.6 (transfer nitrogenous groups)
+
+Category:EC 2.6.1
+Alanine transaminase EC 2.6.1.2
+Aspartate transaminase EC 2.6.1.1
+Category:EC 2.7 (transfer phosphorus-containing groups)
+
+Category:EC 2.7.2
+Butyrate kinase (EC 2.7.2.7)
+Category:EC 2.8 (transfer sulfur-containing groups)
+
+Category:EC 2.9 (transfer selenium-containing groups)
+
+Category:Hydrolases (EC 3) (Hydrolase)
+
+Hydrolytic enzyme
+Category:EC 3.1 (act on ester bonds)
+
+Nuclease
+Endonuclease
+Exonuclease
+Category:EC 3.1.1
+Acid hydrolase
+Phospholipase A (EC 3.1.1.4)
+Acetylcholinesterase (EC 3.1.1.7)
+Cholinesterase (EC 3.1.1.8)
+Lipoprotein lipase (EC 3.1.1.34)
+Category:EC 3.1.2
+Ubiquitin carboxy-terminal hydrolase L1 (EC 3.1.2.15)
+Category:EC 3.1.3
+Phosphatase
+Alkaline phosphatase (EC 3.1.3.1)
+Fructose bisphosphatase (EC 3.1.3.11)
+Category:EC 3.1.4
+Phospholipase C (EC 3.1.4.3)
+CGMP specific phosphodiesterase type 5 (EC 3.1.4.17)
+Phospholipase D (EC 3.1.4.50)
+Category:EC 3.1.21
+Restriction enzyme Type 1 (EC 3.1.21.3)
+Deoxyribonuclease I (EC 3.1.21.1)
+Category:EC 3.1.26
+RNase H (EC 3.1.26.4)
+Category:EC 3.1.27
+Ribonuclease
+Category:EC 3.2 (act on sugars - glycosylases)
+
+Category:EC 3.2.1
+Amylase (EC 3.2.1.1)
+Sucrase (EC 3.2.1.10)
+Chitinase (EC 3.2.1.14)
+Lysozyme (EC 3.2.1.17)
+Maltase (EC 3.2.1.20)
+Lactase (EC 3.2.1.23)
+Beta-galactosidase (EC 3.2.1.23)
+Hyaluronidase (EC 3.2.1.35)
+Category:EC 3.3 (act on ether bonds)
+
+Category:EC 3.4 (act on peptide bonds - Peptidase)
+
+Category:EC 3.4.11
+Alanine aminopeptidase
+Category:EC 3.4.15
+Angiotensin converting enzyme
+Category:EC 3.4.21
+Serine protease
+Chymotrypsin (EC 3.4.21.1)
+Trypsin (EC 3.4.21.4)
+Thrombin (EC 3.4.21.5)
+Factor X (EC 3.4.21.6)
+Plasmin (EC 3.4.21.7)
+Acrosin (EC 3.4.21.10)
+Factor VII (EC 3.4.21.21)
+Factor IX (EC 3.4.21.22)
+Prolyl oligopeptidase (EC 3.4.21.26)
+Factor XI (EC 3.4.21.27)
+Elastase (EC 3.4.21.37)
+Factor XII (EC 3.4.21.38)
+Proteinase K (EC 3.4.21.64)
+Tissue plasminogen activator (EC 3.4.21.68)
+Protein C (EC 3.4.21.69)
+Category:EC 3.4.22
+Separase (EC 3.4.22.49)
+Category:EC 3.4.23
+Pepsin (EC 3.4.23.1)
+Rennet (EC 3.4.23.4)
+Renin (EC 3.4.23.15)
+Trypsinogen (EC 3.4.23.18) and (20/21/23/24/26)
+Plasmepsin (EC 3.4.23.39)
+Category:EC 3.4.24
+Matrix metalloproteinase (EC 3.4.24.7)
+Category:EC 3.4.42
+Metalloendopeptidase
+Category:EC 3.5 (act on carbon-nitrogen bonds, other than peptide bonds)
+
+Category:EC 3.5.1 (In linear amides)
+Urease (EC 3.5.1.5)
+Category:EC 3.5.2 (In cyclic amides)
+Beta-lactamase (EC 3.5.2.6)
+Category:EC 3.5.3 (In linear amidines)
+Arginase (EC 3.5.3.1)
+Category:EC 3.5.4 (In cyclic amidines)
+Adenosine deaminase (EC 3.5.4.4)
+GTP cyclohydrolase I (EC 3.5.4.16)
+Category:EC 3.5.5 (In nitriles)
+Nitrilase (EC 3.5.5.1)
+Category:EC 3.6 (act on acid anhydrides)
+
+Category:EC 3.6.1
+Helicase
+DnaB helicase
+RecQ helicase
+Category:EC 3.6.3
+ATPase
+NaKATPase (EC 3.6.3.9)
+ATP synthase (EC 3.6.3.14)
+Category:EC 3.7 (act on carbon-carbon bonds)
+
+Kynureninase EC 3.7.1.3
+Category:EC 3.8 (act on halide bonds)
+
+EC 3.8.1.3 Haloacetate dehalogenase
+Category:EC 3.9 (act on phosphorus-nitrogen bonds)
+
+Category:EC 3.10 (act on sulfur-nitrogen bonds)
+
+Category:EC 3.11 (act on carbon-phosphorus bonds)
+
+Category:EC 3.12 (act on sulfur-sulfur bonds)
+
+Category:EC 3.13 (act on carbon-sulfur bonds)
+
+Category:Lyases (EC 4) (Lyase)
+
+Category:EC 4.1 (carbon-carbon lyases)
+
+Category:EC 4.1.1
+Ornithine decarboxylase (EC 4.1.1.17)
+Uridine monophosphate synthetase (EC 4.1.1.23)
+Aromatic-L-amino-acid decarboxylase (EC 4.1.1.28)
+RubisCO (EC 4.1.1.39)
+Category:EC 4.2 (carbon-oxygen lyases)
+
+Category:EC 4.2.1
+Carbonic anhydrase (EC 4.2.1.1)
+Tryptophan synthase (EC 4.2.1.20)
+Category:EC 4.3 (carbon-nitrogen lyases)
+
+Category:EC 4.4 (carbon-sulfur lyases)
+
+Category:EC 4.5 (carbon-halide lyases)
+
+Category:EC 4.6 (phosphorus-oxygen lyases)
+
+Category:EC 4.6.1
+Adenylate cyclase (EC 4.6.1.1)
+Guanylate cyclase (EC 4.6.1.2)
+Category:Isomerases (EC 5) (Isomerase)
+
+Category:EC 5.1 (racemases and epimerases)
+
+Category:EC 5.2 (cis-trans-isomerases)
+
+Category:EC 5.3 (intramolecular oxidoreductases)
+
+Category:EC 5.3.3
+Enoyl CoA isomerase (EC 5.3.3.8)
+Category:EC 5.3.4
+Protein disulfide isomerase (EC 5.3.4.1)
+Category:EC 5.4 (intramolecular transferases -- mutases)
+
+Category:EC 5.4.2
+Phosphoglucomutase (EC 5.4.2.2)
+Category:EC 5.5 (intramolecular lyases)
+
+Category:EC 5.99 (other isomerases)
+
+Category:EC 5.99.1
+Topoisomerase (type I: EC 5.99.1.2, type II: EC 5.99.1.3)
+Category:Ligases (EC 6) (Ligase)
+
+Category:EC 6.1 (form carbon-oxygen bonds)
+
+Category:EC 6.2 (form carbon-sulfur bonds)
+
+Category:EC 6.3 (form carbon-nitrogen bonds)
+
+Glutamine synthetase (EC 6.3.1.2)
+Argininosuccinate synthetase (EC 6.3.4.5)
+CTP synthase (EC 6.3.4.2)
+Category:EC 6.4 (form carbon-carbon bonds)
+
+Pyruvate carboxylase (EC 6.4.1.1)
+Acetyl-CoA carboxylase (EC 6.4.1.2)
+Category:EC 6.5 (form phosphoric ester bonds)
+
+DNA ligase (EC 6.5.1.1)
+
+Category:EC 6.6 (form nitrogen-metal bonds)
+
+Retrieved from "http://en.wikipedia.org/w/index.php?title=List_of_enzymes&oldid=571342545"
+Categories: Enzymes
+This page was last modified on 3 September 2013 at 06:54.
+Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. 
+Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.

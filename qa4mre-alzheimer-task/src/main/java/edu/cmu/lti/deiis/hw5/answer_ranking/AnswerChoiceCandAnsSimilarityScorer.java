@@ -45,8 +45,15 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
       System.out.println("Question: " + question.getText());
       ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
               Answer.class);
-     
-         
+
+      // callie Remove the sentences for which isDiscard is true
+      for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
+        Answer temp = choiceList.get(ind);
+        if (temp.getIsDiscard()) {
+          choiceList.remove(ind);
+        }
+      }
+
       // get candidate sentences of each question
       ArrayList<CandidateSentence> candSentList = Utils.fromFSListToCollection(qaSet.get(i)
               .getCandidateSentenceList(), CandidateSentence.class);
@@ -87,10 +94,8 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
                 nnMatch++;
               }
             }
-                       
-          }
-          
 
+          }
 
           // Wenyi modified this part
           // removed some error in the baseline code
@@ -111,19 +116,18 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
 
           }
 
-          
-          //napat add score to question/answer direct match
+          // napat add score to question/answer direct match
           for (int l = 0; l < choiceNERs.size(); l++) {
             if (question.getText().contains(choiceNERs.get(l).getText())) {
-              nnMatch ++;
+              nnMatch++;
             }
           }
           for (int l = 0; l < choiceNouns.size(); l++) {
             if (question.getText().contains(choiceNouns.get(l).getText())) {
-              nnMatch ++;
+              nnMatch++;
             }
           }
-         
+
           System.out.println(choiceList.get(j).getText() + "\t" + nnMatch);
           CandidateAnswer candAnswer = null;
           if (candSent.getCandAnswerList() == null) {
@@ -137,7 +141,7 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
           candAnswer.setText(answer.getText());
           candAnswer.setQId(answer.getQuestionId());
           candAnswer.setChoiceIndex(j);
-          candAnswer.setSimilarityScore(1.0*nnMatch/(answer.getEnd()-answer.getBegin())); 
+          candAnswer.setSimilarityScore(1.0 * nnMatch / (answer.getEnd() - answer.getBegin()));
           // nnMatch is the default similarity score between candidate sentence and choice
           // Wenyi modified it with a normalization using the length of answer.
           // when running "questionRun", the result improves from 02113 to 02213.
@@ -182,5 +186,5 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
     }
     return st.length() - 1;
   }
-  
+
 }
