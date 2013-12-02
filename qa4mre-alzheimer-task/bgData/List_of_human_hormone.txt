@@ -1,0 +1,203 @@
+List of human hormones
+From Wikipedia, the free encyclopedia
+The following is a list of hormones found in Homo sapiens. Spelling is not uniform for many hormones. Current North America and international usage is estrogen, gonadotropin, while British usage retains the Greek diphthong in oestrogen and favors the earlier spelling gonadotrophin (from trophē ‘nourishment, sustenance’ rather than tropē ‘turning, change’).
+
+
+
+Contents
+
+1 Eicosanoid
+2 Peptide
+3 Steroid
+4 References
+Eicosanoid
+
+Name	Abbreviation	Tissue	Cells	Receptor	Target Tissue	Effect
+Prostaglandins	PG	seminal vesicle		prostaglandin receptor		
+Leukotrienes	LT		white blood cells	G protein-coupled receptors		
+Prostacyclin	PGI2	endothelium		prostacyclin receptor		
+Thromboxane	TXA2		platelets	thromboxane receptor		
+Peptide
+
+Name	Abbreviation	Tissue	Cells	Receptor	Target Tissue	Effect
+Amylin (or Islet Amyloid Polypeptide)	IAPP	pancreas	pancreatic β-cells	amylin receptor		slowing down gastric emptying, inhibition of digestive secretion, and reducing food intake
+Antimullerian hormone (or Müllerian inhibiting factor or hormone)	AMH	testes	Sertoli cell	AMHR2		Inhibit release of prolactin and TRH from anterior pituitary
+Adiponectin	Acrp30	adipose tissue		adiponectin receptors		
+Adrenocorticotropic hormone (or corticotropin)	ACTH	anterior pituitary	corticotrope	ACTH receptor → cAMP		synthesis of corticosteroids (glucocorticoids and androgens) in adrenocortical cells
+Angiotensinogen and angiotensin	AGT	liver		angiotensin receptor → IP3		vasoconstriction
+release of aldosterone from adrenal cortex dipsogen.
+
+Antidiuretic hormone (or vasopressin, arginine vasopressin)	ADH	posterior pituitary	Parvocellular neurosecretory neurons in hypothalamus
+Magnocellular neurosecretory cells in posterior pituitary	several		retention of water in kidneys
+moderate vasoconstriction
+Release ACTH in anterior pituitary
+Atrial-natriuretic peptide (or atriopeptin)	ANP	heart		ANP receptor → cGMP		
+Brain natriuretic peptide	BNP	heart	Cardiac myocytes	NPR		(To a minor degree than ANP) reduce blood pressure by:
+reducing systemic vascular resistance, reducing blood water, sodium and fats
+
+Calcitonin	CT	thyroid gland	parafollicular cell	CT receptor → cAMP		Construct bone, reduce blood Ca2+
+Cholecystokinin	CCK	duodenum		CCK receptor		Release of digestive enzymes from pancreas
+Release of bile from gallbladder
+Hunger suppressant
+Corticotropin-releasing hormone	CRH	hypothalamus		CRF1 → cAMP		Release ACTH from anterior pituitary
+Enkephalin		Kidney	Chromaffin cells	Opioid receptor		Regulate pain
+Endothelin		Stomach	X cells	ET receptor		Smooth muscle contraction of stomach[1]
+Erythropoietin	EPO	kidney	Extraglomerular mesangial cells	EpoR		Stimulate erythrocyte production
+Follicle-stimulating hormone	FSH	anterior pituitary	gonadotrope	FSH receptor → cAMP		In female: stimulates maturation of Graafian follicles in ovary.
+In male: spermatogenesis, enhances production of androgen-binding protein by the Sertoli cells of the testes
+
+Galanin	GAL	central nervous system and gastrointestinal tract		GALR1, GALR2, and GALR3		modulation and inhibition of action potentials in neurons
+Gastrin	GRP	stomach, duodenum	G cell	CCK2		Secretion of gastric acid by parietal cells
+Ghrelin		stomach	P/D1 cell	ghrelin receptor		Stimulate appetite,
+secretion of growth hormone from anterior pituitary gland
+
+Glucagon	GCG	pancreas	alpha cells	Glucagon receptor → cAMP		glycogenolysis and gluconeogenesis in liver
+increases blood glucose level
+
+Gonadotropin-releasing hormone	GnRH	hypothalamus		GnRH receptor → IP3		Release of FSH and LH from anterior pituitary.
+Growth hormone-releasing hormone	GHRH	hypothalamus		GHRH receptor → IP3		Release GH from anterior pituitary
+Human chorionic gonadotropin	hCG	placenta	syncytiotrophoblast cells	LH receptor → cAMP		promote maintenance of corpus luteum during beginning of pregnancy
+Inhibit immune response, towards the human embryo.
+
+Human placental lactogen	HPL	placenta				increase production of insulin and IGF-1
+increase insulin resistance and carbohydrate intolerance
+
+Growth hormone	GH or hGH	anterior pituitary	somatotropes	GH receptor		stimulates growth and cell reproduction
+Release Insulin-like growth factor 1 from liver
+
+Inhibin		testes, ovary, fetus	Sertoli cells of testes
+granulosa cells of ovary
+trophoblasts in fetus	anterior pituitary		Inhibit production of FSH
+Insulin	INS	pancreas	beta cells	insulin receptor, IGF-1, IGF-2		Intake of glucose, glycogenesis and glycolysis in liver and muscle from blood
+intake of lipids and synthesis of triglycerides in adipocytes Other anabolic effects
+
+Insulin-like growth factor (or somatomedin)	IGF	liver	Hepatocytes	insulin receptor, IGF-1		insulin-like effects
+regulate cell growth and development
+
+Leptin	LEP	adipose tissue		LEP-R		decrease of appetite and increase of metabolism.
+Lipotropin	LPH	anterior pituitary	Corticotropes			lipolysis and steroidogenesis,
+stimulates melanocytes to produce melanin
+Luteinizing hormone	LH	anterior pituitary	gonadotropes	LHR → cAMP		In female: ovulation
+In male: stimulates Leydig cell production of testosterone
+
+Melanocyte stimulating hormone	MSH or α-MSH	anterior pituitary/pars intermedia	Melanotroph	melanocortin receptor → cAMP		melanogenesis by melanocytes in skin and hair
+Motilin	MLN	Small intestine		Motilin receptor		stimulates gastric activity
+Orexin		hypothalamus		OX1, OX2		wakefulness and increased energy expenditure, increased appetite
+Oxytocin	OXT	posterior pituitary	Magnocellular neurosecretory cells	OXT receptor → IP3		release breast milk
+Contraction of cervix and vagina Involved in orgasm, trust between people.[2] and circadian homeostasis (body temperature, activity level, wakefulness).[3]
+
+Pancreatic polypeptide		Pancreas	PP cells	pancreatic polypeptide receptor 1		Self-regulation of pancreatic secretions (endocrine and exocrine). It also affects hepatic glycogen levels and gastrointestinal secretions.
+Parathyroid hormone	PTH	parathyroid gland	parathyroid chief cell	PTH receptor → cAMP		increase blood Ca2+:
+indirectly stimulate osteoclasts
+Ca2+ reabsorption in kidney
+activate vitamin D
+(Slightly) decrease blood phosphate:
+
+(decreased reuptake in kidney but increased uptake from bones
+activate vitamin D)
+Prolactin	PRL	anterior pituitary, uterus	lactotrophs of anterior pituitary
+Decidual cells of uterus	PRL receptor		milk production in mammary glands
+sexual gratification after sexual acts
+Prolactin releasing hormone	PRH	hypothalamus				Release prolactin from anterior pituitary
+Relaxin	RLN	uterus	Decidual cells	RLN receptor		Unclear in humans
+Renin		Kidney	Juxtaglomerular cells			Activates the renin-angiotensin system by producing angiotensin I of angiotensinogen
+Secretin	SCT	duodenum	S cell	SCT receptor		Secretion of bicarbonate from liver, pancreas and duodenal Brunner's glands
+Enhances effects of cholecystokinin Stops production of gastric juice
+
+Somatostatin	SRIF	hypothalamus, islets of Langerhans, gastrointestinal system	delta cells in islets
+Neuroendocrince cells of the Periventricular nucleus in hypothalamus	Somatostatin receptor		Inhibit release of GH and TRH from anterior pituitary
+Suppress release of gastrin, cholecystokinin (CCK), secretin, motilin, vasoactive intestinal peptide (VIP), gastric inhibitory polypeptide (GIP), enteroglucagon in gastrointestinal system
+Lowers rate of gastric emptying
+Reduces smooth muscle contractions and blood flow within the intestine [4]
+Inhibit release of insulin from beta cells [5]
+Inhibit release of glucagon from alpha cells [5]
+Suppress the exocrine secretory action of pancreas.
+
+Thrombopoietin	TPO	liver, kidney, striated muscle	Myocytes	TPO receptor	megakaryocytes	produce platelets[6]
+Thyroid-stimulating hormone (or thyrotropin)	TSH	anterior pituitary	thyrotropes	Thyrotropin receptor → cAMP	thyroid gland	secrete thyroxine (T4) and triiodothyronine (T3)
+Thyrotropin-releasing hormone	TRH	hypothalamus	Parvocellular neurosecretory neurons	TRHR → IP3	anterior pituitary	Release thyroid-stimulating hormone (primarily)
+Stimulate prolactin release
+Steroid
+
+Chemical class	Name	Abbreviation	Tissue	Cells	Receptor	Target Tissue	Effect
+androgen	Testosterone		testes	Leydig cells	AR		libido, Anabolic: growth of muscle mass and strength, increased bone density, growth and strength,
+Virilizing: maturation of sex organs, formation of scrotum, deepening of voice, growth of beard and axillary hair.
+
+androgen	Dehydroepiandrosterone	DHEA	testes, ovary, kidney	Zona fasciculata and Zona reticularis cells of kidney
+theca cells of ovary
+Leydig cellss of testes	AR		Virilization, anabolic
+androgen	Androstenedione		adrenal glands, gonads		AR		Substrate for estrogen
+androgen	Dihydrotestosterone	DHT	multiple		AR		5-DHT or DHT is a male reproductive hormone that targets the prostate gland, bulbourethral gland, seminal vesicles, penis and scrotum and promotes growth/mitosis/cell maturation and differentiation. Testosterone is converted to 5-DHT by 5alpha-reductase, usually with in the target tissues of 5-DHT because of the need for high concentrations of 5-dht to produced the physiological effects.
+mineralocorticoid	Aldosterone		adrenal cortex (zona glomerulosa)		MR		Increase blood volume by reabsorption of sodium in kidneys (primarily)
+Potassium and H+ secretion in kidney.
+
+estrogen	Estradiol	E2	females: ovary, males testes	females: granulosa cells, males: Sertoli cell	ER		Females:
+Structural:
+
+promote formation of female secondary sex characteristics
+accelerate height growth
+accelerate metabolism (burn fat)
+reduce muscle mass
+stimulate endometrial growth
+increase uterine growth
+maintenance of blood vessels and skin
+reduce bone resorption, increase bone formation
+Protein synthesis:
+
+increase hepatic production of binding proteins
+Coagulation:
+
+increase circulating level of factors 2, 7, 9, 10, antithrombin III, plasminogen
+increase platelet adhesiveness
+Increase HDL, triglyceride, height growth Decrease LDL, fat deposition Fluid balance:
+
+salt (sodium) and water retention
+increase growth hormone
+increase cortisol, SHBG
+Gastrointestinal tract:
+
+reduce bowel motility
+increase cholesterol in bile
+Melanin:
+
+increase pheomelanin, reduce eumelanin
+Cancer: support hormone-sensitive breast cancers [7] Suppression of production in the body of estrogen is a treatment for these cancers.
+
+Lung function:
+
+promote lung function by supporting alveoli.[8]
+Males: Prevent apoptosis of germ cells[9]
+
+estrogen	Estrone		ovary	granulosa cells, Adipocytes	ER		
+estrogen	Estriol	E3	placenta	syncytiotrophoblast	ER		
+glucocorticoid	Cortisol		adrenal cortex (zona fasciculata and zona reticularis cells)		GR		Stimulation of gluconeogenesis
+Inhibition of glucose uptake in muscle and adipose tissue Mobilization of amino acids from extrahepatic tissues Stimulation of fat breakdown in adipose tissue anti-inflammatory and immunosuppressive
+
+progestogen	Progesterone		ovary, adrenal glands, placenta (when pregnant)	Granulosa cells theca cells of ovary	PR		Support pregnancy:[10]
+Convert endometrium to secretory stage Make cervical mucus permeable to sperm. Inhibit immune response, e.g. towards the human embryo. Decrease uterine smooth muscle contractility[10] Inhibit lactation Inhibit onset of labor. Support fetal production of adrenal mineralo- and glucosteroids.
+
+Other: Raise epidermal growth factor-1 levels Increase core temperature during ovulation[11] Reduce spasm and relax smooth muscle (widen bronchi and regulate mucus) Antiinflammatory Reduce gall-bladder activity[12] Normalize blood clotting and vascular tone, zinc and copper levels, cell oxygen levels, and use of fat stores for energy. Assist in thyroid function and bone growth by osteoblasts Resilience in bone, teeth, gums, joint, tendon, ligament and skin Healing by regulating collagen Nerve function and healing by regulating myelin Prevent endometrial cancer by regulating effects of estrogen.
+
+secosteroid	Calcitriol (1,25-dihydroxyvitamin D3)		skin/proximal tubule of kidneys		VDR		Active form of vitamin D3
+Increase absorption of calcium and phosphate from gastrointestinal tract and kidneys inhibit release of PTH
+
+secosteroid	Calcidiol (25-hydroxyvitamin D3)		skin/proximal tubule of kidneys		VDR		Inactive form of vitamin D3
+References
+
+Jump up ^ Endo K, Matsumoto T, Kobayashi T, Kasuya Y, Kamata K (February 2005). "Diabetes-related changes in contractile responses of stomach fundus to endothelin-1 in streptozotocin-induced diabetic rats". J Smooth Muscle Res 41 (1): 35–47. doi:10.1540/jsmr.41.35. PMID 15855738.
+Jump up ^ Kosfeld M, Heinrichs M, Zak PJ, Fischbacher U, Fehr E (June 2005). "Oxytocin increases trust in humans". Nature 435 (7042): 673–6. doi:10.1038/nature03701. PMID 15931222.
+Jump up ^ Scientific American Mind, "Rhythm and Blues"; June/July 2007; Scientific American Mind; by Ulrich Kraft
+Jump up ^ http://www.vivo.colostate.edu/hbooks/pathphys/endocrine/otherendo/somatostatin.html Colorado State University - Biomedical Hypertextbooks - Somatostatin
+^ Jump up to: a b Physiology at MCG 5/5ch4/s5ch4_17
+Jump up ^ Kaushansky K (May 2006). "Lineage-specific hematopoietic growth factors". N. Engl. J. Med. 354 (19): 2034–45. doi:10.1056/NEJMra052706. PMID 16687716.
+Jump up ^ Hormonal Therapy
+Jump up ^ Massaro D, Massaro GD (2004). "Estrogen regulates pulmonary alveolar formation, loss, and regeneration in mice". American Journal of Physiology. Lung Cellular and Molecular Physiology 287 (6): L1154–9. doi:10.1152/ajplung.00228.2004. PMID 15298854.
+Jump up ^ Pentikäinen V, Erkkilä K, Suomalainen L, Parvinen M, Dunkel L. "Estradiol Acts as a Germ Cell Survival Factor in the Human Testis in vitro. The Journal of Clinical Endocrinology & Metabolism 2006;85:2057-67 doi:10.1210/jc.85.5.2057 PMID 10843196
+^ Jump up to: a b Placental Hormones
+Jump up ^ Physiology at MCG 5/5ch9/s5ch9_13
+Jump up ^ Hould F, Fried G, Fazekas A, Tremblay S, Mersereau W (1988). "Progesterone receptors regulate gallbladder motility". J Surg Res 45 (6): 505–12. doi:10.1016/0022-4804(88)90137-0. PMID 3184927.
+Retrieved from "http://en.wikipedia.org/w/index.php?title=List_of_human_hormones&oldid=583316959"
+Categories: Human hormonesCell signalingSignal transduction
+This page was last modified on 26 November 2013 at 01:05.
+Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. 
+Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
