@@ -66,9 +66,11 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
           curKnowBase = knowBase.get("enzyme");
         } else if ((quesTokens[2].compareTo("hormone") == 0 && quesTokens[1].compareTo("peptide") == 0)) {
           curKnowBase = knowBase.get("hormone");
-        }
-        else if ((quesTokens[0].compareTo("what") == 0 && quesTokens[1].compareTo("organism") == 0)) {
+        } else if ((quesTokens[0].compareTo("what") == 0 && quesTokens[1].compareTo("organism") == 0)) {
           curKnowBase = knowBase.get("organisms");
+        } 
+        else if (question.getText().indexOf("what protein") != -1) {
+          curKnowBase = knowBase.get("protein");
         }
       }
 
@@ -182,13 +184,10 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
     for (File f : files) {
       HashSet<String> tmp = new HashSet<String>();
       String content = readFile(f);
-      String[] tokens = content.replaceAll("[()./]", " ").toLowerCase().split(" ");
+      String[] tokens = content.replaceAll("[()./_]", " ").toLowerCase().split(" ");
 
       for (String token : tokens) {
         tmp.add(token);
-        if (token.compareTo("somatostatin") == 0) {
-          System.out.println("somatostatin!!!!!!somatostatin");
-        }
       }
       String fname = f.getName();
       if (fname.indexOf("acid") != -1) {
@@ -201,6 +200,8 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
         result.put("hormone", tmp);
       } else if (fname.indexOf("organisms") != -1) {
         result.put("organisms", tmp);
+      } else if (fname.indexOf("protein") != -1) {
+        result.put("protein", tmp);
       }
     }
     return result;
