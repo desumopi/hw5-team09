@@ -1,0 +1,156 @@
+List of organisms by chromosome count
+From Wikipedia, the free encyclopedia
+This page lists the numbers of chromosomes in various plants, animals, protists, and other living organisms, given as the diploid number (2n). This is not a comprehensive list, but instead should be seen as a cross-section of different groups.
+
+Organism	Scientific name	Diploid number of chromosomes (2n = x)	Notes
+Adders-tongue	Ophioglossum reticulatum	1260	[1] This fern has the highest known chromosome number of any life form. Number given is maximum, shows many variants.
+Field Horsetail	Equisetum arvense	216	
+Rattlesnake fern	Botrypus virginianus	184[2]	
+Carp		104	
+Red viscacha rat	Tympanoctomys barrerae	102 [3]	Highest number known in mammals, formerly thought to be a tetraploid.[4]
+Kamraj (fern)	Helminthostachys zeylanica	94	
+Aquatic Rat	Anotomys leander	92[5]	Previously thought to be the highest number in mammals, tied with Ichthyomys pittieri.
+Shrimp	Penaeus semisulcatus	86–92 [6]	
+Crab-eating rat (semiaquatic rodent)	Ichthyomys pittieri	92[5]	Previously thought to be the highest number in mammals, tied with Anotomys leander.
+Grape fern	Sceptridium	90	
+Hedgehog Genus Atelerix (African hedgehogs)		90	
+Moonworts	Botrychium	90	
+Hedgehog Genus Erinaceus (Woodland hedgehogs)		88	
+Nagaho-no-natsu-no-hana-warabi	Botrypus strictus	88	B. strictus and B. virginianus have been shown to be paraphyletic in the genus Botrypus
+Pigeon		80	
+Turkey		80[7]	
+African Wild Dog	Lycaon pictus	78[8]	
+Chicken	Gallus gallus domesticus	78	
+Coyote	Canis latrans	78[8]	
+Dhole	Cuon alpinus	78	
+Dingo	Canis lupus dingo	78[8]	
+Dog	Canis lupus familiaris	78[9]	76 autosomal and 2 sexual.[10]
+Dove		78[11]	Based on African collared dove
+Golden Jackal	Canis aureus	78[8]	
+Wolf	Canis lupus	78	
+Maned Wolf	Chrysocyon brachyurus	76	
+American Black Bear	Ursus americanus	74	
+Asiatic Black Bear	Ursus thibetanus	74	
+Brown Bear	Ursus arctos	74	
+Polar Bear	Ursus maritimus	74	
+Sloth Bear	Melursus ursinus	74	
+Sun Bear	Helarctos malayanus	74	
+Bat-eared Fox	Otocyon megalotis	72[8]	
+Black nightshade	Solanum nigrum	72[12]	
+White-tailed deer	Odocoileus virginianus	70	
+Elk (Wapiti)	Cervus canadensis	68	
+Red Deer	Cervus elaphus	68	
+Gray Fox	Urocyon cinereoargenteus	66[8]	
+Raccoon Dog	Nyctereutes procyonoides	66	Some variation in the number of chromosomes between individuals [13]
+Chinchilla	Chinchilla lanigera	64 [14]	
+Echidna		63/64	63 (XXY, male) and 64 (XXXX, female)
+Fennec Fox	Vulpes zerda	64[8]	
+Horse	Equus ferus caballus	64	
+Spotted Skunk	Spilogale x	64	
+Mule		63	semi-infertile
+Donkey	Equus africanus asinus	62	
+Giraffe	Giraffa camelopardalis	62	
+Gypsy moth		62	
+Bengal Fox	Vulpes bengalensis	60	
+American Bison	Bison bison	60	
+Cow	Bos primigenius	60	
+Goat		60	
+Woolly Mammoth	Mammuthus primigenius	58	extinct; tissue from a frozen carcass
+Elephant		56	
+Capuchin Monkey	Cebus x	54[15]	
+Hyrax	Hyracoidea	54[16]	Hyraxes are considered to be the closest living relative to the Elephant.[17]
+Sheep		54	
+Silkworm	Bombyx mori	54	
+Cotton	Gossypium hirsutum	52[18]	2n=4x; Cultivated upland cotton is derived from an allotetraploid
+Platypus	Ornithorhynchus anatinus	52 [19]	Ten sex chromosomes.
+Spectacled Bear	Tremarctos ornatus	52	
+Kit Fox		50	
+Pineapple	Ananas comosus	50[18]	
+Striped skunk	Mephitis mephitis	50	
+Zebrafish	Danio rerio	50[20]	
+Beaver (Eurasian)	Castor fiber	48	
+Chimpanzee	Pan troglodytes	48[21]	
+Deer Mouse	Peromyscus maniculatus	48	
+Gorilla		48	
+Hare[22][23]		48	
+Orangutan	Pongo x	48	
+Potato	Solanum tuberosum	48[18]	This is a tetraploid; wild relatives mostly have 2n=24.[18]
+Tobacco	Nicotiana tabacum	48[18]	Cultivated species is a tetraploid.[18]
+Human	Homo sapiens	46[24]	44 autosomal and 2 sex
+Reeves's Muntjac	Muntiacus reevesi	46	
+Sable Antelope	Hippotragus niger	46	
+Dolphin	Delphinidae Delphis	44	
+Eurasian Badger	Meles meles	44	
+Rabbit		44	
+Fossa	Cryptoprocta ferox	42	
+Giant Panda	Ailuropoda melanoleuca	42	
+Oats	Avena sativa	42[18]	This is a hexaploid with 2n=6x=42. Diploid and tetraploid cultivated species also exist.[18]
+Raccoon Dog	Nyctereutes viverrinus	42	some sources say sub-species differ with 38, 54, and even 56 chromosomes
+Rat		42	
+Rhesus Monkey		42[25]	
+Wheat	Triticum aestivum	42[18]	This is a hexaploid with 2n=6x=42. Durum wheat is Triticum turgidum var. durum, and is a tetraploid with 2n=4x=28.[18]
+Wolverine	Gulo gulo	42	
+Beaver (American)	Castor canadensis	40	
+European Polecat	Mustela putorius	40	
+Ferret	Mustela putorius furo	40	
+Hyena		40	
+Mango	Mangifera indica	40[18]	
+Mouse	Mus musculus	40[26]	
+American Marten	Martes americana	38	
+Beech Marten	Martes foina	38	
+Cat	Felis catus	38	
+Coatimundi		38	
+European Mink	Mustela lutreola	38	
+Fisher (animal)		38	a type of marten
+Lion	Panthera leo	38	
+Oriental Small-clawed Otter	Aonyx cinerea	38	
+Pig		38	
+Pine Marten	Martes martes	38	
+Raccoon	Procyon lotor	38[27]	
+Sable	Martes zibellina	38	
+Sea Otter		38	
+Tanuki/Raccoon Dog	Nyctereutes procyonoides albus	38	
+Tiger	Panthera tigris	38	
+Earthworm	Lumbricus terrestris	36	
+Long-nosed Cusimanse (a type of mongoose)		36	
+Meerkat	Suricata suricatta	36	
+Red Panda		36	
+Starfish		36	
+Tibetan sand fox	Vulpes ferrilata	36	
+Yellow Mongoose	Cynictis penicillata	36	
+Porcupine	Erethizon dorsatum	34 [14]
+Red Fox	Vulpes vulpes	34[8]	Plus 3-5 microsomes.
+Alfalfa	Medicago sativa	32[18]	Cultivated alfalfa is tetraploid, with 2n=4x=32. Wild relatives have 2n=16.[18]
+American Badger	Taxidea taxus	32	
+European honey bee	Apis mellifera	32	32 for females, males are haploid and thus have 16.
+Yeast	Saccharomyces cerivisiae	32	
+American Mink	Neovison vison	30	
+Pill millipede	Arthrosphaera magna attems	30	[28]
+Bittersweet nightshade	Solanum dulcamara	24[29][30]	
+Husk Tomato	Physalis pubescens	24[31]	
+Silverleaf nightshade	Solanum elaeagnifolium	24[32]	
+Rice	Oryza sativa	24[18]	
+Snail		24	
+Bean	Phaseolus sp.	22[18]	All species in the genus have the same chromosome number, including P. vulgaris, P. coccineus, P. acutifolis,and P. lunatus.[18]
+Virginia Opossum	Didelphis virginiana	22[33]	
+Cannabis	Cannabis sativa	20	
+Maize	Zea mays	20[18]	
+Cabbage	Brassica oleracea	18[18]	Broccoli, cabbage, kale, kohlrabi, brussels sprouts, and cauliflower are all the same species and have the same chromosome number.[18]
+Radish	Raphanus sativus	18[18]	
+Kangaroo		16	This includes several members genus Macropus, but not the red kangaroo (M. rufus, 40)[34]
+Koala	Phascolarctos cinereus	16		
+Barley	Hordeum vulgare	14[18]	
+Pea	Pisum sativum	14[18]	
+Rye	Secale cereale	14[18]	
+Tasmanian Devil	Sarcophilus harrisii	14	
+Slime Mold	Dictyostelium discoideum	12 [35]	
+Swamp Wallaby	Wallabia bicolor	10/11	11 for male, 10 for female[36]
+Nematode	Caenorhabditis elegans	12/11	12 for hermaphrodites, 11 for males
+Thale Cress	Arabidopsis thaliana	10	
+Fruit fly	Drosophila melanogaster	8[37]	6 autosomal, and 2 sexual
+Hawkweed		8	
+Indian muntjac	Muntiacus muntjak	6/7[38]	female/male
+Mosquito	Aedes aegypti	6[39]	The 2n=6 chromosome number is conserved in the entire family Culicidae, except in Chagasia bathana which has 2n=8.[39]
+Spider mite		4–14[40]	Spider mites (family Tetranychidae) are typically haplodiploidy (males are haploid, while females are diploid)[40]
+Jack jumper ant	Myrmecia pilosula	2[41]	2 for females, males are haploid and thus have 1; smallest number possible. Other ant species have more chromosomes.[41]
+See also

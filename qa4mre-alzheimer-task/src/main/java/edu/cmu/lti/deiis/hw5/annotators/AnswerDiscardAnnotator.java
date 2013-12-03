@@ -67,6 +67,9 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
         } else if ((quesTokens[2].compareTo("hormone") == 0 && quesTokens[1].compareTo("peptide") == 0)) {
           curKnowBase = knowBase.get("hormone");
         }
+        else if ((quesTokens[0].compareTo("what") == 0 && quesTokens[1].compareTo("organism") == 0)) {
+          curKnowBase = knowBase.get("organisms");
+        }
       }
 
       // callie
@@ -196,10 +199,9 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
         result.put("enzyme", tmp);
       } else if (fname.indexOf("List_of_human_hormone") != -1) {
         result.put("hormone", tmp);
-      } 
-//      else if (fname.indexOf("Peptide") != -1) {
-//        result.put("peptide", tmp);
-//      }
+      } else if (fname.indexOf("organisms") != -1) {
+        result.put("organisms", tmp);
+      }
     }
     return result;
   }
