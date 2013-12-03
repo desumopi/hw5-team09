@@ -1,6 +1,7 @@
 package edu.cmu.lti.deiis.hw5.annotators;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -54,18 +55,17 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
 
       // Wenyi: discard answers based on knowledge
       HashSet<String> curKnowBase = new HashSet<String>();
-      if (question.getText().toLowerCase().indexOf("what") != -1
-              || question.getText().toLowerCase().indexOf("which") != -1) {
-        if (question.getText().toLowerCase().indexOf("amino acid") != -1) {
+      curKnowBase = null;
+      String[] quesTokens = question.getText().toLowerCase().split(" ");
+      if (quesTokens[0].compareTo("what") == 0 || quesTokens[0].compareTo("which") == 0) {
+        if (quesTokens[1].compareTo("amino") == 0 && quesTokens[2].compareTo("acid") == 0) {
           curKnowBase = knowBase.get("amino_acid");
-        } else if (question.getText().toLowerCase().indexOf("histone deacetylase inhibitor") != -1) {
+        } else if (question.getText().indexOf("histone deacetylase inhibitor") != -1) {
           curKnowBase = knowBase.get("histone_deacetylase_inhibitor");
-        } else if (question.getText().toLowerCase().indexOf("enzyme") != -1) {
+        } else if (quesTokens[1].compareTo("enzyme") == 0) {
           curKnowBase = knowBase.get("enzyme");
-        } else if (question.getText().toLowerCase().indexOf("hormone") != -1 || question.getText().toLowerCase().indexOf("peptide hormone") != -1) {
+        } else if ((quesTokens[2].compareTo("hormone") == 0 && quesTokens[1].compareTo("peptide") == 0)) {
           curKnowBase = knowBase.get("hormone");
-        } else if (question.getText().toLowerCase().indexOf("peptide") != -1) {
-          curKnowBase = knowBase.get("peptide");
         }
       }
 
@@ -118,14 +118,15 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
           // Wenyi: discard answers based on knowledge
           if (curKnowBase != null) {
             String[] ansTokens = temp.getText().toLowerCase().split(" ");
-            boolean flag = false;
-            for (String token : ansTokens){
-              if (curKnowBase.contains(token)){
-                flag=true;
+            boolean flag = true;
+            for (String token : ansTokens) {
+
+              if (!curKnowBase.contains(token)) {
+                flag = false;
                 break;
               }
             }
-            if (flag == false){
+            if (flag == false) {
               temp.setIsDiscard(true);
             }
           }
@@ -178,9 +179,13 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
     for (File f : files) {
       HashSet<String> tmp = new HashSet<String>();
       String content = readFile(f);
-      String[] tokens = content.split(" ");
+      String[] tokens = content.replaceAll("[()./]", " ").toLowerCase().split(" ");
+
       for (String token : tokens) {
         tmp.add(token);
+        if (token.compareTo("somatostatin") == 0) {
+          System.out.println("somatostatin!!!!!!somatostatin");
+        }
       }
       String fname = f.getName();
       if (fname.indexOf("acid") != -1) {
@@ -189,11 +194,12 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
         result.put("histone_deacetylase_inhibitor", tmp);
       } else if (fname.indexOf("enzymes") != -1) {
         result.put("enzyme", tmp);
-      } else if (fname.indexOf("hormone") != -1) {
+      } else if (fname.indexOf("List_of_human_hormone") != -1) {
         result.put("hormone", tmp);
-      } else if (fname.indexOf("Peptide") != -1) {
-        result.put("peptide", tmp);
-      }
+      } 
+//      else if (fname.indexOf("Peptide") != -1) {
+//        result.put("peptide", tmp);
+//      }
     }
     return result;
   }
