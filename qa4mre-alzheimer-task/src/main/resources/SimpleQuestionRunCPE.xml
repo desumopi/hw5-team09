@@ -28,7 +28,13 @@
     <delegateAnalysisEngine key="AnswerChoiceCandAnsSimilarityScorer">
       <import location="annotators/AnswerChoiceCandAnsSimilarityScorer.xml"/>
     </delegateAnalysisEngine>
-  </delegateAnalysisEngineSpecifiers>
+  <delegateAnalysisEngine key="PhraseAnnotator">
+<import name="annotators.PhraseAnnotator"/>
+</delegateAnalysisEngine>
+<delegateAnalysisEngine key="QuestionPhraseAnnotator">
+<import name="annotators.QuestionPhraseAnnotator"/>
+</delegateAnalysisEngine>
+</delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
     <name>CpeQuestionDescriptor</name>
     <description/>
@@ -38,14 +44,16 @@
     <configurationParameterSettings/>
     <flowConstraints>
       <fixedFlow>
-        <node>QuestionCandSentSimilarityMatcher</node>
+        <node>PhraseAnnotator</node>
         <!-- <node>QuestionCandSentSynonymMatcher</node>-->
         <!-- <node>QuestionCandSentDependencyMatcher</node>-->
-        <node>AnswerChoiceCandAnsSimilarityScorer</node>
+        <node>QuestionPhraseAnnotator</node>
         <!-- <node>AnswerChoiceCandAnsSynonymScorer</node>-->
         <!--<node>AnswerChoiceCandAnsPMIScorer</node>-->
-        <node>AnswerSelectionByKCandVoting</node>
-      </fixedFlow>
+        <node>QuestionCandSentSimilarityMatcher</node>
+      <node>AnswerChoiceCandAnsPMIScorer</node>
+<node>AnswerSelectionByKCandVoting</node>
+</fixedFlow>
     </flowConstraints>
     <typePriorities/>
     <fsIndexCollection/>

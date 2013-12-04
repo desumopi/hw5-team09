@@ -143,6 +143,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
           // callie: count term frequency of answer in document, use frequency to change weight
           double tFreq = getTermCount(answer.getText(), testDoc.getText());
           score1 += tFreq;
+          //System.out.println("score = " + score1 + " + " + tFreq);
 
           // Wenyi added "count" to normalize the original the PMI score, which is a sum of scores.
           // the result of PMI itself stays the same; but when combined with default and alternative
@@ -207,18 +208,18 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
   public static double getTermCount(String term, String doc) {
     String t = term.toLowerCase();
     String d = doc.toLowerCase();
-    int count=0;
-    int len = 0;
+    double count=0.0;
+    double len = 0.0;
     for (int i = 0; i < doc.length()-t.length(); i++) {
       String dsub = d.substring(i,i+t.length());
       if (dsub.contains(t)) {
-        count++;
+        count=count + 1.0;
       }
       if (d.substring(i,i+1).equals(" ")) {
-        len++;
+        len = len + 1.0;
       }
     }
-    return (double)count/(double)len;
+    return count;
   }
 
   public double scoreCoOccurInSameDoc(String question, Answer choice) throws Exception {
