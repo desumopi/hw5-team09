@@ -59,7 +59,7 @@ public class PhraseAnnotator extends JCasAnnotator_ImplBase{
 			String pos=token.getPos();
 			
 			// Changed POS criteria for NounPhrase - Dishan
-			if(pos.startsWith("NN") /*|| pos.startsWith("JJ")*/ || pos.startsWith("CD")){
+			if(pos.startsWith("NN") /*|| pos.startsWith("JJ")*/ || pos.startsWith("CD") || pos.startsWith("VB") ){
 				nounPhrase+=word+" ";
 			}else{
 				nounPhrase=nounPhrase.trim();

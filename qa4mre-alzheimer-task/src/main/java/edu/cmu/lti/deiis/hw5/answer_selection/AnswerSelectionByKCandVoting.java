@@ -21,6 +21,7 @@ import edu.cmu.lti.qalab.utils.Utils;
 public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
 
   int K_CANDIDATES = 5;
+  double MIN_SCORE = 7;
 
   @Override
 	public void initialize(UimaContext context)
@@ -60,10 +61,21 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
 
       HashMap<String, Double> hshAnswer = new HashMap<String, Double>();
       
+      //napat
+      boolean isNoneAboveAvail = false;
+      
       //Napat initialize hshAnswer so we won't select null
       //Remove the sentences for which isDiscard is true
        for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
          Answer temp = choiceList.get(ind);
+         
+         //set flag if there is none of the above option
+         if(temp.getText().equalsIgnoreCase("None of the above"))
+         {
+           isNoneAboveAvail = true;
+         }
+         
+         //napat should we discard none of the above?
          if (temp.getIsDiscard()) {
            choiceList.remove(ind);
          }
@@ -117,7 +129,7 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
 
       String bestChoice = null;
       try {
-        bestChoice = findBestChoice(hshAnswer);
+        bestChoice = findBestChoice(hshAnswer,isNoneAboveAvail);
 
       } catch (Exception e) {
         e.printStackTrace();
@@ -147,7 +159,7 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
 
   }
 
-  public String findBestChoice(HashMap<String, Double> hshAnswer) throws Exception {
+  public String findBestChoice(HashMap<String, Double> hshAnswer, boolean isNoneAboveAvail) throws Exception {
 
     Iterator<String> it = hshAnswer.keySet().iterator();
     String bestAns = null;
@@ -163,7 +175,14 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
       }
 
     }
-
+    
+    if(isNoneAboveAvail)
+    {
+        if(maxScore < MIN_SCORE){
+          return "None of the above"; 
+        }
+    }
+    
     return bestAns;
   }
 
