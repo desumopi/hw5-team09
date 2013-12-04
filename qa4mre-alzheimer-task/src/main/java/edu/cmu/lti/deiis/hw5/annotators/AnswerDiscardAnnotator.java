@@ -68,8 +68,7 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
           curKnowBase = knowBase.get("hormone");
         } else if ((quesTokens[0].compareTo("what") == 0 && quesTokens[1].compareTo("organism") == 0)) {
           curKnowBase = knowBase.get("organisms");
-        } 
-        else if (question.getText().indexOf("what protein") != -1) {
+        } else if (question.getText().indexOf("what protein") != -1) {
           curKnowBase = knowBase.get("protein");
         }
       }
@@ -184,7 +183,7 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
     for (File f : files) {
       HashSet<String> tmp = new HashSet<String>();
       String content = readFile(f);
-      String[] tokens = content.replaceAll("[()./_]", " ").toLowerCase().split(" ");
+      String[] tokens = content.replaceAll("[()./_-]", " ").toLowerCase().split(" ");
 
       for (String token : tokens) {
         tmp.add(token);
