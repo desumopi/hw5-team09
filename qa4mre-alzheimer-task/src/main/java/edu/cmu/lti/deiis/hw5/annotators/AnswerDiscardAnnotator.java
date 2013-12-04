@@ -156,7 +156,12 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
         return false;
       }
     } catch (NumberFormatException nfe) {
-      return false;
+      if (!str.contains("million") && !str.contains("billion") && !str.contains("thousand")
+              && !str.contains("hundred")) {
+        return false;
+      } else {
+        return true;
+      }
     }
     return true;
   }
