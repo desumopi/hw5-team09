@@ -209,7 +209,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
     String d = doc.toLowerCase();
     int count=0;
     int len = 0;
-    for (int i = 0; i < doc.length(); i++) {
+    for (int i = 0; i < doc.length()-t.length(); i++) {
       String dsub = d.substring(i,i+t.length());
       if (dsub.contains(t)) {
         count++;
