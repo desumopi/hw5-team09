@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>false</primitive>
@@ -63,9 +64,9 @@
 <import name="annotators.AnswerChoiceCandAnsPMIScorer"/>
 </delegateAnalysisEngine>
 <delegateAnalysisEngine key="AnswerDiscardAnnotator">
-      <import name="annotators.AnswerDiscardAnnotator"/>
-    </delegateAnalysisEngine>
-    <!--<delegateAnalysisEngine key="AnswerSelectionByKCandAggregation">
+<import name="annotators.AnswerDiscardAnnotator"/>
+</delegateAnalysisEngine>
+<!--<delegateAnalysisEngine key="AnswerSelectionByKCandAggregation">
       <import location="annotators/AnswerSelectionByKCandAggregation.xml"/>
     </delegateAnalysisEngine>-->
     
@@ -99,7 +100,8 @@
         <!--<node>AnswerChoiceCandAnsPMIScorer</node>-->
         <node>AnswerChoiceCandAnsPMIScorer</node>       
         <node>AnswerSelectionByKCandVoting</node>
-        <!--<node>AnswerSelectionByKCandVoting</node>-->
+<node>AnswerDiscardAnnotator</node>
+<!--<node>AnswerSelectionByKCandVoting</node>-->
       </fixedFlow>
     </flowConstraints>
     <typePriorities/>
