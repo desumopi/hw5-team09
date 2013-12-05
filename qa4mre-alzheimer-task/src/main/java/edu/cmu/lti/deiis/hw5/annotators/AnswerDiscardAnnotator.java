@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.Map.Entry;
@@ -38,7 +39,7 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
   @Override
   public void initialize(UimaContext context) throws ResourceInitializationException {
     super.initialize(context);
-    knowBase = loadFiles();
+    loadFiles();
 
   }
 
@@ -52,27 +53,50 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
       Question question = qaSet.get(i).getQuestion();
       ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
               Answer.class);
+      // HashSet<String> xxx = new HashSet<String>();
+      // xxx = knowBase.get("protein");
+      // Iterator iter = xxx.iterator();
+      // while (iter.hasNext()) {
+      // // System.out.print("see ");
+      // System.out.println(iter.next());
+      // }
 
       // Wenyi: discard answers based on knowledge
       HashSet<String> curKnowBase = new HashSet<String>();
-      curKnowBase = null;
+      System.out.println("curKnowBase is EMPTY: " + curKnowBase.isEmpty());
       String[] quesTokens = question.getText().toLowerCase().split(" ");
-      if (quesTokens[0].compareTo("what") == 0 || quesTokens[0].compareTo("which") == 0) {
-        if (quesTokens[1].compareTo("amino") == 0 && quesTokens[2].compareTo("acid") == 0) {
-          curKnowBase = knowBase.get("amino_acid");
-        } else if (question.getText().indexOf("histone deacetylase inhibitor") != -1) {
-          curKnowBase = knowBase.get("histone_deacetylase_inhibitor");
-        } else if (quesTokens[1].compareTo("enzyme") == 0) {
-          curKnowBase = knowBase.get("enzyme");
-        } else if ((quesTokens[2].compareTo("hormone") == 0 && quesTokens[1].compareTo("peptide") == 0)) {
-          curKnowBase = knowBase.get("hormone");
-        } else if ((quesTokens[0].compareTo("what") == 0 && quesTokens[1].compareTo("organism") == 0)) {
-          curKnowBase = knowBase.get("organisms");
-        } else if (question.getText().indexOf("what protein") != -1) {
-          curKnowBase = knowBase.get("protein");
+      String mark = null;
+      if (question.getText().toLowerCase().indexOf("what protein") != -1
+              || question.getText().toLowerCase().indexOf("what specific protein") != -1) {
+        System.out.println(question.getText());
+        System.out.println("got protein three !!!");
+        curKnowBase = new HashSet<String>(knowBase.get("protein"));
+        mark = "protein";
+      } else {
+        if (quesTokens[0].compareTo("what") == 0 || quesTokens[0].compareTo("which") == 0) {
+          if (quesTokens[1].compareTo("amino") == 0 && quesTokens[2].compareTo("acid") == 0) {
+            curKnowBase = new HashSet<String>(knowBase.get("amino_acid"));
+            mark = "amino_acid";
+          } else if (question.getText().indexOf("histone deacetylase inhibitor") != -1) {
+            curKnowBase = new HashSet<String>(knowBase.get("histone_deacetylase_inhibitor"));
+            mark = "histone_deacetylase_inhibitor";
+          } else if (quesTokens[1].compareTo("enzyme") == 0) {
+            curKnowBase = new HashSet<String>(knowBase.get("enzyme"));
+            mark = "enzyme";
+          } else if ((quesTokens[2].compareTo("hormone") == 0 && quesTokens[1].compareTo("peptide") == 0)) {
+            curKnowBase = new HashSet<String>(knowBase.get("hormone"));
+            mark = "hormone";
+          } else if ((quesTokens[0].compareTo("what") == 0 && quesTokens[1].compareTo("organism") == 0)) {
+            curKnowBase = new HashSet<String>(knowBase.get("organisms"));
+            mark = "organisms";
+          }
         }
       }
 
+      System.out.println("curKnowBase is EMPTY: " + curKnowBase.isEmpty());
+      if (!curKnowBase.isEmpty()) {
+        System.out.println("test: " + curKnowBase.contains("bdnf"));
+      }
       // callie
       try {
         BufferedWriter bW = new BufferedWriter(new FileWriter("RemovedAnswers.txt", true));
@@ -120,11 +144,11 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
           }
 
           // Wenyi: discard answers based on knowledge
-          if (curKnowBase != null) {
-            String[] ansTokens = temp.getText().toLowerCase().split(" ");
+          if (!curKnowBase.isEmpty()) {
+            String[] ansTokens = temp.getText().replaceAll("[()./_]", " ").replaceAll("\n", " ")
+                    .replaceAll("\r", " ").toLowerCase().split(" ");
             boolean flag = true;
             for (String token : ansTokens) {
-
               if (!curKnowBase.contains(token)) {
                 flag = false;
                 break;
@@ -156,12 +180,7 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
         return false;
       }
     } catch (NumberFormatException nfe) {
-      if (!str.contains("million") && !str.contains("billion") && !str.contains("thousand")
-              && !str.contains("hundred")) {
-        return false;
-      } else {
-        return true;
-      }
+      return false;
     }
     return true;
   }
@@ -177,8 +196,8 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
     return st.length() - 1;
   }
 
-  public static HashMap<String, HashSet<String>> loadFiles() {
-    HashMap<String, HashSet<String>> result = new HashMap<String, HashSet<String>>();
+  public void loadFiles() {
+    knowBase = new HashMap<String, HashSet<String>>();
     File fl = new File("bgData");
     File[] files = fl.listFiles(new FileFilter() {
       public boolean accept(File file) {
@@ -188,27 +207,26 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
     for (File f : files) {
       HashSet<String> tmp = new HashSet<String>();
       String content = readFile(f);
-      String[] tokens = content.replaceAll("[()./_-]", " ").toLowerCase().split(" ");
-
-      for (String token : tokens) {
-        tmp.add(token);
-      }
+      String[] tokens = content.replaceAll("[()./_]", " ").replaceAll("\n", " ")
+              .replaceAll("\r", " ").toLowerCase().split(" ");
       String fname = f.getName();
-      if (fname.indexOf("acid") != -1) {
-        result.put("amino_acid", tmp);
+      for (String token : tokens) {
+        tmp.add(token.trim());
+      }
+      if (fname.indexOf("proteins.txt") != -1) {
+        knowBase.put("protein", tmp);
+      } else if (fname.indexOf("acid") != -1) {
+        knowBase.put("amino_acid", tmp);
       } else if (fname.indexOf("histone_deacetylase_inhibitor.txt") != -1) {
-        result.put("histone_deacetylase_inhibitor", tmp);
+        knowBase.put("histone_deacetylase_inhibitor", tmp);
       } else if (fname.indexOf("enzymes") != -1) {
-        result.put("enzyme", tmp);
+        knowBase.put("enzyme", tmp);
       } else if (fname.indexOf("List_of_human_hormone") != -1) {
-        result.put("hormone", tmp);
+        knowBase.put("hormone", tmp);
       } else if (fname.indexOf("organisms") != -1) {
-        result.put("organisms", tmp);
-      } else if (fname.indexOf("protein") != -1) {
-        result.put("protein", tmp);
+        knowBase.put("organisms", tmp);
       }
     }
-    return result;
   }
 
   public static String readFile(File file) {
