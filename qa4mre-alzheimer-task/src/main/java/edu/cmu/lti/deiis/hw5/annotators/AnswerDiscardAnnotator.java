@@ -53,23 +53,13 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
       Question question = qaSet.get(i).getQuestion();
       ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
               Answer.class);
-      // HashSet<String> xxx = new HashSet<String>();
-      // xxx = knowBase.get("protein");
-      // Iterator iter = xxx.iterator();
-      // while (iter.hasNext()) {
-      // // System.out.print("see ");
-      // System.out.println(iter.next());
-      // }
 
       // Wenyi: discard answers based on knowledge
       HashSet<String> curKnowBase = new HashSet<String>();
-      System.out.println("curKnowBase is EMPTY: " + curKnowBase.isEmpty());
       String[] quesTokens = question.getText().toLowerCase().split(" ");
       String mark = null;
       if (question.getText().toLowerCase().indexOf("what protein") != -1
               || question.getText().toLowerCase().indexOf("what specific protein") != -1) {
-        System.out.println(question.getText());
-        System.out.println("got protein three !!!");
         curKnowBase = new HashSet<String>(knowBase.get("protein"));
         mark = "protein";
       } else {
@@ -93,10 +83,6 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
         }
       }
 
-      System.out.println("curKnowBase is EMPTY: " + curKnowBase.isEmpty());
-      if (!curKnowBase.isEmpty()) {
-        System.out.println("test: " + curKnowBase.contains("bdnf"));
-      }
       // callie
       try {
         BufferedWriter bW = new BufferedWriter(new FileWriter("RemovedAnswers.txt", true));
@@ -213,7 +199,7 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
       for (String token : tokens) {
         tmp.add(token.trim());
       }
-      if (fname.indexOf("proteins.txt") != -1) {
+      if (fname.indexOf("protein.txt") != -1) {
         knowBase.put("protein", tmp);
       } else if (fname.indexOf("acid") != -1) {
         knowBase.put("amino_acid", tmp);
