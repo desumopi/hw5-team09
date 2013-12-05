@@ -45,7 +45,7 @@ public class OutputRunCasConsumer extends CasConsumer_ImplBase {
   /**
    * for writing to the output format.
    */
-  String team_id = "cmuq"; // TBD: needs to be replaced by real team id in the
+  String team_id = "team09"; // TBD: needs to be replaced by real team id in the
                 // task.
   int current_year = 13;
   String number_of_run = "01"; // TBD: needs to be passed in from the
