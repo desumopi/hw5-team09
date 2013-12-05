@@ -35,6 +35,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
   HashSet<String> hshStopWords = new HashSet<String>();
 
   int K_CANDIDATES = 5;
+  double tFreqWeight = 1.0;
 
   @Override
   public void initialize(UimaContext context) throws ResourceInitializationException {
@@ -142,7 +143,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
           
           // callie: count term frequency of answer in document, use frequency to change weight
           double tFreq = getTermCount(answer.getText(), testDoc.getText());
-          score1 += tFreq;
+          score1 += tFreqWeight*tFreq;
           //System.out.println("score = " + score1 + " + " + tFreq);
 
           // Wenyi added "count" to normalize the original the PMI score, which is a sum of scores.
