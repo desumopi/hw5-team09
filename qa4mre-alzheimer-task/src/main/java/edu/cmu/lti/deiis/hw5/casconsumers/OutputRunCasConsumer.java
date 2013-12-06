@@ -45,7 +45,7 @@ public class OutputRunCasConsumer extends CasConsumer_ImplBase {
   /**
    * for writing to the output format.
    */
-  String team_id = "team09"; // TBD: needs to be replaced by real team id in the
+  String team_id = "team-09"; // TBD: needs to be replaced by real team id in the
                 // task.
   int current_year = 13;
   String number_of_run = "01"; // TBD: needs to be passed in from the
@@ -94,7 +94,7 @@ public class OutputRunCasConsumer extends CasConsumer_ImplBase {
      */
     try {
       sb.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n");
-      sb.append(String.format("<output run_id=\"%s%d%s%s\">\n", team_id, current_year, number_of_run, language_pair));
+      sb.append(String.format("<output run_id=\"%s\">\n", team_id));
       sb.append(String.format("<topic t_id=\"%d\" >\n", t_id));
       //DEBUG
       //System.out.println(sb.toString());

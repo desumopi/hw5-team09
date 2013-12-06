@@ -164,8 +164,6 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
         {
           ans.setIsSelected(true);
         }
-        hshAnswer.put(answer,1.0);
-    
       }
 
       
