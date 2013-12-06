@@ -86,10 +86,6 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
            isNoneAboveAvail = true;
          }
          
-         //napat should we discard none of the above?
-         if (temp.getIsDiscard() ) {
-           choiceList.remove(ind);
-         }
        }
        
      //napat if discard all answers then its better to not do any discarding 
