@@ -40,7 +40,7 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
   public void initialize(UimaContext context) throws ResourceInitializationException {
     super.initialize(context);
     loadFiles();
-
+    System.out.println("initializing...loading files...");
   }
 
   @Override
