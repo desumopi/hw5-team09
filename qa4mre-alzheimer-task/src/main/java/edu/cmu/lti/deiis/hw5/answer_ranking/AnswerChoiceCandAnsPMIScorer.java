@@ -74,6 +74,13 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
         }
       }
       
+      //napat in case all choice is discard recover them
+      if(choiceList.isEmpty())
+      {
+        choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
+                Answer.class);
+      }
+      
       ArrayList<CandidateSentence> candSentList = Utils.fromFSListToCollection(qaSet.get(i)
               .getCandidateSentenceList(), CandidateSentence.class);
 

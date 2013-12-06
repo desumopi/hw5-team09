@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
+import org.apache.solr.analysis.TrimFilter;
 import org.apache.uima.UimaContext;
 import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
 import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
@@ -46,6 +47,9 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
       System.out.println("Question: " + question.getText());
       ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
               Answer.class);
+      ArrayList<Answer> tmpChoiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
+              Answer.class);
+      
       ArrayList<CandidateSentence> candSentList = Utils.fromFSListToCollection(qaSet.get(i)
               .getCandidateSentenceList(), CandidateSentence.class);
 
@@ -60,6 +64,12 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
         }
       }
 
+      //napat
+      if(choiceList.size()>5)
+      {
+        choiceList.remove(0);
+      }
+      
       HashMap<String, Double> hshAnswer = new HashMap<String, Double>();
       
       //napat
@@ -77,7 +87,7 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
          }
          
          //napat should we discard none of the above?
-         if (temp.getIsDiscard()) {
+         if (temp.getIsDiscard() ) {
            choiceList.remove(ind);
          }
        }
@@ -85,8 +95,7 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
      //napat if discard all answers then its better to not do any discarding 
        if(choiceList.isEmpty())
        {
-         choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
-                 Answer.class);
+         choiceList = tmpChoiceList;
        }
        
        
@@ -115,7 +124,7 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
           CandidateAnswer candAns = candAnswerList.get(j);
           String answer = candAns.getText();
 
-          double totalScore = candAns.getSimilarityScore() + candAns.getSynonymScore()
+          double totalScore = 1+candAns.getSimilarityScore() + candAns.getSynonymScore()
                   + candAns.getPMIScore()+candAns.getAltSimScore();
 //          System.out.println("SimilarityScore:" + candAns.getSimilarityScore());
 //          System.out.println("SynonymScore:" + candAns.getSynonymScore());
@@ -191,8 +200,9 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
     while (it.hasNext()) {
       String key = it.next();
       Double val = hshAnswer.get(key);
+      
       System.out.println(key + "\t" + key + "\t" + val);
-      if (val > maxScore) {
+      if (val > maxScore && !key.equals("")) {
         maxScore = val;
         bestAns = key;
         select = i;
