@@ -188,9 +188,9 @@ public class OutputRunCasConsumer extends CasConsumer_ImplBase {
                 .getHead();
             Answer ans = (Answer) qaHead;
             a_id = Integer.parseInt(ans.getId());
-            System.out.println("Answer: " + ans.getId() +
+           /*System.out.println("Answer: " + ans.getId() +
             ", text: "
-             + ans.getText());
+             + ans.getText());*/
             if (ans.getIsCorrect()) {
               if (ans.getIsSelected()) {
                 correct++;

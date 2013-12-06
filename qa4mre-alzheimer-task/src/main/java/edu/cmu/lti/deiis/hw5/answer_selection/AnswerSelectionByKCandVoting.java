@@ -82,6 +82,14 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
          }
        }
        
+     //napat if discard all answers then its better to not do any discarding 
+       if(choiceList.isEmpty())
+       {
+         choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
+                 Answer.class);
+       }
+       
+       
        //initialize all availible answer to 1
        for (int j = 0; j < choiceList.size(); j++) {
       
@@ -90,7 +98,7 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
          hshAnswer.put(answer,1.0);
      
        }
-
+       
       
       
 
