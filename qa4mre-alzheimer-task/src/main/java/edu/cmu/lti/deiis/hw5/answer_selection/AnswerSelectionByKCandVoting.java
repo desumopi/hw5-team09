@@ -23,6 +23,7 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
   int K_CANDIDATES = 5;
   double MIN_SCORE = 7;
 
+  int select = 0;
   @Override
 	public void initialize(UimaContext context)
 			throws ResourceInitializationException {
@@ -87,7 +88,7 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
          Answer ans = choiceList.get(j);
          String answer = ans.getText();
          hshAnswer.put(answer,1.0);
-         
+     
        }
 
       
@@ -146,6 +147,20 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
       }
       total++;
       System.out.println("================================================");
+      //napat
+      for (int j = 0; j < choiceList.size(); j++) {
+        
+        Answer ans = choiceList.get(j);
+        String answer = ans.getText();
+        if(answer.equalsIgnoreCase(bestChoice))
+        {
+          ans.setIsSelected(true);
+        }
+        hshAnswer.put(answer,1.0);
+    
+      }
+
+      
 
     }
 
@@ -165,6 +180,8 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
     String bestAns = null;
     double maxScore = 0;
     System.out.println("Aggregated counts; ");
+    //napat
+    int i=1;
     while (it.hasNext()) {
       String key = it.next();
       Double val = hshAnswer.get(key);
@@ -172,8 +189,10 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
       if (val > maxScore) {
         maxScore = val;
         bestAns = key;
+        select = i;
       }
 
+      i++;
     }
     
     if(isNoneAboveAvail)

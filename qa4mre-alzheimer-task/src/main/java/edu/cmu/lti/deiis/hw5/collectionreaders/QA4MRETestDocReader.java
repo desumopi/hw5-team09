@@ -91,6 +91,10 @@ public class QA4MRETestDocReader extends CollectionReader_ImplBase {
 
 		String testDocId = ((Element) testDocNodeList.item(0))
 				.getAttribute("d_id");
+		//napat
+		String readingTestId = ((Element) testDocNodeList.item(0))
+		        .getAttribute("r_id");
+		
 		String fileName = testFile[nCurrFile].getName();
 
 		String docId = fileName.replace(".xmi", "") + "_" + testDocId;
@@ -162,6 +166,7 @@ public class QA4MRETestDocReader extends CollectionReader_ImplBase {
 		jcas.setDocumentText(docText);
 		TestDocument testDoc = new TestDocument(jcas);
 		testDoc.setId(docId);
+		testDoc.setReadingTestId(readingTestId);
 		testDoc.setText(docText);
 		testDoc.setQaList(quetionAnswersFSList);
 

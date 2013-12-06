@@ -47,17 +47,15 @@
     <configurationParameterSettings/>
     <flowConstraints>
       <fixedFlow>
-        <node>PhraseAnnotator</node>
+        <node>QuestionCandSentSimilarityMatcher</node>
         <!-- <node>QuestionCandSentSynonymMatcher</node>-->
         <!-- <node>QuestionCandSentDependencyMatcher</node>-->
-        <node>QuestionPhraseAnnotator</node>
+        <node>AnswerDiscardAnnotator</node>
         <!-- <node>AnswerChoiceCandAnsSynonymScorer</node>-->
         <!--<node>AnswerChoiceCandAnsPMIScorer</node>-->
-        <node>QuestionCandSentSimilarityMatcher</node>
-      <node>AnswerDiscardAnnotator</node>
-<node>AnswerChoiceCandAnsPMIScorer</node>
-<node>AnswerSelectionByKCandVoting</node>
-      </fixedFlow>
+        <node>AnswerChoiceCandAnsPMIScorer</node>
+      <node>AnswerSelectionByKCandVoting</node>
+</fixedFlow>
     </flowConstraints>
     <typePriorities/>
     <fsIndexCollection/>

@@ -160,7 +160,9 @@ public class OutputRunCasConsumer extends CasConsumer_ImplBase {
         doc.setReadingTestId(String.valueOf(testId));
         testId++;
         //TBD: get reading-test id, such as r_id = doc.getReadingTestId()
-        System.out.println(doc.getReadingTestId());
+        //napat
+        r_id = Integer.parseInt(doc.getReadingTestId());
+        System.out.println(""+r_id);
         out.write(String.format("\t<reading-test r_id=\"%d\">\n", Integer.parseInt(doc.getReadingTestId())));
         
         FSList list = doc.getQaList();
@@ -186,9 +188,9 @@ public class OutputRunCasConsumer extends CasConsumer_ImplBase {
                 .getHead();
             Answer ans = (Answer) qaHead;
             a_id = Integer.parseInt(ans.getId());
-            // DEBUG System.out.println("Answer: " + ans.getId() +
-            // ", text: "
-            // + ans.getText());
+            System.out.println("Answer: " + ans.getId() +
+            ", text: "
+             + ans.getText());
             if (ans.getIsCorrect()) {
               if (ans.getIsSelected()) {
                 correct++;
