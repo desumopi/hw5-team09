@@ -24,6 +24,7 @@ import org.apache.uima.util.ProgressImpl;
 import org.apache.xerces.parsers.DOMParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
@@ -91,9 +92,8 @@ public class QA4MRETestDocReader extends CollectionReader_ImplBase {
 
 		String testDocId = ((Element) testDocNodeList.item(0))
 				.getAttribute("d_id");
-		//napat
-		String readingTestId = ((Element) testDocNodeList.item(0))
-		        .getAttribute("r_id");
+		
+
 		
 		String fileName = testFile[nCurrFile].getName();
 
@@ -166,7 +166,7 @@ public class QA4MRETestDocReader extends CollectionReader_ImplBase {
 		jcas.setDocumentText(docText);
 		TestDocument testDoc = new TestDocument(jcas);
 		testDoc.setId(docId);
-		testDoc.setReadingTestId(readingTestId);
+		testDoc.setReadingTestId(testDocId);
 		testDoc.setText(docText);
 		testDoc.setQaList(quetionAnswersFSList);
 
