@@ -53,7 +53,7 @@ public class OutputRunCasConsumer extends CasConsumer_ImplBase {
   String language_pair = "enen"; // We only deal with
 
   int t_id = 1; // seems like Alzheimer task only has t_id == 1.
-  int r_id = 1; // reading test id. currently not recorded in the
+  int r_id = 0; // reading test id. currently not recorded in the
           // collectionreader...? TBD: needs to be changed according
           // to the input reading document format..
   int q_id = 0; // changing (from 1 - 10) according to the question id in a
@@ -150,24 +150,25 @@ public class OutputRunCasConsumer extends CasConsumer_ImplBase {
 
     FSIterator<Annotation> it = jcas.getAnnotationIndex().iterator();
     StringBuffer sb = new StringBuffer();
-    int testId=1;
+    int testId=0;
     while (it.hasNext()) {
       Annotation an = (it.next());
       // System.out.println(an);
-
+      
       if (an instanceof TestDocument) {
         TestDocument doc = (TestDocument) an;
-        doc.setReadingTestId(String.valueOf(testId));
+        //doc.setReadingTestId(String.valueOf(testId));
         testId++;
         //TBD: get reading-test id, such as r_id = doc.getReadingTestId()
         //napat
-        r_id = Integer.parseInt(doc.getReadingTestId());
-        System.out.println(""+r_id);
-        out.write(String.format("\t<reading-test r_id=\"%d\">\n", Integer.parseInt(doc.getReadingTestId())));
-        
+        //r_id = Integer.parseInt(doc.getReadingTestId());
+        //System.out.println(""+r_id);
+        r_id++;
+        out.write(String.format("\t<reading-test r_id=\"%d\">\n", r_id));
         FSList list = doc.getQaList();
         boolean answered = false;
         int selectedAnswerId = -1;
+        q_id = -1;
         while (list instanceof NonEmptyFSList) { // every question
           answered = false; //reset "answered" variable.
           selectedAnswerId = -1;
@@ -179,7 +180,7 @@ public class OutputRunCasConsumer extends CasConsumer_ImplBase {
           //DEBUG
           //System.out.println(q.getId());
           
-          q_id = Integer.parseInt(q.getId());
+          q_id++;;
           // DEBUG System.out.println("Question: " + q.getText());
           FSList aList = qas.getAnswerList();
           while (aList instanceof NonEmptyFSList) { // every answer
@@ -215,7 +216,9 @@ public class OutputRunCasConsumer extends CasConsumer_ImplBase {
           list = ((NonEmptyFSList) list).getTail();
         }
         out.write("\t</reading-test>\n");
+        
       }
+
     }
 
   }
