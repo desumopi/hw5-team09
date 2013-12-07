@@ -83,7 +83,7 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
         }
       }
 
-      // callie
+      // callie discard answers based on syntax and semantics
       try {
         BufferedWriter bW = new BufferedWriter(new FileWriter("RemovedAnswers.txt", true));
         for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
@@ -96,6 +96,7 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
           String qWdTwo = question.getText().substring(stind1, stind2);
           Character lastQChar = qWdTwo.charAt(qWdTwo.length() - 1);
 
+          // discard non-numeric answers to "how many" questions
           if ("How many".equals(question.getText().substring(0, 8)) && !isNumeric(temp.getText())
                   && !temp.getText().contains("more") && !temp.getText().contains("less")) {
 
@@ -159,6 +160,7 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
     }
   }
 
+  // callie: determine whether a string is numeric
   public static boolean isNumeric(String str) {
     try {
       double d = Double.parseDouble(str);
@@ -170,7 +172,8 @@ public class AnswerDiscardAnnotator extends JCasAnnotator_ImplBase {
     }
     return true;
   }
-
+  
+  // callie: helper method to get the index of the first instance of ' ' in a string
   public static int getFirstSpace(String st) {
     Character space = ' ';
     for (int i = 0; i < st.length(); i++) {

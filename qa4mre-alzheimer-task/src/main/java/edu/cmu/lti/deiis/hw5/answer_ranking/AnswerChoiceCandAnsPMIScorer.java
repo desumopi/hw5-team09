@@ -70,6 +70,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
       for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
         Answer temp = choiceList.get(ind);
         if (temp.getIsDiscard()) {
+          //System.out.println(choiceList.get(ind));
           choiceList.remove(ind);
         }
       }
