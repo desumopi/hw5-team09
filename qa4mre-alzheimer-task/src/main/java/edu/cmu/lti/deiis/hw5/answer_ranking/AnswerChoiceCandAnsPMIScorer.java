@@ -70,7 +70,6 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
       for (int ind = choiceList.size() - 1; ind >= 0; ind--) {
         Answer temp = choiceList.get(ind);
         if (temp.getIsDiscard()) {
-          //System.out.println(choiceList.get(ind));
           choiceList.remove(ind);
         }
       }
@@ -150,9 +149,10 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
           }
           
           // callie: count term frequency of answer in document, use frequency to change weight
+          // note that "frequency" is a misnomer: this is really the count of the answer in the
+          // document multiplied by some weight
           double tFreq = getTermCount(answer.getText(), testDoc.getText());
           score1 += tFreqWeight*tFreq;
-          //System.out.println("score = " + score1 + " + " + tFreq);
 
           // Wenyi added "count" to normalize the original the PMI score, which is a sum of scores.
           // the result of PMI itself stays the same; but when combined with default and alternative
